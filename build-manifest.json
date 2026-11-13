@@ -1,6 +1,6 @@
 {
   "format": 1,
-  "cacheName": "pose-notes-5cf2913ea730",
+  "cacheName": "pose-notes-878100e4a091",
   "groups": 38,
   "imageFiles": 224,
   "files": {
@@ -46,11 +46,11 @@
     },
     "photo-pose-app/service-worker.js": {
       "bytes": 7443,
-      "sha256": "ee7cadcc095113be701c0cc420b95398e2ef57156b1c6460b8bb15fa2ab6cae5"
+      "sha256": "607a88a2510b7464e07e6d2b02defb59b3ca26f598876cbd97bd62dd466fcb9f"
     },
     "photo-pose-app/shoot.js": {
-      "bytes": 44652,
-      "sha256": "cec7ecdb843d6f57cd3100b3f31b6d308a185135dad8851fc6c69259e6fc8770"
+      "bytes": 44632,
+      "sha256": "d24a9e0481ac6d377fb6f0b3fac47985c6ba5fd0cde183dd656f97325b7f6c42"
     },
     "photo-pose-app/style.css": {
       "bytes": 31029,
