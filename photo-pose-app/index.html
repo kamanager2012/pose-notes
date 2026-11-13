@@ -59,6 +59,7 @@
           <strong id="shoot-title">拍摄</strong>
           <button id="shoot-grid-toggle" type="button" aria-pressed="false" aria-label="显示九宫格">网格</button>
           <button id="shoot-timer" type="button" aria-label="自拍定时：关闭">定时</button>
+          <button id="shoot-burst" type="button" aria-pressed="false" aria-label="连拍：关闭，点击开启">连拍</button>
           <button id="shoot-close" type="button" aria-label="关闭相机">关闭</button>
         </div>
         <div class="shoot-stage" id="shoot-stage" data-ref="corner" data-facing="environment">
@@ -69,9 +70,13 @@
           <p id="shoot-countdown" class="shoot-countdown" aria-hidden="true" hidden></p>
           <p id="shoot-cue" class="shoot-cue"></p>
         </div>
+        <div id="shoot-shots" class="shoot-shots" role="group" aria-label="连拍照片，点一张选中" hidden></div>
         <p id="shoot-message" class="shoot-message" role="status" aria-live="polite" hidden></p>
         <div id="shoot-live-controls" class="shoot-controls">
-          <button id="shoot-ref-toggle" type="button" hidden></button>
+          <div class="shoot-ref-tools">
+            <button id="shoot-ref-toggle" type="button" hidden></button>
+            <button id="shoot-ref-move" type="button" aria-pressed="false" hidden>移动参考</button>
+          </div>
           <button id="shoot-shutter" class="shoot-shutter" type="button" aria-label="拍照" disabled><span aria-hidden="true"></span></button>
           <button id="shoot-flip" type="button" disabled>换镜头</button>
         </div>
@@ -133,6 +138,20 @@
               <option value="0.98">极高</option>
             </select>
           </label>
+          <label class="shoot-setting-row">连拍
+            <select id="shoot-burst-count">
+              <option value="1">单张</option>
+              <option value="3">3 张</option>
+              <option value="5">5 张</option>
+            </select>
+          </label>
+          <label class="shoot-setting-row">连拍间隔
+            <select id="shoot-burst-interval">
+              <option value="500">0.5 秒</option>
+              <option value="800" selected>0.8 秒</option>
+              <option value="1500">1.5 秒</option>
+            </select>
+          </label>
           <label class="shoot-setting-check"><input id="shoot-mirror-save" type="checkbox" /> 保存时镜像前置照片</label>
           <label id="shoot-torch-row" class="shoot-setting-check" hidden><input id="shoot-torch" type="checkbox" /> 手电/闪光（支持时）</label>
           <label id="shoot-zoom-row" class="shoot-setting-row" hidden>变焦
@@ -144,6 +163,7 @@
           <label class="shoot-setting-row">参考图大小
             <input id="shoot-ref-scale" type="range" min="0.6" max="1.4" step="0.1" value="1" />
           </label>
+          <label class="shoot-setting-check"><input id="shoot-ref-lock" type="checkbox" /> 锁定参考图位置</label>
           <button id="shoot-settings-reset" type="button">恢复默认设置</button>
           <p class="shoot-settings-note">设置只保存在本机，照片仍不上传。手电和变焦是否可用取决于手机浏览器。</p>
         </section>
