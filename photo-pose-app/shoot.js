@@ -35,7 +35,7 @@ const state = {
   phase: 'idle', errorKey: '', refMode: 'corner', hasRef: false, blob: null, url: '', name: '', capturing: false,
   delay: 0, countdown: null, countdownTimer: null, countdownStart: 0, gridOn: false,
   settings: readCameraSettings(), compare: false,
-  shots: [], selected: 0, reviewToken: 0, burstTimer: null, burstResolve: null,
+  shots: [], selected: 0, reviewToken: 0, burstTimer: null, burstResolve: null, dataReader: null,
   refDragging: false, drag: null,
 };
 const IMAGE_NAME = /\.(jpe?g|png|webp|heic|heif)$/i;
@@ -112,10 +112,14 @@ function closeSettings() {
 }
 
 function openSettings() {
+ if (state.capturing) return;
  const panel = byId('shoot-settings');
  panel.hidden = false;
  closePicker();
+ state.refDragging = false;
+ state.drag = null;
  applyCameraSettings();
+ applyRef();
  byId('shoot-settings-close').focus({ preventScroll: true });
  panel.scrollIntoView({ block: 'start' });
 }
@@ -128,11 +132,13 @@ function isMobile() {
   return /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
 }
 
-function readDataUrl(blob) {
+function readDataUrl(blob, onReader) {
   return new Promise((resolve, reject) => {
     const reader = new FileReader();
+    onReader?.(reader);
     reader.onload = () => resolve(reader.result);
     reader.onerror = () => reject(reader.error);
+    reader.onabort = () => reject(new DOMException('Aborted', 'AbortError'));
     reader.readAsDataURL(blob);
   });
 }
@@ -171,9 +177,9 @@ function applyRef() {
   byId('shoot-ref-toggle').hidden = !(state.hasRef && state.phase === 'live');
   byId('shoot-ref-toggle').textContent = REF_LABELS[state.refMode];
   byId('shoot-ref-toggle').setAttribute('aria-label', REF_HINTS[state.refMode]);
-  byId('shoot-ref-toggle').disabled = state.phase !== 'live';
+  byId('shoot-ref-toggle').disabled = state.phase !== 'live' || state.capturing;
   const move = byId('shoot-ref-move');
-  const canMove = state.hasRef && state.phase === 'live' && state.refMode === 'overlay' && !state.settings.refLocked;
+  const canMove = state.hasRef && state.phase === 'live' && state.refMode === 'overlay' && !state.settings.refLocked && !state.capturing;
   move.hidden = !canMove;
   move.textContent = state.refDragging ? '完成移动' : '移动参考';
   move.setAttribute('aria-pressed', String(state.refDragging));
@@ -204,6 +210,7 @@ function setPhase(phase) {
   byId('shoot-save-hint').hidden = !review;
   byId('shoot-share').hidden = review && isWeChat();
   byId('shoot-save').textContent = isWeChat() ? '长按照片保存' : '保存到相册';
+  byId('shoot-save').disabled = false;
   if (review) {
     byId('shoot-save-hint').textContent = isWeChat()
       ? '微信里请长按上方照片，选择“保存图片”或“发送给朋友”。'
@@ -213,6 +220,9 @@ function setPhase(phase) {
   byId('shoot-flip').disabled = phase !== 'live' || state.capturing;
   byId('shoot-burst').disabled = phase !== 'live' || state.capturing;
   byId('shoot-timer').disabled = phase !== 'live' || state.capturing;
+  for (const id of ['shoot-settings-open', 'shoot-ref-library', 'shoot-native']) {
+    byId(id).disabled = phase === 'live' && state.capturing;
+  }
   byId('shoot-retry').hidden = !canRetry;
   if (phase === 'error') {
     const target = byId(canRetry ? 'shoot-retry' : 'shoot-close');
@@ -220,13 +230,13 @@ function setPhase(phase) {
   }
   applyGrid();
   if (phase === 'starting') keepFocusInside('shoot-close');
-  if (phase === 'live') keepFocusInside('shoot-shutter');
+  if (phase === 'live') keepFocusInside(state.capturing ? 'shoot-close' : 'shoot-shutter');
   applyRef();
 }
 
 function keepFocusInside(fallbackId) {
   const active = document.activeElement;
-  if (!active || active === document.body || active.closest('[hidden]')) byId(fallbackId).focus();
+  if (!active || active === document.body || active.closest('[hidden]') || active.disabled) byId(fallbackId).focus();
 }
 
 function updateTimerButton() {
@@ -371,6 +381,9 @@ function waitForBurstGap(ms) {
 }
 
 function clearPhoto() {
+  state.dataReader?.abort();
+  state.dataReader = null;
+  byId('shoot-save').disabled = false;
   const urls = new Set(state.shots.map((shot) => shot.url));
   for (const url of urls) URL.revokeObjectURL(url);
   if (state.url && !urls.has(state.url)) URL.revokeObjectURL(state.url);
@@ -570,23 +583,32 @@ async function takePhotos() {
   }
   const token = state.token;
   const count = state.settings.burstCount;
+  closeSettings();
+  closePicker();
   state.capturing = true;
   setPhase('live');
   showNotice(count > 1 ? `连拍 1/${count}…` : '正在生成照片…');
   const shots = [];
+  let lastStart = 0;
   for (let index = 0; index < count; index += 1) {
     if (token !== state.token || state.phase !== 'live' || !state.capturing) return;
     if (index > 0) {
-      await waitForBurstGap(state.settings.burstInterval);
+      const remaining = Math.max(0, state.settings.burstInterval - (performance.now() - lastStart));
+      if (remaining > 0) await waitForBurstGap(remaining);
       if (token !== state.token || state.phase !== 'live' || !state.capturing) return;
       showNotice(`连拍 ${index + 1}/${count}…`);
     }
+    lastStart = performance.now();
     const blob = await captureStill();
     if (token !== state.token || state.phase !== 'live' || !state.capturing) return;
     if (!blob) {
       state.capturing = false;
-      setPhase('live');
-      showNotice('拍照失败，请重试。');
+      if (shots.length) {
+        showReview(shots, '', `第 ${index + 1} 张失败，已保留前 ${shots.length} 张。点缩略图选一张保存或分享。`);
+      } else {
+        setPhase('live');
+        showNotice('拍照失败，请重试。');
+      }
       return;
     }
     shots.push(blob);
@@ -634,22 +656,47 @@ async function selectShot(index) {
   state.url = shot.url;
   const token = ++state.reviewToken;
   const image = byId('shoot-result');
+  const save = byId('shoot-save');
+  const needsData = isWeChat() || isMobile();
   image.dataset.shot = String(index);
+  image.alt = state.shots.length > 1
+    ? `第 ${index + 1} 张，共 ${state.shots.length} 张照片，尚未保存`
+    : '刚拍的照片，尚未保存';
   byId('shoot-photo-meta').hidden = false;
   byId('shoot-photo-meta').textContent = `${formatBytes(shot.blob.size)} · 读取尺寸…`;
   image.src = shot.url;
   renderShots();
-  if (isWeChat() || isMobile()) {
-    try {
-      const src = await readDataUrl(shot.blob);
-      if (token === state.reviewToken && state.phase === 'review') image.src = src;
-    } catch (error) {
-      console.warn('Unable to prepare the photo for long-press saving', error);
+  if (!needsData) {
+    state.dataReader?.abort();
+    save.disabled = false;
+    return;
+  }
+  state.dataReader?.abort();
+  save.disabled = true;
+  let reader = null;
+  try {
+    const src = await readDataUrl(shot.blob, (created) => {
+      reader = created;
+      state.dataReader = created;
+    });
+    if (token === state.reviewToken && state.phase === 'review') {
+      image.src = src;
+      save.disabled = false;
     }
+  } catch (error) {
+    if (error?.name !== 'AbortError') {
+      console.warn('Unable to prepare the photo for long-press saving', error);
+      if (token === state.reviewToken && state.phase === 'review') {
+        save.disabled = false;
+        showNotice('长按保存准备失败，请重试拍摄，或使用分享。');
+      }
+    }
+  } finally {
+    if (state.dataReader === reader) state.dataReader = null;
   }
 }
 
-async function showReview(input, name = '') {
+async function showReview(input, name = '', warning = '') {
   const shots = (Array.isArray(input) ? input : [input]).filter(Boolean);
   if (!shots.length) return;
   state.token += 1;
@@ -665,11 +712,13 @@ async function showReview(input, name = '') {
   state.selected = 0;
   setPhase('review');
   renderShots();
-  showNotice(shots.length > 1
+  showNotice(warning || (shots.length > 1
     ? `拍了 ${shots.length} 张，点下面的缩略图选一张保存或分享。`
-    : name ? `已选择 ${name}，确认后保存或分享。` : '拍好了。可以重拍，或保存、分享。');
-  byId('shoot-save').focus();
+    : name ? `已选择 ${name}，确认后保存或分享。` : '拍好了。可以重拍，或保存、分享。'));
+  byId('shoot-stage').scrollIntoView({ block: 'start' });
   await selectShot(0);
+  const save = byId('shoot-save');
+  (save.disabled ? byId('shoot-close') : save).focus({ preventScroll: true });
 }
 
 function fileName(type, index = 0) {
@@ -908,12 +957,16 @@ function chooseReference(entry) {
   ref.alt = `${POSTURE_LABELS[entry.posture]}${ANGLE_LABELS[entry.angle]}的人偶线稿姿势参考`;
   applyRef();
   closePicker();
-  showNotice(`已选参考图：${POSTURE_LABELS[entry.posture]} · ${ANGLE_LABELS[entry.angle]}。可以切换角落、叠加或隐藏。`);
+  showNotice(`已选参考图：${POSTURE_LABELS[entry.posture]} · ${ANGLE_LABELS[entry.angle]}。可以切换角落、叠加或隐藏；叠加时点“移动参考”可拖动。`);
   byId('shoot-ref-library').focus();
 }
 
 function openPicker() {
+  if (state.capturing) return;
   closeSettings();
+  state.refDragging = false;
+  state.drag = null;
+  applyRef();
   const panel = byId('shoot-picker');
   panel.hidden = false;
   picker.scrollNeeded = true;
@@ -1016,7 +1069,14 @@ function wire() {
   byId('shoot-ref').addEventListener('keydown', nudgeRef);
   byId('shoot-native').addEventListener('click', () => byId('shoot-file').click());
   byId('shoot-file').addEventListener('change', useSystemPhoto);
-  byId('shoot-ref').addEventListener('error', () => { state.hasRef = false; applyRef(); });
+  byId('shoot-ref').addEventListener('error', () => {
+    const hadFocus = document.activeElement === byId('shoot-ref');
+    state.hasRef = false;
+    state.refDragging = false;
+    state.drag = null;
+    applyRef();
+    if (hadFocus) byId('shoot-ref-library').focus();
+  });
   byId('shoot-result').addEventListener('load', () => {
     if (state.phase !== 'review' || !state.blob) return;
     const image = byId('shoot-result');
