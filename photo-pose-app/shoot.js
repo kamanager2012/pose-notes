@@ -49,7 +49,7 @@ function typeFor(name, fallback = '') {
 }
 
 function readCameraSettings() {
- const defaults = { aspect: 'source', quality: 0.92, mirrorSave: false };
+ const defaults = { aspect: 'source', quality: 0.92, mirrorSave: false, refOpacity: 0.45, refScale: 1 };
  try {
   const raw = JSON.parse(localStorage.getItem(SETTINGS_KEY) ?? 'null');
   if (!raw || typeof raw !== 'object') return defaults;
@@ -57,6 +57,8 @@ function readCameraSettings() {
    aspect: ASPECTS.has(raw.aspect) ? raw.aspect : defaults.aspect,
    quality: QUALITIES.includes(Number(raw.quality)) ? Number(raw.quality) : defaults.quality,
    mirrorSave: Boolean(raw.mirrorSave),
+   refOpacity: Number(raw.refOpacity) >= 0.15 && Number(raw.refOpacity) <= 0.9 ? Number(raw.refOpacity) : defaults.refOpacity,
+   refScale: Number(raw.refScale) >= 0.6 && Number(raw.refScale) <= 1.4 ? Number(raw.refScale) : defaults.refScale,
   };
  } catch {
   return defaults;
@@ -81,6 +83,8 @@ function applyCameraSettings() {
  }
  byId('shoot-quality').value = String(state.settings.quality);
  byId('shoot-mirror-save').checked = state.settings.mirrorSave;
+ byId('shoot-ref-opacity').value = String(state.settings.refOpacity);
+ byId('shoot-ref-scale').value = String(state.settings.refScale);
 }
 
 function closeSettings() {
@@ -127,7 +131,10 @@ function closePicker() {
 function applyRef() {
   const showing = state.hasRef && state.phase !== 'review';
   byId('shoot-stage').dataset.ref = state.refMode;
-  byId('shoot-ref').hidden = !showing || state.refMode === 'off';
+  const ref = byId('shoot-ref');
+  ref.hidden = !showing || state.refMode === 'off';
+  ref.style.opacity = state.refMode === 'overlay' ? String(state.settings.refOpacity) : '';
+  ref.style.transform = state.refMode === 'overlay' ? `scale(${state.settings.refScale})` : '';
   byId('shoot-ref-toggle').hidden = !showing;
   byId('shoot-ref-toggle').textContent = REF_LABELS[state.refMode];
   byId('shoot-ref-toggle').setAttribute('aria-label', REF_HINTS[state.refMode]);
@@ -782,6 +789,23 @@ function wire() {
   byId('shoot-mirror-save').addEventListener('change', (event) => {
     state.settings.mirrorSave = event.target.checked;
     saveCameraSettings();
+  });
+  byId('shoot-ref-opacity').addEventListener('input', (event) => {
+    state.settings.refOpacity = Number(event.target.value);
+    saveCameraSettings();
+    applyRef();
+  });
+  byId('shoot-ref-scale').addEventListener('input', (event) => {
+    state.settings.refScale = Number(event.target.value);
+    saveCameraSettings();
+    applyRef();
+  });
+  byId('shoot-settings-reset').addEventListener('click', () => {
+    state.settings = { aspect: 'source', quality: 0.92, mirrorSave: false, refOpacity: 0.45, refScale: 1 };
+    saveCameraSettings();
+    applyCameraSettings();
+    applyRef();
+    showNotice('相机设置已恢复默认。');
   });
   byId('shoot-ref-library').addEventListener('click', () => {
     if (byId('shoot-picker').hidden) openPicker();

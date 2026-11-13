@@ -238,6 +238,7 @@ select:focus { border-color: var(--mint-dark); outline: 2px solid var(--accent-u
 .shoot-setting-row input[type='range'] { flex: 1; min-width: 120px; }
 .shoot-setting-check { display: flex; align-items: center; gap: 8px; min-height: 44px; color: var(--muted-strong); font-size: 13px; }
 .shoot-setting-check input { width: 18px; height: 18px; }
+#shoot-settings-reset { margin-top: 10px; min-height: 44px; padding: 0 14px; color: var(--ink); background: white; border: 1px solid var(--border-strong); font-size: 14px; }
 .shoot-settings-note { margin: 10px 0 0; color: var(--muted-strong); font-size: 12px; line-height: 1.6; }
 .shoot-settings button:focus-visible, .shoot-settings select:focus-visible, .shoot-settings input:focus-visible { outline: 2px solid var(--accent-ui); outline-offset: 2px; }
 .shoot-picker { margin-top: 12px; padding: 12px; background: var(--paper); border: 1px solid var(--line); }
