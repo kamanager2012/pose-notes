@@ -64,6 +64,13 @@ h1 em { color: var(--mint-dark); font-style: normal; }
 .gallery-card select { width: auto; max-width: 100px; height: 44px; padding: 0 25px 0 8px; appearance: auto; }
 .gallery-enlarge { min-height: 44px; min-width: 44px; padding: 0 10px; color: var(--ink); background: white; border: 1px solid var(--border-strong); font-size: 12px; white-space: nowrap; }
 .gallery-viewer { width: min(900px, calc(100vw - 32px)); max-width: none; max-height: calc(100dvh - 32px); padding: 14px; color: var(--ink); background: var(--panel); border: 1px solid var(--line); }
+.about-dialog { width: min(620px, calc(100vw - 32px)); max-width: none; max-height: calc(100dvh - 32px); padding: 18px; color: var(--ink); background: var(--panel); border: 1px solid var(--line); overflow-y: auto; }
+.about-dialog::backdrop { background: rgb(15 22 20 / 78%); }
+.about-dialog p { margin: 12px 0 0; color: var(--muted-strong); font-size: 13px; line-height: 1.8; }
+.about-dialog code { color: var(--ink); font: 12px var(--mono); }
+.about-dialog .viewer-toolbar button { min-height: 44px; min-width: 44px; padding: 0 12px; color: var(--ink); background: white; border: 1px solid var(--border-strong); }
+.footer-link { min-height: 44px; padding: 0; color: var(--muted-strong); background: transparent; border: 0; font: 12px var(--mono); letter-spacing: .05em; text-decoration: underline; }
+.footer-link:focus-visible { outline: 2px solid var(--accent-ui); outline-offset: 2px; }
 .gallery-viewer::backdrop { background: rgb(15 22 20 / 78%); }
 .viewer-toolbar, .viewer-controls { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
 .viewer-toolbar { min-height: 42px; }

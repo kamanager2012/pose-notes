@@ -1,12 +1,12 @@
 {
   "format": 1,
-  "cacheName": "pose-notes-561fbfa42a7e",
+  "cacheName": "pose-notes-bdc297e7baa2",
   "groups": 38,
   "imageFiles": 224,
   "files": {
     "photo-pose-app/app.js": {
-      "bytes": 26340,
-      "sha256": "c2b683d3188f3939a17b3c4fa459eebf2cd64fe10be2ea8a9da3fa139527d066"
+      "bytes": 26740,
+      "sha256": "52e039f73ae573f731d6187cebed5d83790cb4f560b439954f3bfe27c73f5185"
     },
     "photo-pose-app/diagrams/group-four-ground.svg": {
       "bytes": 1641,
@@ -41,20 +41,20 @@
       "sha256": "a3e3552a1333dc8a39f8306f222f4afe047cf64b5980b6e55c4b8f9a27224654"
     },
     "photo-pose-app/index.html": {
-      "bytes": 16485,
-      "sha256": "192beb5f9f771bef0998e27b07199f7c9c133010ea4c68c2c27cd10f25885f00"
+      "bytes": 17610,
+      "sha256": "5b3e619870aee2d5069d7868d060bb3362d76892fe496974fe4992c682550d91"
     },
     "photo-pose-app/service-worker.js": {
       "bytes": 7443,
-      "sha256": "159a1cd6b017179fd9dc990a1c4d1ca7ed1f7e78833743e1a6768c8faf302bc7"
+      "sha256": "485d43ab625b0b7b6da358607a38c302abd6f42d2db5d8da545390a50ba922f3"
     },
     "photo-pose-app/shoot.js": {
       "bytes": 31513,
       "sha256": "a5f486b219311d9b62cc62252dfe0909a8bf38670e236d6c257b43e96321020c"
     },
     "photo-pose-app/style.css": {
-      "bytes": 29065,
-      "sha256": "5b76b89538d19e86a7a77fda479135ae6eb4075ca30dbdf99c24575f91ff7314"
+      "bytes": 29955,
+      "sha256": "920dba20a48036ab52ba2971c551831fdd984eca68f1f36cef0091df67fa0c96"
     },
     "reference-library/photo-pose-gallery.json": {
       "bytes": 11730,

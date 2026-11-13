@@ -343,6 +343,7 @@ const state = { peopleCount: 1, context: '', posture: '', framing: '', available
 const allPoses = [...catalog.poses, ...catalog.guideBasedPoses];
 byId('catalog-version').textContent = `v${catalog.version} · ${allPoses.length} 条`;
 byId('catalog-count').textContent = String(allPoses.length);
+byId('about-version').textContent = `v${catalog.version} · ${allPoses.length} 条动作`;
 
 function updateAdvancedSummary() {
   const selected = [state.posture, state.framing, ...state.availableFeatures];
@@ -599,6 +600,12 @@ byId('style-checkbox').addEventListener('change', updateAdvancedSummary);
 updateAdvancedSummary();
 render();
 }
+
+byId('about-open').addEventListener('click', () => byId('about-dialog').showModal());
+byId('about-close').addEventListener('click', () => byId('about-dialog').close());
+byId('about-dialog').addEventListener('click', (event) => {
+  if (event.target === byId('about-dialog')) byId('about-dialog').close();
+});
 
 byId('retry-button').addEventListener('click', () => {
   if (reloadOnRetry) window.location.reload();

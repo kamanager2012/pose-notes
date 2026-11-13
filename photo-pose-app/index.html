@@ -155,6 +155,18 @@
         </details>
         <p class="shoot-note">照片只在本机处理，页面不会上传。参考图是人偶线稿或站位示意图，只示意姿势和站位，不用对齐。</p>
       </dialog>
+      <dialog id="about-dialog" class="about-dialog" aria-labelledby="about-title">
+        <div class="viewer-toolbar">
+          <strong id="about-title">关于与隐私</strong>
+          <button id="about-close" type="button" aria-label="关闭关于与隐私">关闭</button>
+        </div>
+        <p>这是一个现场摄影动作参考工具：按人数、场景和现场条件给出动作口令、三步、机位提醒和安全边界。</p>
+        <p>照片只在本机处理：不上传，不写照片存储；相机设置以 <code>pose-notes-camera-v1</code> 保存在本机。离线缓存可能被浏览器清除。</p>
+        <p>图片：人偶线稿来自 Shisei v0.4.1（CC0 1.0）；站位示意图为本项目原创。没有真人示范图。</p>
+        <p>限制：网页相机画质和功能弱于原生相机；iOS、微信等环境的相机能力受系统限制；现场条件和身体条件仍须自己确认。</p>
+        <p>版本：<span id="about-version">v4 · 98 条动作</span>。</p>
+      </dialog>
+
       <section class="workspace" aria-label="动作筛选与结果">
         <aside class="filters" aria-labelledby="filter-title">
           <div class="filter-heading">
@@ -276,6 +288,7 @@
     <footer class="footer">
       <span>POSE REFERENCES · CC0 IMAGES</span>
       <span>原创摄影编排 / 公开原则参考</span>
+      <button id="about-open" class="footer-link" type="button">关于与隐私</button>
     </footer>
     <script type="module" src="./app.js"></script>
   </body>
