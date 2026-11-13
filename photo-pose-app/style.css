@@ -191,6 +191,7 @@ select:focus { border-color: var(--mint-dark); outline: 2px solid var(--accent-u
 .shoot-ref { position: absolute; background: rgb(255 255 255 / 92%); pointer-events: none; object-fit: contain; }
 .shoot-ref[hidden] { display: none; }
 .shoot-stage[data-ref='corner'] .shoot-ref { right: 8px; bottom: 56px; width: 28%; max-height: 38%; padding: 4px; border: 1px solid var(--ink); }
+.shoot-stage[data-compare='true'] .shoot-ref { inset: 0; width: 100%; height: 100%; padding: 8px; background: transparent; mix-blend-mode: multiply; }
 .shoot-stage[data-ref='overlay'] .shoot-ref { inset: 0; width: 100%; height: 100%; padding: 8px; background: transparent; mix-blend-mode: multiply; opacity: .45; }
 .shoot-grid { position: absolute; inset: 0; pointer-events: none; }
 .shoot-grid[hidden] { display: none; }

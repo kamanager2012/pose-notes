@@ -1,4 +1,4 @@
-const CACHE_NAME = 'pose-notes-a20f83d55d11';
+const CACHE_NAME = 'pose-notes-561fbfa42a7e';
 const APP_ROOT = new URL('./', self.location.href);
 const IMAGE_ROOT = new URL('../reference-library/poses-shisei-v0.4.1/', self.location.href);
 const CATALOG_URL = new URL('../reference-library/photo-pose-selection.json', self.location.href).href;

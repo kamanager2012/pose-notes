@@ -31,7 +31,7 @@ const state = {
   pose: null, opener: null, stream: null, facing: 'environment', token: 0,
   phase: 'idle', errorKey: '', refMode: 'corner', hasRef: false, blob: null, url: '', name: '', capturing: false,
   delay: 0, countdown: null, countdownTimer: null, countdownStart: 0, gridOn: false,
-  settings: readCameraSettings(),
+  settings: readCameraSettings(), compare: false,
 };
 const IMAGE_NAME = /\.(jpe?g|png|webp|heic|heif)$/i;
 const picker = { loaded: false, entries: [], limit: PICKER_PAGE, request: 0, scrollNeeded: false };
@@ -129,16 +129,21 @@ function closePicker() {
 }
 
 function applyRef() {
-  const showing = state.hasRef && state.phase !== 'review';
-  byId('shoot-stage').dataset.ref = state.refMode;
+  const comparing = state.phase === 'review' && state.compare && state.hasRef;
+  const showing = state.hasRef && (state.phase === 'review' ? comparing : state.refMode !== 'off');
+  const stage = byId('shoot-stage');
+  stage.dataset.ref = state.refMode;
+  stage.dataset.compare = String(comparing);
   const ref = byId('shoot-ref');
-  ref.hidden = !showing || state.refMode === 'off';
-  ref.style.opacity = state.refMode === 'overlay' ? String(state.settings.refOpacity) : '';
-  ref.style.transform = state.refMode === 'overlay' ? `scale(${state.settings.refScale})` : '';
-  byId('shoot-ref-toggle').hidden = !showing;
+  ref.hidden = !showing;
+  ref.style.opacity = showing ? String(comparing ? Math.min(0.8, state.settings.refOpacity) : state.settings.refOpacity) : '';
+  ref.style.transform = showing && !comparing && state.refMode === 'overlay' ? `scale(${state.settings.refScale})` : '';
+  byId('shoot-ref-toggle').hidden = !(state.hasRef && state.phase === 'live');
   byId('shoot-ref-toggle').textContent = REF_LABELS[state.refMode];
   byId('shoot-ref-toggle').setAttribute('aria-label', REF_HINTS[state.refMode]);
   byId('shoot-ref-toggle').disabled = state.phase !== 'live';
+  byId('shoot-compare').hidden = !(state.phase === 'review' && state.hasRef);
+  byId('shoot-compare').textContent = state.compare ? '隐藏参考' : '对比参考';
 }
 
 function setPhase(phase) {
@@ -483,6 +488,7 @@ async function showReview(blob, name = '') {
   stopStream();
   clearPhoto();
   state.name = name;
+  state.compare = false;
   state.blob = blob.type ? blob : blob.slice(0, blob.size, typeFor(name, blob.type));
   const photo = state.blob;
   state.url = URL.createObjectURL(photo);
@@ -754,6 +760,10 @@ function wire() {
   byId('shoot-retake').addEventListener('click', retake);
   byId('shoot-save').addEventListener('click', savePhoto);
   byId('shoot-share').addEventListener('click', sharePhoto);
+  byId('shoot-compare').addEventListener('click', () => {
+    state.compare = !state.compare;
+    applyRef();
+  });
   byId('shoot-ref-toggle').addEventListener('click', cycleReference);
   byId('shoot-native').addEventListener('click', () => byId('shoot-file').click());
   byId('shoot-file').addEventListener('change', useSystemPhoto);
