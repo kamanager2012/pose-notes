@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" role="img" aria-labelledby="t d">
+  <title id="t">四人前坐后站站位示意</title>
+  <desc id="d">俯视站位：两个人坐在长凳上，另外两个人站在坐者之间和外侧的空隙处，下方是镜头方向。</desc>
+  <g fill="none" stroke="#17211f" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+<rect x="80" y="70" width="740" height="880" rx="6" stroke-dasharray="14 12" /><path d="M400 1060 H500 L450 990 Z" fill="#17211f" stroke="none" /><text x="450" y="1130" font-size="32" fill="#17211f" stroke="none">镜头</text>
+<rect x="210" y="610" width="480" height="80" rx="4" />
+<circle cx="340" cy="650" r="58" /><path d="M288 702 Q340 746 392 702" /><text x="340" y="665" font-size="40" fill="#17211f" stroke="none">1</text><text x="340" y="795" font-size="28" fill="#17211f" stroke="none">坐</text>
+<circle cx="560" cy="650" r="58" /><path d="M508 702 Q560 746 612 702" /><text x="560" y="665" font-size="40" fill="#17211f" stroke="none">2</text><text x="560" y="795" font-size="28" fill="#17211f" stroke="none">坐</text>
+<circle cx="450" cy="330" r="58" /><path d="M398 382 Q450 426 502 382" /><text x="450" y="345" font-size="40" fill="#17211f" stroke="none">3</text><text x="450" y="475" font-size="28" fill="#17211f" stroke="none">站</text>
+<circle cx="720" cy="380" r="58" /><path d="M668 432 Q720 476 772 432" /><text x="720" y="395" font-size="40" fill="#17211f" stroke="none">4</text><text x="720" y="525" font-size="28" fill="#17211f" stroke="none">站</text>
+  </g>
+</svg>

@@ -1,0 +1,8 @@
+// Retire the earlier broad-scope worker without intercepting requests.
+self.addEventListener('install', (event) => {
+  event.waitUntil(self.skipWaiting());
+});
+
+self.addEventListener('activate', (event) => {
+  event.waitUntil(self.registration.unregister());
+});

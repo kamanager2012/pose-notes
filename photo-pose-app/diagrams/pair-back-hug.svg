@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" role="img" aria-labelledby="t d">
+  <title id="t">背后轻环抱站位示意</title>
+  <desc id="d">俯视站位：一人在前，另一人在身后轻轻环抱，下方是镜头方向。</desc>
+  <g fill="none" stroke="#17211f" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+<rect x="80" y="70" width="740" height="880" rx="6" stroke-dasharray="14 12" /><path d="M400 1060 H500 L450 990 Z" fill="#17211f" stroke="none" /><text x="450" y="1130" font-size="32" fill="#17211f" stroke="none">镜头</text>
+<circle cx="450" cy="640" r="58" /><path d="M398 692 Q450 736 502 692" /><text x="450" y="655" font-size="40" fill="#17211f" stroke="none">1</text>
+<circle cx="450" cy="360" r="58" /><path d="M398 412 Q450 456 502 412" /><text x="450" y="375" font-size="40" fill="#17211f" stroke="none">2</text>
+<path d="M505 470 Q590 560 515 650" />
+<path d="M395 470 Q310 560 385 650" />
+<text x="450" y="900" font-size="30" fill="#17211f" stroke="none" text-anchor="middle">2 站在 1 身后，双臂轻环住，不抱离地面</text>
+  </g>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" role="img" aria-labelledby="t d">
+  <title id="t">三人并行慢走站位示意</title>
+  <desc id="d">俯视站位：三个人朝同一方向并排慢走，箭头表示行进方向，下方是镜头方向。</desc>
+  <g fill="none" stroke="#17211f" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+<rect x="80" y="70" width="740" height="880" rx="6" stroke-dasharray="14 12" /><path d="M400 1060 H500 L450 990 Z" fill="#17211f" stroke="none" /><text x="450" y="1130" font-size="32" fill="#17211f" stroke="none">镜头</text>
+<path d="M200 200 H680" />
+<path d="M640 160 L690 200 L640 240" />
+<g transform="rotate(-90 450 430)"><circle cx="450" cy="430" r="58" /><path d="M398 482 Q450 526 502 482" /></g><circle cx="522" cy="430" r="7" fill="#17211f" stroke="none" /><text x="450" y="445" font-size="40" fill="#17211f" stroke="none">1</text>
+<g transform="rotate(-90 450 630)"><circle cx="450" cy="630" r="58" /><path d="M398 682 Q450 726 502 682" /></g><circle cx="522" cy="630" r="7" fill="#17211f" stroke="none" /><text x="450" y="645" font-size="40" fill="#17211f" stroke="none">2</text>
+<g transform="rotate(-90 450 830)"><circle cx="450" cy="830" r="58" /><path d="M398 882 Q450 926 502 882" /></g><circle cx="522" cy="830" r="7" fill="#17211f" stroke="none" /><text x="450" y="845" font-size="40" fill="#17211f" stroke="none">3</text>
+<text x="450" y="310" font-size="30" fill="#17211f" stroke="none" text-anchor="middle">三人并排同向，不是一列</text>
+  </g>
+</svg>

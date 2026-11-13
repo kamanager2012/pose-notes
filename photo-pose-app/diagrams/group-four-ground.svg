@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" role="img" aria-labelledby="t d">
+  <title id="t">四人坐地合照站位示意</title>
+  <desc id="d">俯视站位：四个人坐在地面上，前后错开，头部高低略有变化，下方是镜头方向。</desc>
+  <g fill="none" stroke="#17211f" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+<rect x="80" y="70" width="740" height="880" rx="6" stroke-dasharray="14 12" /><path d="M400 1060 H500 L450 990 Z" fill="#17211f" stroke="none" /><text x="450" y="1130" font-size="32" fill="#17211f" stroke="none">镜头</text>
+<circle cx="230" cy="480" r="58" /><path d="M178 532 Q230 576 282 532" /><text x="230" y="495" font-size="40" fill="#17211f" stroke="none">1</text><text x="230" y="625" font-size="28" fill="#17211f" stroke="none">坐</text>
+<circle cx="430" cy="600" r="58" /><path d="M378 652 Q430 696 482 652" /><text x="430" y="615" font-size="40" fill="#17211f" stroke="none">2</text><text x="430" y="745" font-size="28" fill="#17211f" stroke="none">坐</text>
+<circle cx="620" cy="520" r="58" /><path d="M568 572 Q620 616 672 572" /><text x="620" y="535" font-size="40" fill="#17211f" stroke="none">3</text><text x="620" y="665" font-size="28" fill="#17211f" stroke="none">坐</text>
+<circle cx="730" cy="700" r="58" /><path d="M678 752 Q730 796 782 752" /><text x="730" y="715" font-size="40" fill="#17211f" stroke="none">4</text><text x="730" y="845" font-size="28" fill="#17211f" stroke="none">坐</text>
+<text x="450" y="850" font-size="30" fill="#17211f" stroke="none" text-anchor="middle">四人坐地，前后错开</text>
+  </g>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" role="img" aria-labelledby="t d">
+  <title id="t">一坐一站站位示意</title>
+  <desc id="d">俯视站位：一人坐在椅子上，另一人站在旁边略靠后，下方是镜头方向。</desc>
+  <g fill="none" stroke="#17211f" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+<rect x="80" y="70" width="740" height="880" rx="6" stroke-dasharray="14 12" /><path d="M400 1060 H500 L450 990 Z" fill="#17211f" stroke="none" /><text x="450" y="1130" font-size="32" fill="#17211f" stroke="none">镜头</text>
+<rect x="250" y="620" width="400" height="80" rx="4" />
+<circle cx="450" cy="660" r="58" /><path d="M398 712 Q450 756 502 712" /><text x="450" y="675" font-size="40" fill="#17211f" stroke="none">1</text><text x="450" y="805" font-size="28" fill="#17211f" stroke="none">坐</text>
+<circle cx="700" cy="420" r="58" /><path d="M648 472 Q700 516 752 472" /><text x="700" y="435" font-size="40" fill="#17211f" stroke="none">2</text><text x="700" y="565" font-size="28" fill="#17211f" stroke="none">站</text>
+<text x="450" y="900" font-size="30" fill="#17211f" stroke="none" text-anchor="middle">一人坐椅子，另一人站在旁边略靠后</text>
+  </g>
+</svg>

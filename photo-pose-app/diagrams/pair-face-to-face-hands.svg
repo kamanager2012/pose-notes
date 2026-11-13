@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" role="img" aria-labelledby="t d">
+  <title id="t">面对面牵手站位示意</title>
+  <desc id="d">俯视站位：两人面对面站着，双手轻牵，下方是镜头方向。</desc>
+  <g fill="none" stroke="#17211f" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+<rect x="80" y="70" width="740" height="880" rx="6" stroke-dasharray="14 12" /><path d="M400 1060 H500 L450 990 Z" fill="#17211f" stroke="none" /><text x="450" y="1130" font-size="32" fill="#17211f" stroke="none">镜头</text>
+<g transform="rotate(-90 340 520)"><circle cx="340" cy="520" r="58" /><path d="M288 572 Q340 616 392 572" /></g><circle cx="412" cy="520" r="7" fill="#17211f" stroke="none" /><text x="340" y="535" font-size="40" fill="#17211f" stroke="none">1</text>
+<g transform="rotate(90 560 520)"><circle cx="560" cy="520" r="58" /><path d="M508 572 Q560 616 612 572" /></g><circle cx="488" cy="520" r="7" fill="#17211f" stroke="none" /><text x="560" y="535" font-size="40" fill="#17211f" stroke="none">2</text>
+<path d="M398 520 H502" />
+<circle cx="398" cy="520" r="10" fill="#17211f" stroke="none" />
+<circle cx="502" cy="520" r="10" fill="#17211f" stroke="none" />
+<text x="450" y="900" font-size="30" fill="#17211f" stroke="none" text-anchor="middle">两人面对面，双手轻牵，先互看再看镜头</text>
+  </g>
+</svg>

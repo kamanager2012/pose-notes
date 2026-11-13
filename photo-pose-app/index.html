@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#17211f" />
+    <meta name="description" content="按人数、场景和现场条件筛选摄影动作口令与三步指导。" />
+    <title>Pose Notes | 摄影动作目录</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="./" aria-label="Pose Notes 首页">
+        <span class="brand-mark" aria-hidden="true">✦</span>
+        <span>POSE NOTES</span>
+      </a>
+      <div class="topbar-meta">
+          <span>摄影动作目录</span>
+          <span class="version" id="catalog-version">v— · — 条</span>
+          <span id="network-status" role="status" aria-live="polite">在线</span>
+      </div>
+    </header>
+
+    <div class="update-banner" id="update-banner" role="status" hidden>
+      <span id="update-text">有新版本可用，刷新后使用。</span>
+      <button type="button" id="update-button">刷新到新版本</button>
+    </div>
+
+    <main>
+      <section class="intro" aria-labelledby="page-title">
+        <div class="intro-copy">
+          <p class="eyebrow">FIELD GUIDE / PORTRAIT DIRECTION</p>
+          <h1 id="page-title">让下一张照片，<br /><em>先有一个动作。</em></h1>
+          <p class="lede">从现场条件开始挑选。每条指引都给出一句可以直接说出口的口令、三步动作和机位提醒。</p>
+        </div>
+        <div class="intro-note" aria-label="目录统计">
+          <span class="intro-note-number" id="catalog-count">—</span>
+          <span class="intro-note-label">条文字指引</span>
+          <span class="intro-note-rule"></span>
+          <span class="intro-note-small">商务 · 旅行 · 生活<br />朋友 · 小组</span>
+        </div>
+      </section>
+
+      <dialog id="gallery-viewer" class="gallery-viewer" aria-labelledby="viewer-title">
+        <div class="viewer-toolbar">
+          <strong id="viewer-title">姿势参考</strong>
+          <button id="viewer-close" type="button" aria-label="关闭大图">关闭</button>
+        </div>
+        <img id="viewer-image" alt="" />
+        <p id="viewer-error" role="status" hidden>图片加载失败，请检查连接或切换视角。 <button id="viewer-retry" type="button">重试图片</button></p>
+        <div class="viewer-controls">
+          <span id="viewer-caption"></span>
+          <label>视角 <select id="viewer-angle" aria-label="大图视角"></select></label>
+        </div>
+        <p id="viewer-note">AI 图片为姿势示意；同组图片的动作细节可能不同。</p>
+      </dialog>
+      <dialog id="shoot-dialog" class="shoot-dialog" aria-labelledby="shoot-title" data-phase="idle">
+        <div class="shoot-bar">
+          <strong id="shoot-title">拍摄</strong>
+          <button id="shoot-grid-toggle" type="button" aria-pressed="false" aria-label="显示九宫格">网格</button>
+          <button id="shoot-timer" type="button" aria-label="自拍定时：关闭">定时</button>
+          <button id="shoot-close" type="button" aria-label="关闭相机">关闭</button>
+        </div>
+        <div class="shoot-stage" id="shoot-stage" data-ref="corner" data-facing="environment">
+          <video id="shoot-video" autoplay muted playsinline aria-label="相机取景画面"></video>
+          <img id="shoot-result" alt="刚拍的照片，尚未保存" hidden />
+          <img id="shoot-ref" class="shoot-ref" alt="" hidden />
+          <div id="shoot-grid" class="shoot-grid" aria-hidden="true" hidden><span></span><span></span><span></span><span></span></div>
+          <p id="shoot-countdown" class="shoot-countdown" aria-hidden="true" hidden></p>
+          <p id="shoot-cue" class="shoot-cue"></p>
+        </div>
+        <p id="shoot-message" class="shoot-message" role="status" aria-live="polite" hidden></p>
+        <div id="shoot-live-controls" class="shoot-controls">
+          <button id="shoot-ref-toggle" type="button" hidden></button>
+          <button id="shoot-shutter" class="shoot-shutter" type="button" aria-label="拍照" disabled><span aria-hidden="true"></span></button>
+          <button id="shoot-flip" type="button" disabled>换镜头</button>
+        </div>
+        <div id="shoot-review-controls" class="shoot-controls shoot-review-controls" hidden>
+          <button id="shoot-retake" type="button">重拍</button>
+          <button id="shoot-save" class="shoot-save" type="button">保存或分享</button>
+        </div>
+        <div id="shoot-fallback" class="shoot-fallback">
+          <button id="shoot-retry" type="button" hidden>重试相机</button>
+          <button id="shoot-ref-library" type="button">从图库选参考</button>
+          <button id="shoot-native" type="button">用系统相机拍</button>
+          <input id="shoot-file" type="file" accept="image/*" capture="environment" hidden />
+        </div>
+        <section id="shoot-picker" class="shoot-picker" aria-labelledby="shoot-picker-title" hidden>
+          <div class="shoot-picker-head">
+            <strong id="shoot-picker-title">参考图库</strong>
+            <button id="shoot-picker-close" type="button" aria-label="关闭参考图库">关闭</button>
+          </div>
+          <p class="shoot-picker-note">人偶线稿 · CC0 1.0，只示意姿势，不用对齐。选一张会叠在取景画面上。</p>
+          <label class="shoot-picker-filter">动作类型
+            <select id="shoot-picker-posture">
+              <option value="all">全部</option>
+              <option value="standing">站姿</option>
+              <option value="sitting">坐姿</option>
+              <option value="squatting">蹲姿</option>
+              <option value="lying">躺姿</option>
+              <option value="upper">半身动作</option>
+            </select>
+          </label>
+          <p id="shoot-picker-status" role="status" aria-live="polite">打开后读取图库。</p>
+          <div id="shoot-picker-grid" class="shoot-picker-grid"></div>
+          <button id="shoot-picker-retry" type="button" hidden>重试图库</button>
+          <button id="shoot-picker-more" type="button" hidden>查看更多</button>
+        </section>
+        <details class="shoot-guide">
+          <summary>三步和检查</summary>
+          <ol id="shoot-steps"></ol>
+          <p id="shoot-check"></p>
+          <p><span class="pose-detail-label">摄影者提醒</span> <span id="shoot-camera-tip"></span></p>
+        </details>
+        <p class="shoot-note">照片只在本机处理，页面不会上传。参考图是人偶线稿或站位示意图，只示意姿势和站位，不用对齐。</p>
+      </dialog>
+      <section class="workspace" aria-label="动作筛选与结果">
+        <aside class="filters" aria-labelledby="filter-title">
+          <div class="filter-heading">
+            <p class="eyebrow">01 / SET THE SCENE</p>
+            <h2 id="filter-title">先告诉我现场。</h2>
+            <button id="reset-button" class="text-button" type="button">重置筛选 <span aria-hidden="true">↗</span></button>
+          </div>
+
+          <fieldset class="filter-group">
+            <legend>几个人入镜？</legend>
+            <div class="segmented" id="people-options" role="group" aria-label="入镜人数">
+              <button type="button" data-value="1" class="is-selected" aria-pressed="true">1 <span>人</span></button>
+              <button type="button" data-value="2" aria-pressed="false">2 <span>人</span></button>
+              <button type="button" data-value="3" aria-pressed="false">3 <span>人</span></button>
+              <button type="button" data-value="4" aria-pressed="false">4 <span>人</span></button>
+            </div>
+          </fieldset>
+
+          <fieldset class="filter-group">
+            <legend>今天想拍什么？</legend>
+            <div class="select-wrap">
+              <select id="context-select" aria-label="拍摄场景">
+                <option value="">所有场景</option>
+              </select>
+              <span aria-hidden="true">⌄</span>
+            </div>
+          </fieldset>
+
+          <details class="advanced-filters" id="advanced-filters" open>
+            <summary>
+              <strong>更多筛选</strong>
+              <span id="advanced-summary">姿态、构图、现场条件</span>
+              <span class="summary-icon" aria-hidden="true">＋</span>
+            </summary>
+            <div class="advanced-filter-content">
+              <div class="filter-pair">
+                <fieldset class="filter-group">
+                  <legend>姿态</legend>
+                  <div class="select-wrap">
+                    <select id="posture-select" aria-label="姿态类型">
+                      <option value="">不限</option>
+                    </select>
+                    <span aria-hidden="true">⌄</span>
+                  </div>
+                </fieldset>
+                <fieldset class="filter-group">
+                  <legend>构图</legend>
+                  <div class="select-wrap">
+                    <select id="framing-select" aria-label="构图范围">
+                      <option value="">不限</option>
+                    </select>
+                    <span aria-hidden="true">⌄</span>
+                  </div>
+                </fieldset>
+              </div>
+
+              <fieldset class="filter-group">
+                <legend>可用条件 <span class="legend-hint">已知的才勾选</span></legend>
+                <div id="feature-options" class="feature-grid"></div>
+              </fieldset>
+
+              <label class="style-toggle">
+                <input type="checkbox" id="style-checkbox" />
+                <span class="toggle-control" aria-hidden="true"></span>
+                <span><strong>打开风格手势</strong><small>展示更主动的编排</small></span>
+              </label>
+
+              <p class="filter-footnote">条件不足时不会猜测现场。需要道具或安全空间的动作，只会在你确认后出现。</p>
+            </div>
+          </details>
+        </aside>
+
+        <section class="results" aria-labelledby="results-title">
+          <div class="results-header">
+            <div>
+              <p class="eyebrow">02 / FIND A CUE</p>
+              <h2 id="results-title">给你几种起手式。</h2>
+            </div>
+            <div class="results-tools">
+              <button id="favorites-filter" class="favorites-filter" type="button" aria-pressed="false">☆ 收藏 <span id="favorite-count">0</span></button>
+              <span id="result-count" class="result-count" role="status" aria-live="polite">正在读取…</span>
+            </div>
+          </div>
+          <p id="storage-warning" class="storage-warning" role="status" hidden></p>
+          <div id="status-message" class="status-message" role="status" aria-live="polite" hidden>
+            <span id="status-text"></span>
+            <button id="retry-button" class="retry-button" type="button" hidden>重试</button>
+          </div>
+          <div id="pose-list" class="pose-list"></div>
+        </section>
+      </section>
+
+      <details class="gallery" id="gallery-panel">
+        <summary>
+          <span class="gallery-summary-title"><strong id="gallery-title">姿势图片参考</strong><span>人偶线稿与 AI 图片，不是真人实拍</span></span>
+          <span class="summary-icon" aria-hidden="true">＋</span>
+        </summary>
+        <div class="gallery-heading">
+          <p>每组仅查看过联系表中的最多两个视角，其余视角未经逐张审核；AI 图片的动作细节可能因视角而异。</p>
+          <div class="gallery-controls">
+            <label>图片类型 <select id="gallery-type"><option value="line">人偶线稿</option><option value="photo">AI 图片</option></select></label>
+            <label>画面范围 <select id="gallery-series"><option value="all">全部</option><option value="std">全身</option><option value="upper">上半身</option></select></label>
+            <label>动作类型 <select id="gallery-posture"><option value="all">全部</option><option value="standing">站姿</option><option value="sitting">坐姿</option><option value="squatting">蹲姿</option><option value="lying">躺姿</option><option value="upper">半身动作</option></select></label>
+          </div>
+        </div>
+        <p id="gallery-status" role="status" aria-live="polite">展开后读取图片。</p>
+        <div id="gallery-list" class="gallery-list"></div>
+        <button id="gallery-more" class="gallery-more" type="button" hidden>查看更多</button>
+        <button id="gallery-retry" class="gallery-more" type="button" hidden>重试图片目录</button>
+        <p class="gallery-credit">图片：<a href="https://github.com/wquguru/shisei">Shisei</a> · CC0 1.0。图片仅供姿势参考；坐地等动作请先确认场地和身体条件。</p>
+      </details>
+      <section class="how-to" aria-label="使用提示">
+        <div><span class="step-number">A</span><strong>选人数</strong><span>先锁定画面关系</span></div>
+        <div><span class="step-number">B</span><strong>报条件</strong><span>只确认你现场拥有的</span></div>
+        <div><span class="step-number">C</span><strong>说口令</strong><span>边拍边微调，不必一次摆完</span></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>POSE REFERENCES · CC0 IMAGES</span>
+      <span>原创摄影编排 / 公开原则参考</span>
+    </footer>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

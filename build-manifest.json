@@ -1,0 +1,996 @@
+{
+  "format": 1,
+  "cacheName": "pose-notes-1d58e9c9e5da",
+  "groups": 38,
+  "imageFiles": 224,
+  "files": {
+    "photo-pose-app/app.js": {
+      "bytes": 26340,
+      "sha256": "c2b683d3188f3939a17b3c4fa459eebf2cd64fe10be2ea8a9da3fa139527d066"
+    },
+    "photo-pose-app/diagrams/group-four-ground.svg": {
+      "bytes": 1641,
+      "sha256": "5909db063f655b7f4338b09efd264e5d603631f6e007fbbabd2ded1e02bfeb44"
+    },
+    "photo-pose-app/diagrams/group-four-seated-standing.svg": {
+      "bytes": 1590,
+      "sha256": "7c75743cbf2a822c08790ccfad2506e84f081e4437e134dcaca3e0e95c1fccef"
+    },
+    "photo-pose-app/diagrams/group-three-huddle.svg": {
+      "bytes": 1306,
+      "sha256": "e69097d359cb333ea395e671d3949595598a08e726951d71a302aef9589a37b3"
+    },
+    "photo-pose-app/diagrams/group-three-walk.svg": {
+      "bytes": 1565,
+      "sha256": "988d65b60e698d8868121e9c84028cf446c7a2bcb6bf659ba0806079c1a3f34d"
+    },
+    "photo-pose-app/diagrams/pair-back-hug.svg": {
+      "bytes": 1121,
+      "sha256": "0373e69fec3e303a3abd95321cd75d4da1f7e7521d2853556bd8d759aa7fc9db"
+    },
+    "photo-pose-app/diagrams/pair-face-to-face-hands.svg": {
+      "bytes": 1395,
+      "sha256": "95843ed19f85767432fafcbbd8b12a42e3b9c344982e7e182950b8a77242266b"
+    },
+    "photo-pose-app/diagrams/pair-hand-in-hand.svg": {
+      "bytes": 1487,
+      "sha256": "24f37b901bcf5db91f99011844ce0fabdb7d90d120b0135aa0e18fb8a40f1b35"
+    },
+    "photo-pose-app/diagrams/pair-seated-standing.svg": {
+      "bytes": 1252,
+      "sha256": "a3e3552a1333dc8a39f8306f222f4afe047cf64b5980b6e55c4b8f9a27224654"
+    },
+    "photo-pose-app/index.html": {
+      "bytes": 13753,
+      "sha256": "16230c84fdeb082924c89b3b037e5e2ecb71a7058b1e392b98e491e25a6a679e"
+    },
+    "photo-pose-app/service-worker.js": {
+      "bytes": 6978,
+      "sha256": "b3db4c9165f548d3f50e0d8f36f7759d0993a0e603012031d5d63cb10fa40e3a"
+    },
+    "photo-pose-app/shoot.js": {
+      "bytes": 21331,
+      "sha256": "af09f38381f83b8a16b15535f87f12ee9940d273bb72698ebfb09563b04940a1"
+    },
+    "photo-pose-app/style.css": {
+      "bytes": 26980,
+      "sha256": "d8a3f6c2bc6b1a8542977659f615b3310a442f0f24e3b61eb38f1ac43fb4b412"
+    },
+    "reference-library/photo-pose-gallery.json": {
+      "bytes": 11730,
+      "sha256": "514151c60b6b05e36d764f6b36780a1c0f819d22daf33013013a544168607419"
+    },
+    "reference-library/photo-pose-recommendations.mjs": {
+      "bytes": 3078,
+      "sha256": "8353b6e56f43099f7ba83cd0efaa8d261f6a97b7239ac5779e7b6709079c43f9"
+    },
+    "reference-library/photo-pose-selection.json": {
+      "bytes": 151888,
+      "sha256": "c19e1d8731a9070e06b693a0fab67bf0db29a814c7d83633c263cf8fda3a5661"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/LICENSE": {
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/LICENSE-images": {
+      "bytes": 7048,
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/NOTICE": {
+      "bytes": 1119,
+      "sha256": "4f63b0955507193d860cd745fea51666017dc4b37ea35cfce44413de6eba1480"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P001_above.webp": {
+      "bytes": 26150,
+      "sha256": "d1482a3781c3ddbd18c6bf5f433c274ff4607c08c369386f9572692f2c08895a"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P001_below.webp": {
+      "bytes": 28386,
+      "sha256": "562254579b0f188926029e7c6d142a782c87d113c442ffa2c074c1b0e37388ba"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P001_diag.webp": {
+      "bytes": 24606,
+      "sha256": "4461d85aa5d5291b78b69f491b7176e6ec3fc4501db63e42b4139a1e505f17b1"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P001_front.webp": {
+      "bytes": 26488,
+      "sha256": "441294551540ce41ef16b30d7427148fcc5e454d75f1e6a4ee98625cc4206ba7"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P001_side.webp": {
+      "bytes": 22016,
+      "sha256": "2551e45cb3a624b531b04c7a858027618c5a78cb4f277e6c68ceff36452338eb"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P002_below.webp": {
+      "bytes": 29294,
+      "sha256": "5cda3b68ebc1f4fc4abc19d41b6db7bc5558df8a3a851f5c7ad12012438d1804"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P002_diag.webp": {
+      "bytes": 30440,
+      "sha256": "9b94e43a5db4280f464786fb71e965d8fad87e026af648af465be1ce2b4f066d"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P002_front.webp": {
+      "bytes": 32028,
+      "sha256": "d53d52679b19ae7a599cc564351b302fe9dc74df956d3515b33efeb58be4440f"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P003_above.webp": {
+      "bytes": 26902,
+      "sha256": "307b668cf0cf3f9afd1b28f1a91562e97efae4e4c91e4f0fcc0003a250349072"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P003_below.webp": {
+      "bytes": 29844,
+      "sha256": "867ba675a3a38126176a65768653826795fab54965b71135de98d9b043d5ca70"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P003_diag.webp": {
+      "bytes": 26046,
+      "sha256": "14ff2aa4125fc92922cc5a9c201f01bffde76ca70859cc3f505923657efead83"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P003_front.webp": {
+      "bytes": 34010,
+      "sha256": "671013232841b77f33596f76cd90e15ab613ede0c67a0fb11b8a638780bd1fa9"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P003_side.webp": {
+      "bytes": 21076,
+      "sha256": "8b8e639e8e0a5a941488a2aba36096159604b02b66da2454dab464ef7df68606"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P005_above.webp": {
+      "bytes": 27648,
+      "sha256": "5e9e8d6385df5250ea55f6a0bea9a169f57109b5d2bb01912040c80755788f0d"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P005_below.webp": {
+      "bytes": 27060,
+      "sha256": "4aa674cb1ff72f5517859a2ad6a4af7525a7cc443d46582471018a4a5a90a688"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P005_diag.webp": {
+      "bytes": 28928,
+      "sha256": "9422cb256d1c2f22a903f45c7c2ed4ab7b8e6907be81c08a8d2a21ae481a0955"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P005_front.webp": {
+      "bytes": 26396,
+      "sha256": "62c115799fb2d8321e2e3e136fe85f374bf7287b2afc234933c506f283b5d587"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P005_side.webp": {
+      "bytes": 29346,
+      "sha256": "0d6a45d28120e87e0b891979d3797d05cb571a1d341041b40ddc0084640923c6"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P006_above.webp": {
+      "bytes": 27800,
+      "sha256": "8d527043b34e06666a19d6e19cb2766130b63fd64558b80f62f228fdf6eb1844"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P006_diag.webp": {
+      "bytes": 25284,
+      "sha256": "d0d679e04c53aa90ae02251750886e8860abc04f712011c345e8e43c9e5dc740"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P006_front.webp": {
+      "bytes": 32704,
+      "sha256": "44840b14df8f66f6612c2506a0c857bc1161ce13924315c53acae752bc6d31f0"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P006_side.webp": {
+      "bytes": 18648,
+      "sha256": "a98ebb390b7440195bfd6457e44395dadb9aa3020ffe655c2d06514fa49ad4a3"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P012_above.webp": {
+      "bytes": 35986,
+      "sha256": "f0b0f6115dd14c7cf2a94510406211b5dbdd94c1a1ba54e7e7bbb36416a1d94c"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P012_diag.webp": {
+      "bytes": 37032,
+      "sha256": "320887ded6dde2878de1157eba95f2b461279adef8743f4736ae5fe3d8d4c34c"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P012_front.webp": {
+      "bytes": 33628,
+      "sha256": "6fa6475fe66d6ff5a5c206fac9bfb6364fbd2f0862aef8f4b5413b476b89a76c"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P012_side.webp": {
+      "bytes": 25676,
+      "sha256": "92d9ad98b97b7efa95768ea52c2e341a603cc45321e45460003990697d4caa64"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P014_above.webp": {
+      "bytes": 29246,
+      "sha256": "56b3cbe8cb5c8d8ffaa4a0a179677860580ec8be62724873cc620ff89a25753d"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P014_diag.webp": {
+      "bytes": 35664,
+      "sha256": "1acf6b8f0fc824fcf1111ec1a9778878eb35339994ec0911b5d82123898c345a"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P014_side.webp": {
+      "bytes": 32654,
+      "sha256": "84e754646e36058589c3b0a1d24c30bf786c2e5de9bdc7f899b597bc9a6361c2"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P015_below.webp": {
+      "bytes": 25856,
+      "sha256": "c0000f2a4e4e15cd4bdd9644cceea0badd06c0a2afbe2c62a2e52c9206215424"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P015_diag.webp": {
+      "bytes": 18942,
+      "sha256": "1bb53941921824ef0e5b654492cf322ff1c26e2e469a85e05ef97b2c44f757ee"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P015_front.webp": {
+      "bytes": 22782,
+      "sha256": "efb9fce1dd7ebf1f8a1f93911466ae593da81384d8ad906b600faf4e4f05afda"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P015_side.webp": {
+      "bytes": 20594,
+      "sha256": "9b4164774565fa93dce804cb09ff8e37a8f6de5d5652f41fee6b941cf557b4e5"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P016_above.webp": {
+      "bytes": 31932,
+      "sha256": "474785a3b758ded7e8c48e02ce82a173ac2f3d9399370010a8a66fa792da7f64"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P016_below.webp": {
+      "bytes": 26164,
+      "sha256": "bc2eef5730bb6d5b3cfc9129fcd4e6b09e85c80c1f77e90ffa21066f88bba49e"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P016_diag.webp": {
+      "bytes": 23478,
+      "sha256": "790f17553efe7bf037003d0d42ed054c4af237505b8712fe12b835a41f621a59"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P016_front.webp": {
+      "bytes": 22868,
+      "sha256": "cfd5896968a978357787725500a96b63a277ec138440977c04a4aa2603413fb2"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P016_side.webp": {
+      "bytes": 15954,
+      "sha256": "a20c42cab5f10cc10454bbdf0dd73c2fd11727fedaec3510b895690b50088899"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P017_above.webp": {
+      "bytes": 24062,
+      "sha256": "75a0b2176d273715df353ed4fedda2dd50e5070653e66e39f27b1c3a016b7e3f"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P017_diag.webp": {
+      "bytes": 19838,
+      "sha256": "4990dc2ff0078021e91f267a4f2f26249b4cd6ab2d0a529d4c94d88d81e7a993"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P017_front.webp": {
+      "bytes": 20492,
+      "sha256": "9a45aa0e90dbec80d80dca140a2f3232783d7b681bc0e71fa8f7b0e896ff2228"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P017_side.webp": {
+      "bytes": 15534,
+      "sha256": "35763edd7a1c75e1f890c2a2eb7f505c41ddbaf4deca451b6ec474846e561ead"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P018_above.webp": {
+      "bytes": 21122,
+      "sha256": "2699b9c91ec780337a34483f0329df73ea4fbbb756e2c392e6816fa8050970d5"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P018_below.webp": {
+      "bytes": 33164,
+      "sha256": "a21d3f399cdb99c148ca5d51c744370d02fb960e6f6115613c8246ef8942394a"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P018_front.webp": {
+      "bytes": 21118,
+      "sha256": "ac8ec6a0eea67d4a1649d83138748b22ec29b295938bdb79fceec6a32975a801"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P018_side.webp": {
+      "bytes": 16574,
+      "sha256": "ecbf9b64555a981a2e24791a3a7c7f66e838ad57044ec0e4865443ccf1aadca8"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P021_above.webp": {
+      "bytes": 22124,
+      "sha256": "e3a265a715e52d99d3e07352245fe98f20ddb03fe918ba2561875ca37b140ed7"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P021_below.webp": {
+      "bytes": 23512,
+      "sha256": "45a3c3f5dfae2ec81817cdb107c920432c8b9a2d686cad9e4423ccc1a15db24f"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P021_diag.webp": {
+      "bytes": 21442,
+      "sha256": "1385661ed66f6fe25e00053de678717404828fb8d3d803f93d6e2f2cbec74bfb"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P021_front.webp": {
+      "bytes": 20384,
+      "sha256": "ad548220ad7b80751526a5881e136f1bf042cd7a908bab58ec766fdd11c39775"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P021_side.webp": {
+      "bytes": 19128,
+      "sha256": "edf8dfa7036154fe756c33a7a02203a09bc179b25e623b4ba69e91bba1d49918"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P024_above.webp": {
+      "bytes": 30738,
+      "sha256": "93d70836a34c979d60811830e0ed888a10701634efafe840b031e3d63683e853"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P024_below.webp": {
+      "bytes": 26272,
+      "sha256": "08d5aca7955bab944c9c129f5ae8f11d8c0da029e0ae9b193c17663aa42b2f2b"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P024_diag.webp": {
+      "bytes": 21446,
+      "sha256": "5ec30f8be4da05283c5bfc081597b076239285135bfaeb80940b6648ac596d19"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P024_front.webp": {
+      "bytes": 21448,
+      "sha256": "9e63f0590b56a1bd0aab76248eb4c9e0e6f31c77cece5a198b28300ed1631693"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P024_side.webp": {
+      "bytes": 19252,
+      "sha256": "c5c21cbf80be55a4e92e85e7818a29cb85c3af433496882cade2bf09cff05cb4"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P050_above.webp": {
+      "bytes": 29730,
+      "sha256": "3a24d1f3c33536b8daba5e5f7f222c02ca7d1ce519aae592ceb51fc7e969d302"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P050_front.webp": {
+      "bytes": 19840,
+      "sha256": "fc7208f1453704529fe125d47ae83d50836203de9a8d1e01d2ecee201b5e6cb9"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P050_side.webp": {
+      "bytes": 16988,
+      "sha256": "b4985fe335e84baf58545e125ae7e6896685643b5a55e4db01af4b836d0feee5"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P060_above.webp": {
+      "bytes": 34038,
+      "sha256": "35f7171bb04a6e72e27ec88f5be8ad9059d2882f2764e8bbfed4bb27487dbd02"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P060_below.webp": {
+      "bytes": 30602,
+      "sha256": "0cf093f7a9ff0319b8f2a06bda8aa846b2182fadb2c0cdcc7389481d031a64f8"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P060_diag.webp": {
+      "bytes": 35780,
+      "sha256": "8d7d142acd0e056e59ad40eec602c77c5e337f3f53f82227ec0e27ff07b56a00"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P060_front.webp": {
+      "bytes": 25582,
+      "sha256": "cd2da865b678575e28214e486e3b8f3e8ac3647eecbadeca5c15e7c73021dd1f"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P060_side.webp": {
+      "bytes": 25230,
+      "sha256": "5879d5fb34da679db7725035d7d2abd232606df1c375d2382c6fd871ed017193"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P066_above.webp": {
+      "bytes": 28756,
+      "sha256": "d09ea3271fe850964601e1f1c57725a75e463f664294b39fb25e3d1ef4a61b72"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P066_below.webp": {
+      "bytes": 36610,
+      "sha256": "d80cf61678b6fec7143305550c003aa28ee4aedbb99da6885d4c255bf713ab3d"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P066_diag.webp": {
+      "bytes": 28058,
+      "sha256": "d5925bfa2b944b279d7b21948c81b9c18116a6cbe624dfebdd17d7353b732c0e"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P066_front.webp": {
+      "bytes": 25268,
+      "sha256": "2ec5a13996fad4c5256cf7981ada96055cc542827c0174ac70c7689c92fbdfbd"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P066_side.webp": {
+      "bytes": 25116,
+      "sha256": "89ac6c7f57b5d35624da40f8f9efe00830e440c12327fc9fbd5432e9562fa96f"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P075_above.webp": {
+      "bytes": 27552,
+      "sha256": "cecdbaf1d55a7f2f366c03b8b19e2897f74854b8e08c016b753495fb5ae88911"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P075_below.webp": {
+      "bytes": 30452,
+      "sha256": "f8640a456cf00ebd597acca01c65b1e4b177231ce2185235673d643e2d6cb60e"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P075_diag.webp": {
+      "bytes": 27060,
+      "sha256": "907611d0a2a8d5dc75fcea777aaadd2cc742048ac83e22e65f0a34a7cc35aa78"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P075_front.webp": {
+      "bytes": 26732,
+      "sha256": "6d21c8735a35086c13e6c90cb13fa94a67cbc0dc3091ab065ac1571ad7000d6a"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/line/std_P075_side.webp": {
+      "bytes": 18308,
+      "sha256": "08394fe7010aed7f8e508b5665d85a71dc3c2c49f2cc1a7b8081f697aa20f710"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/photo/std_P001_above.webp": {
+      "bytes": 17550,
+      "sha256": "6561307fed6aa51f756500eb2e6fea2e23d5e3fa2c680f765d70240f5a8c0890"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/photo/std_P001_below.webp": {
+      "bytes": 23752,
+      "sha256": "0c87f234774973066fb2fe4c1014021fc8c0186bf03b1b9ab5887242bbb21fd2"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/photo/std_P001_diag.webp": {
+      "bytes": 19292,
+      "sha256": "7443bbbe27f578fa3b6823a8229595b46d3d7617be6d2496ad492874d564ad40"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/photo/std_P001_front.webp": {
+      "bytes": 23026,
+      "sha256": "57d92fa61372fdeb2d9b0e3a1c6cd1f92c53524cb1121ab8040f47bfbae866a9"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/photo/std_P001_side.webp": {
+      "bytes": 18674,
+      "sha256": "950e86a18c6fa531b61b702b791e2a26a9c72205718f78f7e72064042abd5989"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/photo/std_P002_diag.webp": {
+      "bytes": 28748,
+      "sha256": "2dad42f7f68212443879807ce044a97dee9aae0d3464c033f39be6b3254318f4"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/photo/std_P003_above.webp": {
+      "bytes": 17842,
+      "sha256": "24e371fcad37083ab334969e5e0b55b52daa16d8219be37db5d4577bd65bd125"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/photo/std_P003_below.webp": {
+      "bytes": 24880,
+      "sha256": "48a01d198f6621a576e1f6c18b5823bb288157403688c6abfafcb3fa95b34b49"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/photo/std_P003_diag.webp": {
+      "bytes": 24556,
+      "sha256": "94ac2362d1512f39cfc17a354a819ad6c39df7a4981083dee2ea8242938ea4b7"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/photo/std_P003_front.webp": {
+      "bytes": 23448,
+      "sha256": "de71baaceace54c0ed0494decaa3471265ebc8230567d9b3518783d324845ac4"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/photo/std_P003_side.webp": {
+      "bytes": 22230,
+      "sha256": "6a66397a30f39c007923857e3b323e9e02bb781d7eb63bcc209355721237fe50"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/photo/std_P005_above.webp": {
+      "bytes": 21544,
+      "sha256": "36ce93c0ae3a36cf988fe1914f040566f0094265bb0f597084ad7d8cf5cf7f56"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/photo/std_P005_below.webp": {
+      "bytes": 36224,
+      "sha256": "983480c8d0aa06a07f385b34f6d566bcd564cdb50ece4c52947f9c14462d52cc"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/photo/std_P005_diag.webp": {
+      "bytes": 22124,
+      "sha256": "c02ae7426580b3cad669b20bb9477c5d05d0e62b643dbfd4d120817eab6c1932"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/photo/std_P005_front.webp": {
+      "bytes": 26532,
+      "sha256": "5dc03d96daab81d4db26ac4d7b53109f0913be15f755c709ee4804da2a47a9b5"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/photo/std_P005_side.webp": {
+      "bytes": 18182,
+      "sha256": "0fa73b61a52c559698f33e8006ce0a7580c5f2e7c979ebcbf55e59aa0bf6d33a"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/photo/std_P006_above.webp": {
+      "bytes": 20134,
+      "sha256": "61385ca78d7da7556633dc1faf19bcc57caeab9def17492f8e7e9739c20d389b"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/photo/std_P006_below.webp": {
+      "bytes": 21548,
+      "sha256": "4c77b4a52fcac307eb8232b86b3baf2f76dde18ceca01b020472253639abde0a"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/photo/std_P006_diag.webp": {
+      "bytes": 18620,
+      "sha256": "95e7d21beb69f36123d959713f3ee4939ce57938beaf68bfa9a1042adfc1f1ea"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/photo/std_P006_front.webp": {
+      "bytes": 18206,
+      "sha256": "3836f581c6662fb4e58125b1eec870fbebee92aa3384c18b9cb97734b409441a"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/photo/std_P006_side.webp": {
+      "bytes": 17308,
+      "sha256": "6450a31c5310681b1db00c770e63bf16aca156acfbfdde4e8613480d755f8710"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/photo/std_P012_above.webp": {
+      "bytes": 18760,
+      "sha256": "f2397b7a87c2410e3b5baf5e8189dfa34d5e0495df23740efac095168797717b"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/photo/std_P012_below.webp": {
+      "bytes": 29486,
+      "sha256": "d0b3fc4aff5e0f99824e1fabd3b642feff7cd5c594ade1037e331db87453939d"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/photo/std_P012_diag.webp": {
+      "bytes": 24338,
+      "sha256": "755a802926fe230b794c82292a8bfbccb0ecce84a252e9e296fbcba23b77ae1a"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/photo/std_P012_front.webp": {
+      "bytes": 25266,
+      "sha256": "d693b53787e5780d8d56673b8e04dc86fb58f4954977a82feb1e644bc89f9fb1"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/photo/std_P014_above.webp": {
+      "bytes": 22582,
+      "sha256": "c415f006365ca15d3854dd0fc09583d3c24bc1733438fce3065f2ed0a6ed2486"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/photo/std_P014_below.webp": {
+      "bytes": 26534,
+      "sha256": "2a0025cf9f9eeeb0ff62ee68940930b13a55020fe032641fa6cc99233cce21b1"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/photo/std_P014_front.webp": {
+      "bytes": 26714,
+      "sha256": "393fe9adb8f81f3470d2f7556154161e8ca1cefd7b0e469155b2ed5e3bc609ff"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/photo/std_P015_above.webp": {
+      "bytes": 27138,
+      "sha256": "56ba5c98416438490df7a2c58e4955e8310bc7a557b21587e7b1c0ac35f848f9"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/photo/std_P015_below.webp": {
+      "bytes": 23280,
+      "sha256": "f28f9a4cb8d315347cc5e95b326aca66d56dff52b1ad8abbdc555bf4b581717f"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/photo/std_P015_side.webp": {
+      "bytes": 20202,
+      "sha256": "cdb4db3ec4ff7b5ef1b12d40ebc0aa9a164b6448b45dfa8c6b334ac2ada4bc68"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/photo/std_P016_above.webp": {
+      "bytes": 30168,
+      "sha256": "ebaa1e5f01f870d18f24b0976aade37abc2a7d9c496af0bc18364906ad6bcbde"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/photo/std_P016_below.webp": {
+      "bytes": 26580,
+      "sha256": "1c234c7f00aa6e6bd853a2187a3d26671b7a3b708734875f2597775284f43e7d"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/photo/std_P016_diag.webp": {
+      "bytes": 25508,
+      "sha256": "ec969b248292b54e631871a82a9a9d8d50f2371f6d5ffcba75a93ea2c3388d6e"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/photo/std_P016_front.webp": {
+      "bytes": 25832,
+      "sha256": "2850a555436dd0b8e5cd06507bc52aebe35f8d88985f4c828938b2e251c686a8"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/photo/std_P016_side.webp": {
+      "bytes": 22770,
+      "sha256": "6af8ea1cde2681e73d1121f4f3f4bf50f9c314ec54ed73ad84401741a5587177"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/photo/std_P017_above.webp": {
+      "bytes": 24334,
+      "sha256": "f021c9e32f9d1de1b0d1747b3d6a3d46a845d027e49be4347aabd89e146296b3"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/photo/std_P017_below.webp": {
+      "bytes": 23932,
+      "sha256": "d8643c1d4bb3caf3fe0579499e51430f37b8d1692abe5b1bfdcdc625821c9ad4"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/photo/std_P017_diag.webp": {
+      "bytes": 21550,
+      "sha256": "1fa28bb7fee22e75434cbe118b30bc4b2a34c7e39f60336c029c17e911e9de6f"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/photo/std_P017_front.webp": {
+      "bytes": 22614,
+      "sha256": "0736e159f691858e3bd19f5ee28105172737ea0db37a46b62ba0a6bece326948"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/photo/std_P017_side.webp": {
+      "bytes": 18238,
+      "sha256": "ac55e6c23e2a0abd0922a20b774ef1d257d399a57dca77732e7a34ab82c6c56a"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/photo/std_P018_above.webp": {
+      "bytes": 26646,
+      "sha256": "b2ccf0853fafa5a1d80aa36d879e03b553f04281031a3a8e280f1dea5a454169"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/photo/std_P018_below.webp": {
+      "bytes": 26264,
+      "sha256": "6624fa390123b174da93a36f206bec61a522d29b9cafb2e59a20274a3495efab"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/photo/std_P018_diag.webp": {
+      "bytes": 20866,
+      "sha256": "ac877254b15ab1d7e41adc006215d7331375e14208fd15af000e10d7ec1d28fa"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/photo/std_P018_front.webp": {
+      "bytes": 17600,
+      "sha256": "6a6349b734a71c8e3433c64247f1a434a49c6cfd264b036edc29f3a49f16ddce"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/photo/std_P018_side.webp": {
+      "bytes": 22246,
+      "sha256": "4658f4def40e0eac57e0dca9a7df1387292b876b4588ed876273633ff8c75385"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/photo/std_P021_above.webp": {
+      "bytes": 16608,
+      "sha256": "7e350445620f8c963db22cebfa29dc1f961029a5ff322a82c87f851edc4df828"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/photo/std_P021_below.webp": {
+      "bytes": 26382,
+      "sha256": "2dbc874adc2e6e2150c49f053b6699bc948c3b236342fe18792a8fce56b0f8f1"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/photo/std_P021_diag.webp": {
+      "bytes": 21960,
+      "sha256": "31ff11aa69fc17ab7f90864790a72b7829c84fd42ec5ee9c71d1673cddf9dbab"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/photo/std_P021_front.webp": {
+      "bytes": 22688,
+      "sha256": "df8b6ecc9897d2cacb7edb3e3074551d487cdba1ada772f169e3da2e222f2a6f"
+    },
+    "reference-library/poses-shisei-v0.4.1/std/photo/std_P021_side.webp": {
+      "bytes": 18786,
+      "sha256": "5e63f2763069f7c852e2ea55eaba8fbc4c0e4871967f97c847ab317dfc5a07dc"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/LICENSE": {
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/LICENSE-images": {
+      "bytes": 7048,
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/NOTICE": {
+      "bytes": 1119,
+      "sha256": "4f63b0955507193d860cd745fea51666017dc4b37ea35cfce44413de6eba1480"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U001_above.webp": {
+      "bytes": 37290,
+      "sha256": "d7e1d340de2cee7da6d4dbd86ec02954efc03c4f09bd4f2705d33a9a9b40b226"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U001_below.webp": {
+      "bytes": 39324,
+      "sha256": "4d3eede5fca3bbd2dc5ca6bb28bd89b67b135ce2960fce18d0881d8cc53fa30e"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U001_diag.webp": {
+      "bytes": 33834,
+      "sha256": "6bf77ffa206855577b609b08f0b16df44f0403cf4cbc305bf422382a954a5730"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U001_front.webp": {
+      "bytes": 35582,
+      "sha256": "972505cf555e20ed6b3a8db4d609d8fb02a89e307b718acc55b29aaa7622ce90"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U001_side.webp": {
+      "bytes": 28358,
+      "sha256": "10ef1ff580442a578ab48c82ab7ea271e06883036d4ff430e793a92f019dc51a"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U002_below.webp": {
+      "bytes": 29250,
+      "sha256": "58ae80183335b6e60aa10d07bb9a1ef8d2aa2204993a4a1bd56924412d180a92"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U002_diag.webp": {
+      "bytes": 24030,
+      "sha256": "9108cb30ef5e39242f5b3a4fadf39d795632370206526e5c9e8fefeef041afe2"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U002_front.webp": {
+      "bytes": 23674,
+      "sha256": "ecc1e95be582193be8cf3692ce03012a6bd6f3f1b0221269ab036cf0a689f4d6"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U002_side.webp": {
+      "bytes": 22768,
+      "sha256": "f61b391e42478f6ec9c4052da0ec1a355fcdc7d21015f2112c97570aaf05ec14"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U003_above.webp": {
+      "bytes": 27512,
+      "sha256": "538a40ada168c955a09afe7a4ba3de651b4cd65529a46bd923041362026565f6"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U003_below.webp": {
+      "bytes": 34118,
+      "sha256": "bee3fd3abc6bbc1fa2106b456057cf2a98f47a0d4c38c9dbe7c9c5a6bd144e25"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U003_diag.webp": {
+      "bytes": 22696,
+      "sha256": "c020a0330f371d2f0ddf7732d92dbbc99cf0a5b128cda5f0081a147ab0083c2d"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U003_front.webp": {
+      "bytes": 30230,
+      "sha256": "0d9c033da6f6016f1f5d27b32dc20e4a69d09504b8f32a5aedc0f5932afe754c"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U003_side.webp": {
+      "bytes": 19382,
+      "sha256": "5ebae53b2e5071631ae175be39126fc2da159822bb18be22e7742dc159bc97c2"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U005_above.webp": {
+      "bytes": 32564,
+      "sha256": "43d88ba2893c0f18ed1ab0c900bfdf2d0bacd25666e3a3258ec628fd2417316b"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U005_below.webp": {
+      "bytes": 38874,
+      "sha256": "add7a14c3b51462865b1ea6c2bf9db656d93c825442ebbd85e5c99fb94a70ec8"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U005_diag.webp": {
+      "bytes": 33590,
+      "sha256": "ba66002dbf32d91496bf2f93f346b221ed45ddbe47b7074c63f5cb29abe8a8ff"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U005_front.webp": {
+      "bytes": 33380,
+      "sha256": "0187975a5a9a54d1f086320d9beb768b4bcad6d96a39b1b0034d2328063bf522"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U005_side.webp": {
+      "bytes": 27228,
+      "sha256": "ffb2c5366fbde761614322f2080f5835d5db300706c914ba218a155444fce9b7"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U006_above.webp": {
+      "bytes": 31088,
+      "sha256": "35468505fd59bb78ff4e300500c40eb4e71f527597e3ff8e3d2b328ec50d18d8"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U006_below.webp": {
+      "bytes": 31022,
+      "sha256": "8b6c181319a0a1acb280e781f3dc9922300a9383bc04e7a4a45d8d72997b55f6"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U006_diag.webp": {
+      "bytes": 23002,
+      "sha256": "c5272ce6aa751995d6d6c8fcbfa65436f800ba9940bcb500efdc37b3cb6bcb9d"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U006_front.webp": {
+      "bytes": 22820,
+      "sha256": "4a6efee42af2857a5f1b9c21986bed6c8b5107c85dd7cfeee3a8a649fc34e201"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U006_side.webp": {
+      "bytes": 22090,
+      "sha256": "13b024ff2e17d84d4369f65cfec3750e9396e922fece56dd95294ff2bd67342f"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U008_below.webp": {
+      "bytes": 27538,
+      "sha256": "281f4bd75f187a082a2e272f94ab2ca1e5d14cf62cd85ed93c0ba907cc1497e2"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U008_diag.webp": {
+      "bytes": 26720,
+      "sha256": "df690e417067ea6f3771e7a9b75b8771560981580eb26931ac6f299c6398d31f"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U008_front.webp": {
+      "bytes": 26326,
+      "sha256": "311ffa471b380cbfccfb74c5d53cc0cc6960a168fed892b8a2409763ab18095b"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U008_side.webp": {
+      "bytes": 30112,
+      "sha256": "b2a1b5e400215d132d46a0e6419f94c907a1238d3be2bd77606a3b7c84970d7a"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U009_below.webp": {
+      "bytes": 36486,
+      "sha256": "474ade4d05004884566d871eb70d7542f57afab52330c176cd97a5b6ef86d5cb"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U009_diag.webp": {
+      "bytes": 31382,
+      "sha256": "c84a3830843bd3d2feb89ecd2ed2c56a590a7b1eefb4a62126756e19fa516997"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U009_front.webp": {
+      "bytes": 27216,
+      "sha256": "92fe4de0d4f64ab2e5c05d98f85641587b85fea25743f5b43272b63e1819aa31"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U009_side.webp": {
+      "bytes": 28840,
+      "sha256": "6e9d5415595a30d2910765486deae936d821756e79979ed76fb39da782bf6771"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U010_above.webp": {
+      "bytes": 26352,
+      "sha256": "87612fd48a47e96c8e139e8c24b536c99b7eb3d3b5aacade08a9003d77b48b0f"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U010_below.webp": {
+      "bytes": 26852,
+      "sha256": "0ae081baa257d782ca94782fc4e2d9cb157034b6bd7b1e07c8a9571af7347cd1"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U010_diag.webp": {
+      "bytes": 22052,
+      "sha256": "347df261777ee4a29f328630b18f073e8718f2ac3d449cd927d3be47415e48bb"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U010_front.webp": {
+      "bytes": 22016,
+      "sha256": "033888dab215fc5bbe02623625656b4d6228336c025e15df6b35f9a3a891924b"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U010_side.webp": {
+      "bytes": 24076,
+      "sha256": "052cd601f9c65dfd8de849065c1a5f8c2a74abe321321fa0b5e704ccc53a0edb"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U011_above.webp": {
+      "bytes": 38780,
+      "sha256": "6deeebf90e3ec16eb49eb3bb0a8d432cb8ca1b19aecc8ab8504822d4a7f41caf"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U011_below.webp": {
+      "bytes": 34130,
+      "sha256": "bb12673747ba65e6075db45d022e89b907a2ad974808d46b553ef71fabde6f98"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U011_diag.webp": {
+      "bytes": 35462,
+      "sha256": "b640bf6cc0abe070d71c1b2a9fb7455c33cd71d3a397d4bbd230623656cb8da9"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U011_front.webp": {
+      "bytes": 31628,
+      "sha256": "6e0ca3a5149b5b948e86bd6140ba2222d1ed651fa80b4cce5520b8734a2f15bd"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U011_side.webp": {
+      "bytes": 24170,
+      "sha256": "a0685fc5665a97b8fe5928f3355951ec5da0e3fbbd06cf84e6fd322a7e26d4d9"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U012_above.webp": {
+      "bytes": 30644,
+      "sha256": "51fb3a0865c90702ffe1bf0bfabe0410a0298d2485da6b45ad19a9a7bec90614"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U012_below.webp": {
+      "bytes": 32874,
+      "sha256": "028f1ee51781ead155471935db6bdc4c0fe917fb7627578b85ced1857f890ec2"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U012_diag.webp": {
+      "bytes": 32374,
+      "sha256": "8ca16518c6597fc6be54f769a64478eee900615cf5d335db6090cf3ab0d83df9"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U012_front.webp": {
+      "bytes": 30258,
+      "sha256": "6f6ed801911acfcf2c1678cd8876a14a79c8618563b72d325bc579cf98e7a8e2"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U012_side.webp": {
+      "bytes": 22018,
+      "sha256": "9ad1c5fce9ec776cb9d5bc09d4a31400159ce831511d03ccf3b135d20b0fd825"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U013_above.webp": {
+      "bytes": 29450,
+      "sha256": "33057520f445ff154a491e72c525f6b909a6de0615bf265731605ca5cfceca9f"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U013_below.webp": {
+      "bytes": 25086,
+      "sha256": "0bdea148e45584aa06137d7db4eaedafd2e14440b4d69fcf004716b9df52d651"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U013_diag.webp": {
+      "bytes": 28306,
+      "sha256": "dbd6b429f40f03bb3a5329e617b543ca36b0efa99b231854cafbecd683bf7abe"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U013_front.webp": {
+      "bytes": 32774,
+      "sha256": "a9abaca41caedee3184de24fe8fef3fb2eae01af19ede524dcf434869159cbfe"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U013_side.webp": {
+      "bytes": 27788,
+      "sha256": "90b5fc53f7ae82b02e40c33d577d8c373b000bee64c0392cef9f7a85930e99b8"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U014_above.webp": {
+      "bytes": 30540,
+      "sha256": "10a3a790479bc44c8ec2ce7d7f2a93b4f25a2733aaea2de5213ff43c3d76a528"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U014_diag.webp": {
+      "bytes": 23274,
+      "sha256": "c280b4f65c48b433243673954310a05b9a25dce0ea2b60519573e3e6c5b8fed3"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U014_front.webp": {
+      "bytes": 27518,
+      "sha256": "9b460f5500be472de2e71f8363b8313ed580dbf48d980ee2e4bc9c11ff18a7f7"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U014_side.webp": {
+      "bytes": 23290,
+      "sha256": "6139656cc08e4f6998ca112dde9891b0711243519771ada6cd4a50441560df6f"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U015_above.webp": {
+      "bytes": 47628,
+      "sha256": "cda370f818755745a704759fe627c9af43b7776bfdebc22ef808866acca3c3ee"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U015_below.webp": {
+      "bytes": 38970,
+      "sha256": "a06642990691a7308ac6b157a9cb0c7ebe8d815db06b7ad20feadab3a06b717e"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U015_diag.webp": {
+      "bytes": 30956,
+      "sha256": "2f90a5d961a25f9a960796708924fe2874480c2f37be6363ebb6c88a6e575c49"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U015_front.webp": {
+      "bytes": 29244,
+      "sha256": "8fd153a72dfcb2867f5d7a392b170ce519b1cc123d6c00eb2cdb57add2b765be"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U015_side.webp": {
+      "bytes": 23354,
+      "sha256": "682283ffa1f509216af50765131ef49cc2ad6d1cc5ba14f9fa0bd7ef2f11c23f"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U016_above.webp": {
+      "bytes": 27402,
+      "sha256": "7fbf9053fd00033f9e80af34d4756123c804181b0be9f9d8c4f8484f9bdca18b"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U016_below.webp": {
+      "bytes": 36592,
+      "sha256": "5a9b3004fc46d9abe28d11fd24c35b534cd05849ddf8053c54d2764578117ebc"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U016_diag.webp": {
+      "bytes": 29232,
+      "sha256": "96c54f1052dd24f84a2e62c07e27074c5b43cae95db42c45d8c3936915b1cdce"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U016_front.webp": {
+      "bytes": 29348,
+      "sha256": "daf7bd9c91c71d1e3106621fd79a0fb65f4ebba0547d334106116957fb391b08"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U016_side.webp": {
+      "bytes": 31402,
+      "sha256": "2dfefdbd2f7c5d8d7fb5f693e1a6ea6ca81f21501cb0e7e969975382512cfd0b"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U018_above.webp": {
+      "bytes": 31934,
+      "sha256": "0dc93cfa98075fb764f808318d7b39f207cb83f74c064dd7b84bccbe92fce58f"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U018_below.webp": {
+      "bytes": 44302,
+      "sha256": "36350e5dd8d5685506a1f6a567081135c52fc9ca7478d0938b1b3d7b4b8c98e6"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U018_diag.webp": {
+      "bytes": 38660,
+      "sha256": "0b387e2b5d52a4568190fb1ab9193d22b1a9dc3b0143d00b03eec44b365b04c6"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U018_front.webp": {
+      "bytes": 34920,
+      "sha256": "5e32ce9b56bbe29474b517b11162129e74247b3b240194d0cded96fdd6e08876"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U018_side.webp": {
+      "bytes": 31686,
+      "sha256": "950a83db33244424655125a1ddc48f13dd8752459b49fa86c7ab833b0f946ec6"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U019_above.webp": {
+      "bytes": 29230,
+      "sha256": "8319f311e05402d2d37e52149cab6a6a76cc90cc32f674b4f326db22bb492887"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U019_below.webp": {
+      "bytes": 29646,
+      "sha256": "705ee493717b68b5b05a895510ab2fd8ceb4cb0c6a6496502a3a6c6852bb22f1"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U019_diag.webp": {
+      "bytes": 26948,
+      "sha256": "f0ac33ffc4586681bbf32f43af6ec870132be36642bba6a7c304b92a93e199a3"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U019_front.webp": {
+      "bytes": 25610,
+      "sha256": "eed85ac2beb99563c09af2d90511b51e1ac257abfce7fb52a326d6cf13267e4f"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U019_side.webp": {
+      "bytes": 22236,
+      "sha256": "3ddc9c222e5ce4c253cc62f25caecafce9b044047b7393fcf0105bac86990f10"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U020_above.webp": {
+      "bytes": 27972,
+      "sha256": "42bffb51251f403425bc14865aa5e55be7f0bc3fb80dbb0dd75ac909fe5ddbec"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U020_below.webp": {
+      "bytes": 28298,
+      "sha256": "e044d1c8b5f0112f76a811c2e39362766b72b908fdcb9610c9f3fb00f5dc22c6"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U020_diag.webp": {
+      "bytes": 25162,
+      "sha256": "d899c6ef897b6466aba7e697ef6198d84c5ff0e45f239620256940b20b234958"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U020_front.webp": {
+      "bytes": 24170,
+      "sha256": "9714e373c4d734886faf8cdcbc48d6d1106e43aa8979e2562608b22f303f8dbf"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U020_side.webp": {
+      "bytes": 25126,
+      "sha256": "d95b5d03967b3833f4f834b334a60e54c9afa873900fcebdef6a40512c919f57"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U021_below.webp": {
+      "bytes": 29558,
+      "sha256": "60b2ff680d12e3063526ba539d48c6c2d8240883d8003924f3cec7b0e6a1e15e"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U021_diag.webp": {
+      "bytes": 27094,
+      "sha256": "0f6410b8b507c64305df12b919fcc1aae0a6b696010c2c0c94761173149410e2"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U021_front.webp": {
+      "bytes": 25292,
+      "sha256": "a73ebf41532f11f7e24c61ef5e0bded7105dc916579fb7a2d4a7e5b4bee0434b"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U021_side.webp": {
+      "bytes": 22046,
+      "sha256": "365452017b5d46533f545c32ba5a1fa266e7a0da194d718fba7748d8895a51af"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U022_above.webp": {
+      "bytes": 30386,
+      "sha256": "fbc698991b0511f01e5e97c5ada0069bd3b15d50ba49c98d068af457fc7a8ec8"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U022_below.webp": {
+      "bytes": 32750,
+      "sha256": "0fbcda7d91564e42076480a933664aa6bd6ab74d49fbc50fae52f53ee0d7fc7d"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U022_diag.webp": {
+      "bytes": 24530,
+      "sha256": "4e4e05eedb03a3106ac5cabd38d9b63e8c59df908e7cf403ee6b009daede2130"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U022_front.webp": {
+      "bytes": 23682,
+      "sha256": "d34610a0597d0f1c18ac95962e1da5fcf5387a3f6b943e25061e76d99875543d"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U022_side.webp": {
+      "bytes": 20206,
+      "sha256": "e86711df9e2d7befcb059ad2bb2719e1a090bc64445e9358b71ca9ee6f556fed"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U023_above.webp": {
+      "bytes": 33382,
+      "sha256": "7d003833fe9e88722d0ed65ab4d5742fb52326bef15c3527cd95c1ad33602564"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U023_below.webp": {
+      "bytes": 38476,
+      "sha256": "8282c93f7ab18d8488ed8da87395a0b1b95f7617861d8b807e01c0b652e87900"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U023_diag.webp": {
+      "bytes": 29394,
+      "sha256": "4d5ddb6f79cc2d7e85029d115850517d30219417181fe9cfddd169cd5940ca1c"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U023_front.webp": {
+      "bytes": 23126,
+      "sha256": "29ab7aa965ddefc3d65276db9a54be994fc99755acce88db85190f3749230303"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U023_side.webp": {
+      "bytes": 27686,
+      "sha256": "4c3d81f540a43398881f6cc41b92d704f2195a82ed3c5bf2fbed95610dc7e2df"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U025_above.webp": {
+      "bytes": 45696,
+      "sha256": "c2c050d09200ed9a40170b02259fa43119c11744548af522dc842d113aed19e0"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U025_below.webp": {
+      "bytes": 31682,
+      "sha256": "16d86479d3c0934a8453f685d1a228cf0384092181714c57c22705ec5c3659c9"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U025_diag.webp": {
+      "bytes": 34160,
+      "sha256": "20a752dfc7fe6b476463dfb88500cfe1b2b2e09a996f09b8e2d5b92840df5e38"
+    },
+    "reference-library/poses-shisei-v0.4.1/upper/line/upper_U025_front.webp": {
+      "bytes": 31170,
+      "sha256": "bdbbac3df55f9ab517996f5464c7ce39f3b41ea3d6fef4ff9d908ab2459e221b"
+    },
+    "service-worker.js": {
+      "bytes": 264,
+      "sha256": "f2b5196a47e9201438707ca7e7946b655cae2715365541d1674cd66b3c8121ac"
+    }
+  }
+}

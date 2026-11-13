@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" role="img" aria-labelledby="t d">
+  <title id="t">双人牵手慢走站位示意</title>
+  <desc id="d">俯视站位：两人并排朝同一方向，内侧的手相牵，箭头表示行进方向，下方是镜头方向。</desc>
+  <g fill="none" stroke="#17211f" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+<rect x="80" y="70" width="740" height="880" rx="6" stroke-dasharray="14 12" /><path d="M400 1060 H500 L450 990 Z" fill="#17211f" stroke="none" /><text x="450" y="1130" font-size="32" fill="#17211f" stroke="none">镜头</text>
+<path d="M200 200 H680" />
+<path d="M640 160 L690 200 L640 240" />
+<g transform="rotate(-90 470 470)"><circle cx="470" cy="470" r="58" /><path d="M418 522 Q470 566 522 522" /></g><circle cx="542" cy="470" r="7" fill="#17211f" stroke="none" /><text x="470" y="485" font-size="40" fill="#17211f" stroke="none">1</text>
+<g transform="rotate(-90 470 780)"><circle cx="470" cy="780" r="58" /><path d="M418 832 Q470 876 522 832" /></g><circle cx="542" cy="780" r="7" fill="#17211f" stroke="none" /><text x="470" y="795" font-size="40" fill="#17211f" stroke="none">2</text>
+<path d="M528 540 V710" />
+<circle cx="528" cy="540" r="10" fill="#17211f" stroke="none" />
+<circle cx="528" cy="710" r="10" fill="#17211f" stroke="none" />
+<text x="450" y="900" font-size="30" fill="#17211f" stroke="none" text-anchor="middle">两人并排同向，内侧手相牵</text>
+  </g>
+</svg>

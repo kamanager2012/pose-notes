@@ -1,0 +1,4300 @@
+{
+  "title": "日常人像摄影姿势精选",
+  "version": 4,
+  "usage": "仅对逐项核对并登记的 CC0 人偶线稿展示姿势参考；不得根据源编号自动展示其他来源图。",
+  "references": [
+    {
+      "id": "shotkit-portrait",
+      "title": "Shotkit: 27 Flattering Portrait Poses for Photographers & Models",
+      "url": "https://shotkit.com/portrait-poses/",
+      "checkedOn": "2026-11-12",
+      "access": "public_body_read",
+      "principles": [
+        "放松抱臂与单臂交叉",
+        "给手部安排自然任务",
+        "借用门框等环境形成构图",
+        "倚墙时抬起一脚",
+        "过肩回望",
+        "歪头",
+        "双臂上举",
+        "背后环抱",
+        "交叉腿站",
+        "正面拥抱"
+      ],
+      "useScope": "提炼原则并原创改写；未复制图片或原文段落"
+    },
+    {
+      "id": "500px-poses",
+      "title": "500px: 21 Poses to Try When Photographing Men",
+      "url": "https://iso.500px.com/sample-male-poses/",
+      "checkedOn": "2026-11-11",
+      "access": "public_body_read",
+      "principles": [
+        "道具应与人物和场景有关",
+        "椅坐前倾",
+        "台阶层次",
+        "动作间的自然瞬间"
+      ],
+      "useScope": "不沿用性别限制；按通用摄影原则原创编排"
+    },
+    {
+      "id": "dps-couples",
+      "title": "Digital Photography School: 21 Couples Poses",
+      "url": "https://digital-photography-school.com/posing-guide-21-sample-poses-to-get-you-started-with-couples-photography/",
+      "checkedOn": "2026-11-11",
+      "access": "body_unavailable_403",
+      "useScope": "保留旧目录来源；本轮正文未读到，不作为新增条目依据"
+    },
+    {
+      "id": "adobe-portrait",
+      "title": "Adobe: Portrait photography tips and ideas from experts",
+      "url": "https://www.adobe.com/creativecloud/photography/discover/portrait-photography.html",
+      "checkedOn": "2026-11-11",
+      "access": "public_body_read",
+      "principles": [
+        "人物故事和自然表情",
+        "尝试不同构图和光线",
+        "专业肖像表现人物个性"
+      ],
+      "useScope": "通用拍摄原则；具体窗边或桌边动作是原创编排"
+    },
+    {
+      "id": "fujifilm-groups",
+      "title": "Fujifilm: Creating Great Group Photos",
+      "url": "https://www.fujifilm-x.com/en-us/stories/beginner-month-9-events-35-group-shots/",
+      "checkedOn": "2026-11-11",
+      "access": "public_body_read",
+      "principles": [
+        "坐站组合产生高低层次",
+        "确认所有人可见",
+        "互动与连拍",
+        "避免画面边缘人物变形"
+      ],
+      "useScope": "多人构图与沟通原则；具体互动口令为原创编排"
+    },
+    {
+      "id": "fujifilm-triangles",
+      "title": "Fujifilm: Create Pro-Style Family Portraits",
+      "url": "https://www.fujifilm-x.com/en-us/stories/advanced-month-9-events-35-pro-style-family-portraits/",
+      "checkedOn": "2026-11-11",
+      "access": "public_body_read",
+      "principles": [
+        "利用自然身高差形成三角或对角层次",
+        "摆姿与自然互动交替"
+      ],
+      "useScope": "多人三角构图原则；不复制其示范照片"
+    },
+    {
+      "id": "shotkit-male",
+      "title": "Shotkit: 23 Natural Male Poses",
+      "url": "https://shotkit.com/male-poses/",
+      "checkedOn": "2026-11-12",
+      "access": "public_body_read",
+      "principles": [
+        "歪头",
+        "蹲姿"
+      ],
+      "useScope": "只取动作类型；不沿用性别限制，口令与步骤为原创"
+    },
+    {
+      "id": "shotkit-sitting",
+      "title": "Shotkit: 24 Cute Sitting Poses for Photos",
+      "url": "https://shotkit.com/sitting-poses/",
+      "checkedOn": "2026-11-12",
+      "access": "public_body_read",
+      "principles": [
+        "后靠跷腿坐",
+        "一腿伸直的坐姿"
+      ],
+      "useScope": "只取动作类型与通用原则；口令与步骤为原创，未复制图片或原文"
+    },
+    {
+      "id": "shotkit-friends",
+      "title": "Shotkit: How to Pose Best Friend Photoshoots",
+      "url": "https://shotkit.com/best-friend-photoshoots-poses/",
+      "checkedOn": "2026-11-12",
+      "access": "public_body_read",
+      "principles": [
+        "朋友抱团",
+        "一起跳",
+        "借台阶形成层次",
+        "友好的拥抱",
+        "同一场景里有人坐有人站"
+      ],
+      "useScope": "只取动作类型与通用原则；口令与步骤为原创，未复制图片或原文"
+    },
+    {
+      "id": "prettypresets-groups",
+      "title": "Pretty Presets: Top 30 Photo Poses for Groups",
+      "url": "https://www.lightroompresets.com/blogs/pretty-presets-blog/group-photo-poses",
+      "checkedOn": "2026-11-12",
+      "access": "public_body_read",
+      "principles": [
+        "一起跳",
+        "坐地合照",
+        "互相倚肩",
+        "台阶分层",
+        "并行走",
+        "前排坐后排站"
+      ],
+      "useScope": "只取动作类型与通用原则；口令与步骤为原创，未复制图片或原文"
+    },
+    {
+      "id": "katebackdrop-groups",
+      "title": "Kate Backdrop: group photography poses",
+      "url": "https://www.katebackdrop.com/blogs/creative-ideas/poses-group-photography",
+      "checkedOn": "2026-11-12",
+      "access": "public_body_read",
+      "principles": [
+        "头部靠拢",
+        "集体跳",
+        "坐在地上",
+        "一起走",
+        "利用台阶"
+      ],
+      "useScope": "只取动作类型与通用原则；口令与步骤为原创，未复制图片或原文"
+    },
+    {
+      "id": "photologica-wedding",
+      "title": "Photo-Logica: 24 Wedding Photo Poses",
+      "url": "https://photo-logica.com/wedding-photo-poses/",
+      "checkedOn": "2026-11-12",
+      "access": "public_body_read",
+      "principles": [
+        "背后环抱",
+        "过肩回望",
+        "一起走",
+        "面对面牵手",
+        "额头靠近",
+        "坐站结合的合影"
+      ],
+      "useScope": "只取通用双人和多人站位，不收婚礼专题；口令与步骤为原创"
+    },
+    {
+      "id": "funit-poses",
+      "title": "好好玩 FUNIT：拍照姿勢大全",
+      "url": "https://gofunit.com/%E6%8B%8D%E7%85%A7%E5%A7%BF%E5%8B%A2/",
+      "checkedOn": "2026-11-13",
+      "access": "public_body_read",
+      "principles": [
+        "背影",
+        "蹲下",
+        "席地而坐",
+        "跳跃",
+        "歪头",
+        "张开双臂",
+        "侧身回眸",
+        "拉帽子",
+        "墨镜",
+        "比個愛心",
+        "托腮、捧起臉",
+        "吐舌YA"
+      ],
+      "useScope": "只取动作类型与通用原则；口令与步骤为原创，未复制图片或原文"
+    },
+    {
+      "id": "tina-poses",
+      "title": "Tina：拍照姿势口诀 12 式",
+      "url": "https://tina.chat/share/share_06ba5a9ddd9e3dcaf053a42d",
+      "checkedOn": "2026-11-13",
+      "access": "public_body_read",
+      "principles": [
+        "单脚抵墙",
+        "坐地伸腿",
+        "半蹲配低机位",
+        "背影",
+        "张开双臂",
+        "跳跃连拍",
+        "交叉腿站",
+        "仰头闭眼",
+        "甩衣角",
+        "扶帽檐",
+        "手挡半脸"
+      ],
+      "useScope": "只取动作类型与通用原则；口令与步骤为原创，未复制图片或原文"
+    }
+  ],
+  "recommendationOptions": {
+    "peopleCounts": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "contexts": {
+      "portrait": "普通肖像",
+      "street": "户外街拍",
+      "social": "社交照片",
+      "lifestyle": "生活方式",
+      "business": "商务肖像",
+      "travel": "旅行环境人像",
+      "friends": "朋友合照",
+      "group": "小组合照"
+    },
+    "postures": {
+      "standing": "全员站姿",
+      "seated": "全员坐姿",
+      "walking": "走动",
+      "mixed": "坐站组合",
+      "crouching": "蹲姿"
+    },
+    "framing": {
+      "close_up": "近景",
+      "half_body": "半身",
+      "three_quarter": "三分之二身",
+      "full_body": "全身"
+    },
+    "features": {
+      "chair": "稳固普通椅子",
+      "armrest_chair": "稳固带扶手椅子",
+      "low_seat": "稳固矮凳",
+      "tuckable_hair": "可整理至耳后的头发",
+      "clear_walkway": "适合当前人数并行的平整空路",
+      "stable_wall": "可轻靠的稳固墙面",
+      "pockets": "可用口袋",
+      "table": "稳固桌面",
+      "notebook": "记事本",
+      "jacket": "可整理的外套",
+      "window": "安全窗边",
+      "map": "地图",
+      "travel_bag": "轻便带肩带旅行包",
+      "safe_steps": "可坐且不阻塞通行的宽台阶",
+      "doorway": "不阻塞的门框旁空地",
+      "safe_rail": "安全栏杆内侧空地",
+      "cup": "可安全手持的杯子",
+      "book": "书本",
+      "phone": "手机",
+      "handbag": "可打开的包袋",
+      "curtain": "可安全拉动的窗帘",
+      "camera": "可安全手持的相机",
+      "bench_or_sofa": "容纳两人的稳固长凳或沙发",
+      "two_chairs": "两把稳固座椅",
+      "ground_seat": "可坐的干净干燥地面（草地、垫子等）",
+      "jump_space": "平整防滑、四周留空、可以起跳的地面",
+      "hat": "戴着帽子",
+      "sunglasses": "有墨镜",
+      "contact_agreed": "所有参与者都同意当前动作中的身体接触"
+    },
+    "featureImplications": {
+      "armrest_chair": [
+        "chair"
+      ]
+    },
+    "tiers": {
+      "everyday": "日常基础动作",
+      "style": "主动选择的风格手势",
+      "contextual": "限定场景动作"
+    },
+    "policy": "按用户提供的人数、场景和可用条件筛选；默认不展示风格手势，场景限定动作需场景匹配；每轮同动作族最多一项。编辑排序不是实拍质量评分，不根据性别筛选。"
+  },
+  "starterSets": [
+    {
+      "id": "outdoor-single",
+      "name": "户外单人入门",
+      "peopleCount": 1,
+      "poseIds": [
+        "photo-full-single-p017",
+        "photo-full-single-p015",
+        "walk-natural",
+        "hands-in-pockets"
+      ]
+    },
+    {
+      "id": "seated-single",
+      "name": "坐姿单人入门",
+      "peopleCount": 1,
+      "poseIds": [
+        "photo-full-single-p041",
+        "photo-full-single-p009",
+        "photo-full-single-p012"
+      ]
+    },
+    {
+      "id": "social-gestures",
+      "name": "社交手势自选",
+      "peopleCount": 1,
+      "poseIds": [
+        "photo-upper80v2-p001",
+        "photo-upper80v2-p018",
+        "photo-upper80v2-p016"
+      ]
+    },
+    {
+      "id": "lifestyle-single",
+      "name": "生活方式抓拍",
+      "peopleCount": 1,
+      "poseIds": [
+        "photo-upper80v2-p023",
+        "wall-relaxed",
+        "photo-full-single-p067"
+      ]
+    },
+    {
+      "id": "outdoor-pair",
+      "name": "双人自然互动",
+      "peopleCount": 2,
+      "poseIds": [
+        "couple-side-by-side",
+        "friends-side-by-side",
+        "pair-hand-in-hand"
+      ]
+    },
+    {
+      "id": "business-single",
+      "name": "商务肖像入门",
+      "peopleCount": 1,
+      "poseIds": [
+        "business-arms-relaxed",
+        "business-elbow-support",
+        "business-desk-seated",
+        "business-present-hand"
+      ]
+    },
+    {
+      "id": "travel-single",
+      "name": "旅行环境人像",
+      "peopleCount": 1,
+      "poseIds": [
+        "travel-map-open",
+        "travel-bag-shoulder",
+        "travel-stair-rest",
+        "travel-back-look"
+      ]
+    },
+    {
+      "id": "lifestyle-props",
+      "name": "生活方式道具",
+      "peopleCount": 1,
+      "poseIds": [
+        "lifestyle-book-read",
+        "lifestyle-cup-hold",
+        "lifestyle-camera-ready",
+        "lifestyle-phone-check"
+      ]
+    },
+    {
+      "id": "friends-pair",
+      "name": "朋友互动自选",
+      "peopleCount": 2,
+      "poseIds": [
+        "friends-conversation",
+        "friends-seated-angle",
+        "friends-no-contact",
+        "friends-high-five"
+      ]
+    },
+    {
+      "id": "group-three",
+      "name": "三人合照入门",
+      "peopleCount": 3,
+      "poseIds": [
+        "group-three-staggered",
+        "group-three-seated"
+      ]
+    },
+    {
+      "id": "group-four",
+      "name": "四人合照入门",
+      "peopleCount": 4,
+      "poseIds": [
+        "group-four-line",
+        "group-four-walk",
+        "group-four-table",
+        "group-four-candid"
+      ]
+    }
+  ],
+  "guideBasedPoses": [
+    {
+      "id": "walk-natural",
+      "scene": "户外 / 动态全身",
+      "direction": "选一小段平整空路，先确定行进方向；慢慢走动，让手臂自然摆动；先看前方，走稳后短暂看镜头。",
+      "camera": "摄影者站稳连拍；全身构图给行进方向留空间，不边退边拍。",
+      "reference": "Shotkit portrait poses; 500px male poses",
+      "name": "自然慢走",
+      "cue": "沿空路慢走，手自然摆动，偶尔看镜头。",
+      "steps": [
+        "选一小段平整空路，先确定行进方向",
+        "慢慢走动，让手臂自然摆动",
+        "先看前方，走稳后短暂看镜头"
+      ],
+      "quickCheck": "路面无障碍，双方先确认行进路线。",
+      "recommendation": {
+        "family": "walking",
+        "tier": "everyday",
+        "peopleCount": 1,
+        "postures": [
+          "walking"
+        ],
+        "contexts": [
+          "street",
+          "social",
+          "lifestyle"
+        ],
+        "framing": [
+          "full_body"
+        ],
+        "requiredFeatures": [
+          "clear_walkway"
+        ]
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "wall-relaxed",
+      "scene": "街拍 / 环境人像",
+      "direction": "双脚站稳，一侧肩背轻触稳固墙面；双手自然下垂或松松交叠；肩膀放松，看镜头或镜头旁。",
+      "camera": "半身或全身均可；取景时检查墙上的线条是否正好穿过头部。",
+      "reference": "Shotkit portrait poses; 500px male poses",
+      "name": "墙边轻靠",
+      "cue": "一侧肩背轻靠墙，手自然放松，看向一旁。",
+      "steps": [
+        "双脚站稳，一侧肩背轻触稳固墙面",
+        "双手自然下垂或松松交叠",
+        "肩膀放松，看镜头或镜头旁"
+      ],
+      "quickCheck": "脚下独立站稳，只轻靠墙，不依赖栏杆承重。",
+      "recommendation": {
+        "family": "wall-lean",
+        "tier": "everyday",
+        "peopleCount": 1,
+        "postures": [
+          "standing"
+        ],
+        "contexts": [
+          "street",
+          "lifestyle"
+        ],
+        "framing": [
+          "half_body",
+          "full_body"
+        ],
+        "requiredFeatures": [
+          "stable_wall"
+        ]
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "hands-in-pockets",
+      "scene": "站姿 / 日常全身",
+      "direction": "站稳，身体微侧；一只手轻放口袋，拇指留在外面；另一只手自然下垂，肩膀放松。",
+      "camera": "拍三分之二身或全身，把放口袋的手完整留在画面里。",
+      "reference": "500px male poses",
+      "name": "单手轻放口袋",
+      "cue": "身体微侧，一手轻放口袋，拇指留在外面。",
+      "steps": [
+        "站稳，身体微侧",
+        "一只手轻放口袋，拇指留在外面",
+        "另一只手自然下垂，肩膀放松"
+      ],
+      "quickCheck": "确认有可用口袋，手不用力撑口袋。",
+      "recommendation": {
+        "family": "pockets",
+        "tier": "everyday",
+        "peopleCount": 1,
+        "postures": [
+          "standing"
+        ],
+        "contexts": [
+          "portrait",
+          "street",
+          "social"
+        ],
+        "framing": [
+          "three_quarter",
+          "full_body"
+        ],
+        "requiredFeatures": [
+          "pockets"
+        ]
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "couple-side-by-side",
+      "scene": "双人 / 朋友或情侣",
+      "direction": "两人并肩站稳，保持彼此舒适的距离；同向慢走几步，自然交谈或对视；摄影者提示后，再短暂一起看镜头。",
+      "camera": "摄影者站稳连拍；尽量让两张脸处于相近前后位置，回看时放大检查两人眼睛是否都清楚。",
+      "reference": "Digital Photography School couples posing guide",
+      "name": "双人并肩慢走",
+      "cue": "两人并肩慢走，先聊两句，再一起看镜头。",
+      "steps": [
+        "两人并肩站稳，保持彼此舒适的距离",
+        "同向慢走几步，自然交谈或对视",
+        "摄影者提示后，再短暂一起看镜头"
+      ],
+      "quickCheck": "路线无障碍，两张脸都露出来，接触程度由双方决定。",
+      "recommendation": {
+        "family": "paired-walking",
+        "tier": "everyday",
+        "peopleCount": 2,
+        "postures": [
+          "walking"
+        ],
+        "contexts": [
+          "street",
+          "social",
+          "lifestyle"
+        ],
+        "framing": [
+          "half_body",
+          "full_body"
+        ],
+        "requiredFeatures": [
+          "clear_walkway"
+        ]
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "business-arms-relaxed",
+      "scene": "站姿肖像 / 半身",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "shotkit-portrait"
+      ],
+      "name": "放松抱臂",
+      "direction": "双脚站稳，身体微侧；双臂在胸腹前轻松交叠，不夹紧；肩膀放低，视线看镜头或镜头旁。",
+      "camera": "取半身或三分之二身，让双臂轮廓与脸部都清楚。",
+      "cue": "身体微侧，双臂轻松交叠，手指保持放松。",
+      "steps": [
+        "双脚站稳，身体微侧",
+        "双臂在胸腹前轻松交叠，不夹紧",
+        "肩膀放低，视线看镜头或镜头旁"
+      ],
+      "quickCheck": "手臂只是交叠，不要抱紧自己。",
+      "recommendation": {
+        "family": "business-relaxed-arms",
+        "tier": "everyday",
+        "peopleCount": 1,
+        "postures": [
+          "standing"
+        ],
+        "contexts": [
+          "business",
+          "portrait",
+          "street",
+          "social"
+        ],
+        "framing": [
+          "half_body",
+          "three_quarter"
+        ],
+        "requiredFeatures": []
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "business-elbow-support",
+      "scene": "站姿肖像 / 半身",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "shotkit-portrait"
+      ],
+      "name": "单手扶肘",
+      "direction": "站稳并让身体略偏向一侧；一只手轻托另一侧手肘；被托的手臂自然弯曲，抬眼看镜头。",
+      "camera": "半身取景，双手和脸完整入画；避免镜头过低。",
+      "cue": "一手轻托另一侧手肘，肩膀保持水平。",
+      "steps": [
+        "站稳并让身体略偏向一侧",
+        "一只手轻托另一侧手肘",
+        "被托的手臂自然弯曲，抬眼看镜头"
+      ],
+      "quickCheck": "手掌不抓紧手臂，肩膀不耸起。",
+      "recommendation": {
+        "family": "business-elbow-support",
+        "tier": "everyday",
+        "peopleCount": 1,
+        "postures": [
+          "standing"
+        ],
+        "contexts": [
+          "business",
+          "portrait",
+          "street",
+          "social"
+        ],
+        "framing": [
+          "half_body"
+        ],
+        "requiredFeatures": []
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "business-desk-seated",
+      "scene": "商务肖像 / 桌边坐姿",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "shotkit-portrait",
+        "adobe-portrait"
+      ],
+      "name": "桌边端坐",
+      "direction": "坐在稳固椅子上，面向桌边；一侧或双侧前臂轻放桌面；肩膀放松，视线看镜头。",
+      "camera": "从坐姿眼平取半身或三分之二身，避免桌沿切过手腕。",
+      "cue": "坐在桌边，前臂轻放桌面，背部自然伸展。",
+      "steps": [
+        "坐在稳固椅子上，面向桌边",
+        "一侧或双侧前臂轻放桌面",
+        "肩膀放松，视线看镜头"
+      ],
+      "quickCheck": "桌椅高度合适，肩膀不因桌面过高而耸起。",
+      "recommendation": {
+        "family": "business-desk-seated",
+        "tier": "everyday",
+        "peopleCount": 1,
+        "postures": [
+          "seated"
+        ],
+        "contexts": [
+          "business"
+        ],
+        "framing": [
+          "half_body",
+          "three_quarter"
+        ],
+        "requiredFeatures": [
+          "chair",
+          "table"
+        ]
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "business-desk-stand",
+      "scene": "商务肖像 / 桌边站姿",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "shotkit-portrait",
+        "adobe-portrait"
+      ],
+      "name": "桌边站立",
+      "direction": "站在桌边并留出脚下空间；一手轻触桌沿，另一手自然下垂；身体微侧，肩膀放松看向镜头。",
+      "camera": "三分之二身或全身取景，保持桌面水平线不穿过脖子。",
+      "cue": "站在桌边，一手轻触桌沿，身体微侧。",
+      "steps": [
+        "站在桌边并留出脚下空间",
+        "一手轻触桌沿，另一手自然下垂",
+        "身体微侧，肩膀放松看向镜头"
+      ],
+      "quickCheck": "手只轻触桌沿，不依赖桌子保持平衡。",
+      "recommendation": {
+        "family": "business-desk-stand",
+        "tier": "everyday",
+        "peopleCount": 1,
+        "postures": [
+          "standing"
+        ],
+        "contexts": [
+          "business"
+        ],
+        "framing": [
+          "three_quarter",
+          "full_body"
+        ],
+        "requiredFeatures": [
+          "table"
+        ]
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "business-notebook",
+      "scene": "商务肖像 / 道具互动",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "500px-poses"
+      ],
+      "name": "记事本工作感",
+      "direction": "站稳或坐稳，双手自然拿住记事本；低头看一眼页面，保持肩膀放松；抬眼看镜头，记事本停在胸腹下方。",
+      "camera": "半身或三分之二身，确保脸和记事本都清楚。",
+      "cue": "手持记事本，先低头看一眼，再抬眼看镜头。",
+      "steps": [
+        "站稳或坐稳，双手自然拿住记事本",
+        "低头看一眼页面，保持肩膀放松",
+        "抬眼看镜头，记事本停在胸腹下方"
+      ],
+      "quickCheck": "页面不挡脸，手指不要用力夹紧。",
+      "recommendation": {
+        "family": "business-notebook",
+        "tier": "everyday",
+        "peopleCount": 1,
+        "postures": [
+          "standing",
+          "seated"
+        ],
+        "contexts": [
+          "business",
+          "lifestyle"
+        ],
+        "framing": [
+          "half_body",
+          "three_quarter"
+        ],
+        "requiredFeatures": [
+          "notebook"
+        ]
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "business-present-hand",
+      "scene": "商务肖像 / 讲解手势",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "500px-poses",
+        "adobe-portrait"
+      ],
+      "name": "商务讲解手势",
+      "direction": "站稳并让身体微侧；一手在胸腹前做小幅开放手势；手势停住后抬眼看镜头。",
+      "camera": "半身或三分之二身，给手势方向留空，不把手裁在边缘。",
+      "cue": "一手向侧方做小幅讲解手势，另一手自然放松。",
+      "steps": [
+        "站稳并让身体微侧",
+        "一手在胸腹前做小幅开放手势",
+        "手势停住后抬眼看镜头"
+      ],
+      "quickCheck": "手掌放松，动作幅度不超过舒适范围。",
+      "recommendation": {
+        "family": "business-present-hand",
+        "tier": "everyday",
+        "peopleCount": 1,
+        "postures": [
+          "standing"
+        ],
+        "contexts": [
+          "business",
+          "portrait"
+        ],
+        "framing": [
+          "half_body",
+          "three_quarter"
+        ],
+        "requiredFeatures": []
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "business-jacket-adjust",
+      "scene": "商务肖像 / 自然抓拍",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "500px-poses"
+      ],
+      "name": "整理外套",
+      "direction": "身体微侧并站稳；双手轻整理外套前襟或袖口；动作完成后抬眼看镜头。",
+      "camera": "半身或三分之二身，连续拍摄整理前襟到放手的过程。",
+      "cue": "轻整理外套前襟，完成后让双手自然放下。",
+      "steps": [
+        "身体微侧并站稳",
+        "双手轻整理外套前襟或袖口",
+        "动作完成后抬眼看镜头"
+      ],
+      "quickCheck": "只整理衣物，不拉扯领口或憋住肩膀。",
+      "recommendation": {
+        "family": "business-jacket-adjust",
+        "tier": "everyday",
+        "peopleCount": 1,
+        "postures": [
+          "standing"
+        ],
+        "contexts": [
+          "business",
+          "street"
+        ],
+        "framing": [
+          "half_body",
+          "three_quarter"
+        ],
+        "requiredFeatures": [
+          "jacket"
+        ]
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "business-window-look",
+      "scene": "商务肖像 / 环境半身",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "adobe-portrait"
+      ],
+      "name": "窗边商务侧望",
+      "direction": "站在窗边并与玻璃保持距离；身体转向窗光，双手自然放松；视线看窗外，肩膀保持平行。",
+      "camera": "从窗侧拍半身或三分之二身，避免窗光让脸部过暗。",
+      "cue": "站在窗边，身体朝向窗光，视线看向窗外。",
+      "steps": [
+        "站在窗边并与玻璃保持距离",
+        "身体转向窗光，双手自然放松",
+        "视线看窗外，肩膀保持平行"
+      ],
+      "quickCheck": "靠近窗边但不倚压玻璃，确认脚下安全。",
+      "recommendation": {
+        "family": "look-away",
+        "tier": "everyday",
+        "peopleCount": 1,
+        "postures": [
+          "standing"
+        ],
+        "contexts": [
+          "business",
+          "portrait"
+        ],
+        "framing": [
+          "half_body",
+          "three_quarter"
+        ],
+        "requiredFeatures": [
+          "window"
+        ]
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "travel-map-open",
+      "scene": "旅行环境人像 / 道具",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "500px-poses"
+      ],
+      "name": "展开地图",
+      "direction": "站稳并双手拿住地图；低头看地图一秒，表情自然；抬眼看镜头，地图放在胸腹前。",
+      "camera": "半身或三分之二身，地图不要遮住脸和衣服主体。",
+      "cue": "展开地图看一眼，再和镜头分享目的地。",
+      "steps": [
+        "站稳并双手拿住地图",
+        "低头看地图一秒，表情自然",
+        "抬眼看镜头，地图放在胸腹前"
+      ],
+      "quickCheck": "选择不挡路的位置，纸张边缘不碰到眼睛。",
+      "recommendation": {
+        "family": "travel-map",
+        "tier": "everyday",
+        "peopleCount": 1,
+        "postures": [
+          "standing"
+        ],
+        "contexts": [
+          "travel",
+          "lifestyle"
+        ],
+        "framing": [
+          "half_body",
+          "three_quarter"
+        ],
+        "requiredFeatures": [
+          "map"
+        ]
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "travel-bag-shoulder",
+      "scene": "旅行环境人像 / 站姿",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "500px-poses"
+      ],
+      "name": "肩背旅行包",
+      "direction": "背好轻便旅行包并站稳；一手轻扶肩带，另一手自然放下；身体微侧，看镜头或看向路线。",
+      "camera": "三分之二身或全身，保留包和鞋子，避免广角近拍。",
+      "cue": "一手轻扶肩带，身体微侧，脚步保持稳定。",
+      "steps": [
+        "背好轻便旅行包并站稳",
+        "一手轻扶肩带，另一手自然放下",
+        "身体微侧，看镜头或看向路线"
+      ],
+      "quickCheck": "包的重量适中，肩带不勒住颈部。",
+      "recommendation": {
+        "family": "travel-bag",
+        "tier": "everyday",
+        "peopleCount": 1,
+        "postures": [
+          "standing"
+        ],
+        "contexts": [
+          "travel",
+          "street"
+        ],
+        "framing": [
+          "three_quarter",
+          "full_body"
+        ],
+        "requiredFeatures": [
+          "travel_bag"
+        ]
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "travel-stair-rest",
+      "scene": "旅行与街拍 / 台阶坐姿",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "500px-poses"
+      ],
+      "name": "台阶休息",
+      "direction": "确认台阶干燥、宽度足够且没有通行冲突；坐稳，双脚有支撑，双手轻放膝上；上身微侧，看向镜头。",
+      "camera": "从人物眼平或略低处取三分之二身，保留台阶环境。",
+      "cue": "坐在宽而稳的台阶上，双脚落在同一级或地面。",
+      "steps": [
+        "确认台阶干燥、宽度足够且没有通行冲突",
+        "坐稳，双脚有支撑，双手轻放膝上",
+        "上身微侧，看向镜头"
+      ],
+      "quickCheck": "不坐在台阶边缘，不挡住他人通行。",
+      "recommendation": {
+        "family": "travel-stair",
+        "tier": "contextual",
+        "peopleCount": 1,
+        "postures": [
+          "seated"
+        ],
+        "contexts": [
+          "travel",
+          "street",
+          "lifestyle"
+        ],
+        "framing": [
+          "three_quarter",
+          "full_body"
+        ],
+        "requiredFeatures": [
+          "safe_steps"
+        ]
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "travel-doorway-turn",
+      "scene": "旅行环境人像 / 门框",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "shotkit-portrait"
+      ],
+      "name": "门框转身",
+      "direction": "站在门框旁，不挡住出入口；身体朝向通道，脚下站稳；肩膀轻转回镜头并抬眼。",
+      "camera": "三分之二身或全身，让门框成为环境线条但不要切过头部。",
+      "cue": "走到门框旁停下，身体转回镜头，手自然放松。",
+      "steps": [
+        "站在门框旁，不挡住出入口",
+        "身体朝向通道，脚下站稳",
+        "肩膀轻转回镜头并抬眼"
+      ],
+      "quickCheck": "门框和地面稳固，保持出入口畅通。",
+      "recommendation": {
+        "family": "travel-doorway",
+        "tier": "everyday",
+        "peopleCount": 1,
+        "postures": [
+          "standing"
+        ],
+        "contexts": [
+          "travel",
+          "street"
+        ],
+        "framing": [
+          "three_quarter",
+          "full_body"
+        ],
+        "requiredFeatures": [
+          "doorway"
+        ]
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "travel-rail-look",
+      "scene": "旅行环境人像 / 环境站姿",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "shotkit-portrait"
+      ],
+      "name": "栏杆旁远望",
+      "direction": "站在栏杆内侧的安全位置；双手自然下垂或轻松交叠；身体朝景色方向，视线看远处。",
+      "camera": "从侧前方拍半身或三分之二身，保留景物方向。",
+      "cue": "站在安全栏杆旁，双手不压栏杆，视线看远处。",
+      "steps": [
+        "站在栏杆内侧的安全位置",
+        "双手自然下垂或轻松交叠",
+        "身体朝景色方向，视线看远处"
+      ],
+      "quickCheck": "不攀爬或坐上栏杆，确认栏杆不是唯一支撑。",
+      "recommendation": {
+        "family": "look-away",
+        "tier": "contextual",
+        "peopleCount": 1,
+        "postures": [
+          "standing"
+        ],
+        "contexts": [
+          "travel"
+        ],
+        "framing": [
+          "half_body",
+          "three_quarter"
+        ],
+        "requiredFeatures": [
+          "safe_rail"
+        ]
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "travel-back-look",
+      "scene": "旅行环境人像 / 回头",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "500px-poses"
+      ],
+      "name": "停步回头",
+      "direction": "沿平整路线走两步后站稳；双脚保持落地，肩膀轻转向摄影者；头部跟随舒适转动，短暂看镜头。",
+      "camera": "摄影者站定，在人物停稳回头时拍摄，给前方留空间。",
+      "cue": "向前走两步停稳，再转肩回头看镜头。",
+      "steps": [
+        "沿平整路线走两步后站稳",
+        "双脚保持落地，肩膀轻转向摄影者",
+        "头部跟随舒适转动，短暂看镜头"
+      ],
+      "quickCheck": "先停稳再转头，不在行走中大幅扭转身体。",
+      "recommendation": {
+        "family": "travel-back-look",
+        "tier": "everyday",
+        "peopleCount": 1,
+        "postures": [
+          "standing"
+        ],
+        "contexts": [
+          "travel",
+          "street"
+        ],
+        "framing": [
+          "full_body"
+        ],
+        "requiredFeatures": [
+          "clear_walkway"
+        ]
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "travel-cafe-window",
+      "scene": "旅行环境人像 / 窗边坐姿",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "500px-poses",
+        "adobe-portrait"
+      ],
+      "name": "咖啡窗边坐姿",
+      "direction": "坐稳并将杯子放在稳固桌面；一手轻扶杯身，另一手放腿上；视线看窗外，肩膀放松。",
+      "camera": "从窗侧拍半身或三分之二身，回看确认眼睛清楚、脸部不过暗。",
+      "cue": "坐在窗边，一手扶桌上的杯子，视线看向窗外。",
+      "steps": [
+        "坐稳并将杯子放在稳固桌面",
+        "一手轻扶杯身，另一手放腿上",
+        "视线看窗外，肩膀放松"
+      ],
+      "quickCheck": "杯子温度和位置安全，桌椅与窗边留出空间。",
+      "recommendation": {
+        "family": "lifestyle-cup-hold",
+        "tier": "everyday",
+        "peopleCount": 1,
+        "postures": [
+          "seated"
+        ],
+        "contexts": [
+          "travel",
+          "lifestyle"
+        ],
+        "framing": [
+          "half_body",
+          "three_quarter"
+        ],
+        "requiredFeatures": [
+          "chair",
+          "table",
+          "window",
+          "cup"
+        ]
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "travel-street-cross",
+      "scene": "旅行环境人像 / 过街动态",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "shotkit-portrait"
+      ],
+      "name": "空地横向慢走",
+      "direction": "选择步行空地，确认不与他人通行冲突；沿画面横向慢走，手臂自然摆动；目光看前方，摄影者连续拍摄。",
+      "camera": "摄影者站定，横构图给行进方向留空间。",
+      "cue": "在平整空地横向走过画面，手臂自然摆动。",
+      "steps": [
+        "选择步行空地，确认不与他人通行冲突",
+        "沿画面横向慢走，手臂自然摆动",
+        "目光看前方，摄影者连续拍摄"
+      ],
+      "quickCheck": "不在车道或路口摆拍，路线始终可中止。",
+      "recommendation": {
+        "family": "walking",
+        "tier": "contextual",
+        "peopleCount": 1,
+        "postures": [
+          "walking"
+        ],
+        "contexts": [
+          "travel",
+          "street"
+        ],
+        "framing": [
+          "full_body"
+        ],
+        "requiredFeatures": [
+          "clear_walkway"
+        ]
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "lifestyle-book-read",
+      "scene": "生活方式 / 阅读",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "500px-poses"
+      ],
+      "name": "翻书阅读",
+      "direction": "站稳或坐稳并拿住书本；低头阅读或翻过一页；抬眼看向窗外或镜头旁。",
+      "camera": "半身或三分之二身，书本放在胸腹前，不挡住脸。",
+      "cue": "翻开书看一眼，手指轻搭页角，表情保持自然。",
+      "steps": [
+        "站稳或坐稳并拿住书本",
+        "低头阅读或翻过一页",
+        "抬眼看向窗外或镜头旁"
+      ],
+      "quickCheck": "书本轻拿，避免长时间低头造成颈部不适。",
+      "recommendation": {
+        "family": "lifestyle-book",
+        "tier": "everyday",
+        "peopleCount": 1,
+        "postures": [
+          "seated",
+          "standing"
+        ],
+        "contexts": [
+          "lifestyle",
+          "travel"
+        ],
+        "framing": [
+          "half_body",
+          "three_quarter"
+        ],
+        "requiredFeatures": [
+          "book"
+        ]
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "lifestyle-cup-hold",
+      "scene": "生活方式 / 杯子",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "500px-poses"
+      ],
+      "name": "双手捧杯",
+      "direction": "站稳或坐稳，确认杯子温度适合手持；双手轻捧杯身，手肘自然下垂；视线看镜头旁或看杯子。",
+      "camera": "取半身，杯子放在画面下部，脸部保持清楚。",
+      "cue": "双手轻捧杯子放在胸腹前，肩膀放松。",
+      "steps": [
+        "站稳或坐稳，确认杯子温度适合手持",
+        "双手轻捧杯身，手肘自然下垂",
+        "视线看镜头旁或看杯子"
+      ],
+      "quickCheck": "杯子不烫，手指不挡住杯口。",
+      "recommendation": {
+        "family": "lifestyle-cup-hold",
+        "tier": "everyday",
+        "peopleCount": 1,
+        "postures": [
+          "standing",
+          "seated"
+        ],
+        "contexts": [
+          "lifestyle",
+          "travel"
+        ],
+        "framing": [
+          "half_body"
+        ],
+        "requiredFeatures": [
+          "cup"
+        ]
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "lifestyle-cup-sip",
+      "scene": "生活方式 / 杯子抓拍",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "500px-poses"
+      ],
+      "name": "端杯轻抿",
+      "direction": "一手拿稳杯子，肩膀放松；将杯子靠近嘴边做轻抿动作；把杯子移回胸腹前，看向镜头旁。",
+      "camera": "近景或半身连拍，保持杯口不遮住双眼。",
+      "cue": "杯子靠近嘴边但不急着喝，完成后自然放下。",
+      "steps": [
+        "一手拿稳杯子，肩膀放松",
+        "将杯子靠近嘴边做轻抿动作",
+        "把杯子移回胸腹前，看向镜头旁"
+      ],
+      "quickCheck": "确认饮品温度安全，动作不需要真的吞咽。",
+      "recommendation": {
+        "family": "lifestyle-cup-sip",
+        "tier": "contextual",
+        "peopleCount": 1,
+        "postures": [
+          "standing",
+          "seated"
+        ],
+        "contexts": [
+          "lifestyle",
+          "travel"
+        ],
+        "framing": [
+          "close_up",
+          "half_body"
+        ],
+        "requiredFeatures": [
+          "cup"
+        ]
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "lifestyle-phone-check",
+      "scene": "生活方式 / 手机",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "500px-poses"
+      ],
+      "name": "查看手机",
+      "direction": "站稳或坐稳，单手拿住手机；低头看屏幕，另一手自然放松；抬眼看镜头或前方，手机放低。",
+      "camera": "半身或三分之二身，手机不要挡住脸。",
+      "cue": "低头看手机一秒，再抬眼回应镜头。",
+      "steps": [
+        "站稳或坐稳，单手拿住手机",
+        "低头看屏幕，另一手自然放松",
+        "抬眼看镜头或前方，手机放低"
+      ],
+      "quickCheck": "动作模拟即可，不在行走中分心看屏幕。",
+      "recommendation": {
+        "family": "lifestyle-phone",
+        "tier": "everyday",
+        "peopleCount": 1,
+        "postures": [
+          "standing",
+          "seated"
+        ],
+        "contexts": [
+          "lifestyle",
+          "travel",
+          "street"
+        ],
+        "framing": [
+          "half_body",
+          "three_quarter"
+        ],
+        "requiredFeatures": [
+          "phone"
+        ]
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "lifestyle-bag-search",
+      "scene": "生活方式 / 包袋",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "500px-poses"
+      ],
+      "name": "包中取物",
+      "direction": "站稳并让包放在身体侧面；一手扶住包身，另一手轻探入包内；抬眼看镜头，手停在包口附近。",
+      "camera": "三分之二身或全身，确保包和双手都完整入画。",
+      "cue": "一手扶包，一手做寻找物品的自然动作。",
+      "steps": [
+        "站稳并让包放在身体侧面",
+        "一手扶住包身，另一手轻探入包内",
+        "抬眼看镜头，手停在包口附近"
+      ],
+      "quickCheck": "包带牢固，手不需要大幅弯腰。",
+      "recommendation": {
+        "family": "lifestyle-bag",
+        "tier": "everyday",
+        "peopleCount": 1,
+        "postures": [
+          "standing"
+        ],
+        "contexts": [
+          "lifestyle",
+          "travel"
+        ],
+        "framing": [
+          "three_quarter",
+          "full_body"
+        ],
+        "requiredFeatures": [
+          "handbag"
+        ]
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "lifestyle-window-curtain",
+      "scene": "生活方式 / 窗边",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "adobe-portrait",
+        "shotkit-portrait"
+      ],
+      "name": "拉开窗帘",
+      "direction": "站在窗边安全位置；一手轻拉窗帘，另一手自然下垂；头部转向窗光，眼睛保持舒适睁开。",
+      "camera": "从侧后方拍半身或三分之二身，控制窗光不过曝。",
+      "cue": "轻拉窗帘让光线进入，头部转向窗光。",
+      "steps": [
+        "站在窗边安全位置",
+        "一手轻拉窗帘，另一手自然下垂",
+        "头部转向窗光，眼睛保持舒适睁开"
+      ],
+      "quickCheck": "窗帘轨道和地面无障碍，不用踮脚够高处。",
+      "recommendation": {
+        "family": "lifestyle-curtain",
+        "tier": "everyday",
+        "peopleCount": 1,
+        "postures": [
+          "standing"
+        ],
+        "contexts": [
+          "lifestyle"
+        ],
+        "framing": [
+          "half_body",
+          "three_quarter"
+        ],
+        "requiredFeatures": [
+          "window",
+          "curtain"
+        ]
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "lifestyle-camera-ready",
+      "scene": "生活方式 / 手持相机",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "500px-poses"
+      ],
+      "name": "手持相机",
+      "direction": "站稳或坐稳，双手托住相机；低头看一眼取景屏，手肘靠近身体；抬眼看镜头，相机停在胸腹前。",
+      "camera": "半身或三分之二身，确保相机不挡脸；关闭闪光或确认设备安全。",
+      "cue": "双手轻持相机，先看取景屏，再抬眼看镜头。",
+      "steps": [
+        "站稳或坐稳，双手托住相机",
+        "低头看一眼取景屏，手肘靠近身体",
+        "抬眼看镜头，相机停在胸腹前"
+      ],
+      "quickCheck": "相机有腕带或可靠握持，不在行走中分心操作。",
+      "recommendation": {
+        "family": "lifestyle-camera",
+        "tier": "everyday",
+        "peopleCount": 1,
+        "postures": [
+          "standing",
+          "seated"
+        ],
+        "contexts": [
+          "lifestyle",
+          "travel"
+        ],
+        "framing": [
+          "half_body",
+          "three_quarter"
+        ],
+        "requiredFeatures": [
+          "camera"
+        ]
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "lifestyle-seated-lean",
+      "scene": "生活方式 / 坐姿前倾",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "500px-poses"
+      ],
+      "name": "生活方式坐姿前倾",
+      "direction": "坐在稳固椅子上，双脚落地；从髋部轻微前倾，双手搭大腿；肩膀放松，看镜头或镜头旁。",
+      "camera": "从眼平取半身或三分之二身，避免前倾造成头部过近。",
+      "cue": "坐稳后从髋部轻前倾，双手自然搭腿。",
+      "steps": [
+        "坐在稳固椅子上，双脚落地",
+        "从髋部轻微前倾，双手搭大腿",
+        "肩膀放松，看镜头或镜头旁"
+      ],
+      "quickCheck": "背部保持自然，不把重量压在膝盖或手腕上。",
+      "recommendation": {
+        "family": "lifestyle-seated-lean",
+        "tier": "everyday",
+        "peopleCount": 1,
+        "postures": [
+          "seated"
+        ],
+        "contexts": [
+          "lifestyle",
+          "portrait"
+        ],
+        "framing": [
+          "half_body",
+          "three_quarter"
+        ],
+        "requiredFeatures": [
+          "chair"
+        ]
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "friends-side-by-side",
+      "scene": "朋友合照 / 并肩",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "fujifilm-groups"
+      ],
+      "name": "朋友并肩站",
+      "direction": "两人站在同一水平线上并留舒适距离；各自把重心放在较舒适的一侧；一起看镜头，手臂自然放下。",
+      "camera": "半身或全身，保持两张脸在相近平面，左右留出呼吸空间。",
+      "cue": "两人并肩站立，各自把重心放在一侧，肩膀放松。",
+      "steps": [
+        "两人站在同一水平线上并留舒适距离",
+        "各自把重心放在较舒适的一侧",
+        "一起看镜头，手臂自然放下"
+      ],
+      "quickCheck": "不强迫接触，两人都能完整看到镜头。",
+      "recommendation": {
+        "family": "friends-side-by-side",
+        "tier": "everyday",
+        "peopleCount": 2,
+        "postures": [
+          "standing"
+        ],
+        "contexts": [
+          "friends",
+          "social"
+        ],
+        "framing": [
+          "half_body",
+          "full_body"
+        ],
+        "requiredFeatures": []
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "friends-conversation",
+      "scene": "朋友合照 / 交谈",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "fujifilm-groups"
+      ],
+      "name": "朋友自然交谈",
+      "direction": "两人相对站立并保持舒适距离；先互相说话或对视，放松肩膀；摄影者提示后一起转眼看镜头。",
+      "camera": "半身或三分之二身，避免一人的脸完全被另一人挡住。",
+      "cue": "两人面对约四十五度，自然说一句话，再短暂看镜头。",
+      "steps": [
+        "两人相对站立并保持舒适距离",
+        "先互相说话或对视，放松肩膀",
+        "摄影者提示后一起转眼看镜头"
+      ],
+      "quickCheck": "对话内容自然，接触和距离由双方决定。",
+      "recommendation": {
+        "family": "friends-conversation",
+        "tier": "everyday",
+        "peopleCount": 2,
+        "postures": [
+          "standing"
+        ],
+        "contexts": [
+          "friends",
+          "lifestyle"
+        ],
+        "framing": [
+          "half_body",
+          "three_quarter"
+        ],
+        "requiredFeatures": []
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "friends-back-to-back",
+      "scene": "朋友合照 / 背靠背",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "fujifilm-groups"
+      ],
+      "name": "朋友背靠背",
+      "direction": "两人站稳并确认是否需要轻触背部；身体朝向相反方向，双手自然放松；分别看向镜头两侧或一起看镜头。",
+      "camera": "半身或三分之二身，保持两张脸和肩线清楚。",
+      "cue": "两人背部轻触或留一点距离，分别看向不同方向。",
+      "steps": [
+        "两人站稳并确认是否需要轻触背部",
+        "身体朝向相反方向，双手自然放松",
+        "分别看向镜头两侧或一起看镜头"
+      ],
+      "quickCheck": "不把重量压在对方身上，接触可改为不接触。",
+      "recommendation": {
+        "family": "friends-back-to-back",
+        "tier": "style",
+        "peopleCount": 2,
+        "postures": [
+          "standing"
+        ],
+        "contexts": [
+          "friends",
+          "social"
+        ],
+        "framing": [
+          "half_body",
+          "three_quarter"
+        ],
+        "requiredFeatures": []
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "friends-shoulder-look",
+      "scene": "朋友合照 / 肩旁互动",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "fujifilm-groups"
+      ],
+      "name": "肩旁探头",
+      "direction": "前后错开站位，不重叠眼睛；后方人物从肩旁探出脸，双方放松肩颈；一起看镜头并保持距离。",
+      "camera": "近景或半身，前后位置只错开一点，避免后方人物完全被遮挡。",
+      "cue": "一人站前一人站后，后者从肩旁探出脸，两张脸都露出来。",
+      "steps": [
+        "前后错开站位，不重叠眼睛",
+        "后方人物从肩旁探出脸，双方放松肩颈",
+        "一起看镜头并保持距离"
+      ],
+      "quickCheck": "探头幅度自然，前方人物不被推挤。",
+      "recommendation": {
+        "family": "friends-shoulder-look",
+        "tier": "style",
+        "peopleCount": 2,
+        "postures": [
+          "standing"
+        ],
+        "contexts": [
+          "friends",
+          "social"
+        ],
+        "framing": [
+          "close_up",
+          "half_body"
+        ],
+        "requiredFeatures": []
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "friends-high-five",
+      "scene": "朋友合照 / 动作互动",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "fujifilm-groups"
+      ],
+      "name": "朋友击掌",
+      "direction": "两人面对站稳，确认双方愿意击掌和手的高度；轻轻击掌，不追求大幅挥臂；击掌后手臂自然放下并看镜头。",
+      "camera": "半身或三分之二身，连续拍摄击掌前后，确保手势不出画。",
+      "cue": "双方同意后轻击掌，完成后自然看镜头。",
+      "steps": [
+        "两人面对站稳，确认双方愿意击掌和手的高度",
+        "轻轻击掌，不追求大幅挥臂",
+        "击掌后手臂自然放下并看镜头"
+      ],
+      "quickCheck": "力度轻；不愿接触时选择朋友无接触互动。",
+      "recommendation": {
+        "family": "friends-high-five",
+        "tier": "style",
+        "peopleCount": 2,
+        "postures": [
+          "standing"
+        ],
+        "contexts": [
+          "friends",
+          "social"
+        ],
+        "framing": [
+          "half_body",
+          "three_quarter"
+        ],
+        "requiredFeatures": [
+          "contact_agreed"
+        ]
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "friends-seated-angle",
+      "scene": "朋友合照 / 并排坐姿",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "fujifilm-groups"
+      ],
+      "name": "朋友并排坐",
+      "direction": "两人坐在稳固长凳或沙发上；双脚有支撑，双手轻放腿上；上身分别轻转向镜头。",
+      "camera": "半身或三分之二身，保持两张脸同高，避免广角贴近膝盖。",
+      "cue": "两人并排坐稳，膝盖朝前，上身轻转向镜头。",
+      "steps": [
+        "两人坐在稳固长凳或沙发上",
+        "双脚有支撑，双手轻放腿上",
+        "上身分别轻转向镜头"
+      ],
+      "quickCheck": "座位足够宽，两人不互相挤压。",
+      "recommendation": {
+        "family": "friends-seated-angle",
+        "tier": "everyday",
+        "peopleCount": 2,
+        "postures": [
+          "seated"
+        ],
+        "contexts": [
+          "friends",
+          "lifestyle"
+        ],
+        "framing": [
+          "half_body",
+          "three_quarter"
+        ],
+        "requiredFeatures": [
+          "bench_or_sofa"
+        ]
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "pair-hand-in-hand",
+      "scene": "双人合照 / 牵手",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "fujifilm-groups"
+      ],
+      "name": "双人牵手慢走",
+      "direction": "确认双方愿意牵手并选择平整路线；以舒适步幅并肩慢走，手臂自然下垂；摄影者提示后一起短暂看镜头。",
+      "camera": "摄影者站定连拍，确保牵手和两张脸都在画面内。",
+      "cue": "双方同意后轻牵手慢走，先看前方，再一起看镜头。",
+      "steps": [
+        "确认双方愿意牵手并选择平整路线",
+        "以舒适步幅并肩慢走，手臂自然下垂",
+        "摄影者提示后一起短暂看镜头"
+      ],
+      "quickCheck": "接触必须双方同意，路线无障碍且可随时松手。",
+      "recommendation": {
+        "family": "pair-hand-in-hand",
+        "tier": "everyday",
+        "peopleCount": 2,
+        "postures": [
+          "walking"
+        ],
+        "contexts": [
+          "friends",
+          "social",
+          "travel"
+        ],
+        "framing": [
+          "half_body",
+          "full_body"
+        ],
+        "requiredFeatures": [
+          "clear_walkway",
+          "contact_agreed"
+        ]
+      },
+      "diagram": "./diagrams/pair-hand-in-hand.svg",
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "friends-no-contact",
+      "scene": "朋友合照 / 无接触互动",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "fujifilm-groups"
+      ],
+      "name": "朋友无接触互动",
+      "direction": "两人站稳并留出清楚的间隔；各自做挥手、点赞或指向同一方向的手势；一起看镜头，手势停在胸腹附近。",
+      "camera": "半身或三分之二身，画面中保留两人的手势和脸。",
+      "cue": "两人面对镜头，各自做一个手势，保持不接触。",
+      "steps": [
+        "两人站稳并留出清楚的间隔",
+        "各自做挥手、点赞或指向同一方向的手势",
+        "一起看镜头，手势停在胸腹附近"
+      ],
+      "quickCheck": "不接触也能完成，手势不要遮住对方的脸。",
+      "recommendation": {
+        "family": "friends-no-contact",
+        "tier": "style",
+        "peopleCount": 2,
+        "postures": [
+          "standing"
+        ],
+        "contexts": [
+          "friends",
+          "social"
+        ],
+        "framing": [
+          "half_body",
+          "three_quarter"
+        ],
+        "requiredFeatures": []
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "group-three-staggered",
+      "scene": "三人合照 / 站姿层次",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "fujifilm-groups"
+      ],
+      "name": "三人错落站位",
+      "direction": "三人站成浅弧线并前后错开半步；双脚站稳，手臂自然放下；一起看镜头，避免脸部重叠。",
+      "camera": "三分之二身或全身，使用较长焦段压缩距离并检查三张脸。",
+      "cue": "三人前后错开半步，肩线形成轻微层次，一起看镜头。",
+      "steps": [
+        "三人站成浅弧线并前后错开半步",
+        "双脚站稳，手臂自然放下",
+        "一起看镜头，避免脸部重叠"
+      ],
+      "quickCheck": "每个人都有站立空间，不把人排成遮挡关系。",
+      "recommendation": {
+        "family": "group-three-standing",
+        "tier": "everyday",
+        "peopleCount": 3,
+        "postures": [
+          "standing"
+        ],
+        "contexts": [
+          "group",
+          "social"
+        ],
+        "framing": [
+          "three_quarter",
+          "full_body"
+        ],
+        "requiredFeatures": []
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "group-three-triangle",
+      "scene": "三人合照 / 三角构图",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "fujifilm-triangles"
+      ],
+      "name": "三人三角构图",
+      "direction": "确定一人站前、两人站后的位置；三人微微朝向中心，手臂自然放松；一起看镜头并保持脸部间距。",
+      "camera": "半身或三分之二身，略退后取景，避免前后脸部比例差异过大。",
+      "cue": "一人略前，两人略后，三张脸形成宽松三角。",
+      "steps": [
+        "确定一人站前、两人站后的位置",
+        "三人微微朝向中心，手臂自然放松",
+        "一起看镜头并保持脸部间距"
+      ],
+      "quickCheck": "前后距离适中，后排人物不被肩膀遮住。",
+      "recommendation": {
+        "family": "group-three-standing",
+        "tier": "style",
+        "peopleCount": 3,
+        "postures": [
+          "standing"
+        ],
+        "contexts": [
+          "group",
+          "social"
+        ],
+        "framing": [
+          "half_body",
+          "three_quarter"
+        ],
+        "requiredFeatures": []
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "group-three-seated",
+      "scene": "三人合照 / 坐站组合",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "fujifilm-groups"
+      ],
+      "name": "三人坐站组合",
+      "direction": "让一人坐在稳固长凳或沙发中间；两人站在两侧并留出肩膀空间；三人一起看镜头，手臂自然放松。",
+      "camera": "三分之二身或全身，检查坐者和站者的脸都在同一画面层次。",
+      "cue": "一人坐稳，两人站在两侧，三人肩膀放松看镜头。",
+      "steps": [
+        "让一人坐在稳固长凳或沙发中间",
+        "两人站在两侧并留出肩膀空间",
+        "三人一起看镜头，手臂自然放松"
+      ],
+      "quickCheck": "座位稳固，站者不把重量压在坐者身上。",
+      "recommendation": {
+        "family": "group-three-seated",
+        "tier": "everyday",
+        "peopleCount": 3,
+        "postures": [
+          "mixed"
+        ],
+        "contexts": [
+          "group",
+          "lifestyle"
+        ],
+        "framing": [
+          "three_quarter",
+          "full_body"
+        ],
+        "requiredFeatures": [
+          "bench_or_sofa"
+        ]
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "group-four-line",
+      "scene": "四人合照 / 横向站位",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "fujifilm-groups"
+      ],
+      "name": "四人横向站位",
+      "direction": "四人横向排开并留出肩宽间隔；脚步前后错开一点，双手自然放下；一起看镜头并保持肩膀放松。",
+      "camera": "三分之二身或全身，横向取景两侧留出等量空间。",
+      "cue": "四人站成松散横排，脚步错开一点，保持每张脸清楚。",
+      "steps": [
+        "四人横向排开并留出肩宽间隔",
+        "脚步前后错开一点，双手自然放下",
+        "一起看镜头并保持肩膀放松"
+      ],
+      "quickCheck": "不要把人挤到画框边缘，所有人都能看见摄影者。",
+      "recommendation": {
+        "family": "group-four-standing",
+        "tier": "everyday",
+        "peopleCount": 4,
+        "postures": [
+          "standing"
+        ],
+        "contexts": [
+          "group",
+          "social"
+        ],
+        "framing": [
+          "three_quarter",
+          "full_body"
+        ],
+        "requiredFeatures": []
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "group-four-arc",
+      "scene": "四人合照 / 弧形站位",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "fujifilm-groups"
+      ],
+      "name": "四人弧形站位",
+      "direction": "四人站成浅弧线并保持前后清楚；身体略朝向中心，手臂自然放松；一起看镜头，表情保持自然。",
+      "camera": "三分之二身或全身，从弧线正前方取景并保持两侧不变形。",
+      "cue": "四人围成浅弧线，身体朝向中心，脸部朝向镜头。",
+      "steps": [
+        "四人站成浅弧线并保持前后清楚",
+        "身体略朝向中心，手臂自然放松",
+        "一起看镜头，表情保持自然"
+      ],
+      "quickCheck": "弧线宽度适中，不让中间人物被两侧肩膀遮挡。",
+      "recommendation": {
+        "family": "group-four-standing",
+        "tier": "style",
+        "peopleCount": 4,
+        "postures": [
+          "standing"
+        ],
+        "contexts": [
+          "group",
+          "social"
+        ],
+        "framing": [
+          "three_quarter",
+          "full_body"
+        ],
+        "requiredFeatures": []
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "group-four-walk",
+      "scene": "四人合照 / 并行慢走",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "fujifilm-groups"
+      ],
+      "name": "四人并行慢走",
+      "direction": "确认宽阔无障碍的行进路线；四人并行慢走，步幅尽量接近；摄影者提示后一起短暂看镜头。",
+      "camera": "摄影者站定连拍，使用横构图并给队伍前进方向留空间。",
+      "cue": "四人并行慢走，先聊天，再一起看镜头。",
+      "steps": [
+        "确认宽阔无障碍的行进路线",
+        "四人并行慢走，步幅尽量接近",
+        "摄影者提示后一起短暂看镜头"
+      ],
+      "quickCheck": "队伍不占用危险通道，所有人都能听见提示。",
+      "recommendation": {
+        "family": "group-four-walk",
+        "tier": "everyday",
+        "peopleCount": 4,
+        "postures": [
+          "walking"
+        ],
+        "contexts": [
+          "group",
+          "street",
+          "lifestyle"
+        ],
+        "framing": [
+          "full_body"
+        ],
+        "requiredFeatures": [
+          "clear_walkway"
+        ]
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "group-four-table",
+      "scene": "四人合照 / 桌边",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "fujifilm-groups"
+      ],
+      "name": "四人桌边合照",
+      "direction": "确认桌椅稳固，先安排两人坐下；两人站在桌后两侧，避免挡住坐者；四人一起看镜头，手自然放在桌面或身侧。",
+      "camera": "三分之二身或全身，从桌面略高处取景，避免桌沿切过脸部。",
+      "cue": "两人坐桌边、两人站后方，四张脸错开并露出。",
+      "steps": [
+        "确认桌椅稳固，先安排两人坐下",
+        "两人站在桌后两侧，避免挡住坐者",
+        "四人一起看镜头，手自然放在桌面或身侧"
+      ],
+      "quickCheck": "不站在椅子上，桌边和通道保持安全距离。",
+      "recommendation": {
+        "family": "group-four-table",
+        "tier": "everyday",
+        "peopleCount": 4,
+        "postures": [
+          "mixed"
+        ],
+        "contexts": [
+          "group",
+          "business",
+          "lifestyle"
+        ],
+        "framing": [
+          "three_quarter",
+          "full_body"
+        ],
+        "requiredFeatures": [
+          "table",
+          "two_chairs"
+        ]
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "group-four-candid",
+      "scene": "四人合照 / 自然交流",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "fujifilm-groups"
+      ],
+      "name": "四人自然交流",
+      "direction": "四人站成小弧线并保持彼此可见；先互相说话或分享一个简单话题；摄影者提示时让大家一起看镜头一秒。",
+      "camera": "三分之二身或全身，使用连拍捕捉眼睛都睁开的瞬间。",
+      "cue": "四人围成松散小组自然聊天，摄影者抓取一起笑或回头的瞬间。",
+      "steps": [
+        "四人站成小弧线并保持彼此可见",
+        "先互相说话或分享一个简单话题",
+        "摄影者提示时让大家一起看镜头一秒"
+      ],
+      "quickCheck": "话题和距离让所有人舒服，不强迫身体接触。",
+      "recommendation": {
+        "family": "group-four-candid",
+        "tier": "everyday",
+        "peopleCount": 4,
+        "postures": [
+          "standing"
+        ],
+        "contexts": [
+          "group",
+          "lifestyle"
+        ],
+        "framing": [
+          "three_quarter",
+          "full_body"
+        ],
+        "requiredFeatures": []
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "single-back-view",
+      "scene": "单人站姿 / 背影",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "funit-poses",
+        "tina-poses"
+      ],
+      "name": "面朝风景的背影",
+      "direction": "面朝想拍的景物站稳，背对镜头；重心放在一条腿上，肩膀放松；一只手自然抬到胸前或肩旁，头微微转向一侧。",
+      "camera": "站在人物身后略偏一侧，三分之二身或全身，给前方景物留出空间。",
+      "cue": "背对镜头面朝景物站稳，一只手做个小动作。",
+      "steps": [
+        "面朝想拍的景物站稳，背对镜头",
+        "重心放在一条腿上，肩膀放松",
+        "一只手自然抬到胸前或肩旁，头微微转向一侧"
+      ],
+      "quickCheck": "人物身前没有台阶边缘或车流，看不到镜头也能随时停下。",
+      "recommendation": {
+        "family": "back-view",
+        "tier": "everyday",
+        "peopleCount": 1,
+        "postures": [
+          "standing"
+        ],
+        "contexts": [
+          "travel",
+          "street",
+          "lifestyle",
+          "portrait"
+        ],
+        "framing": [
+          "three_quarter",
+          "full_body"
+        ],
+        "requiredFeatures": []
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "single-half-squat",
+      "scene": "单人蹲姿 / 低机位",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "shotkit-male",
+        "funit-poses",
+        "tina-poses"
+      ],
+      "name": "蹲姿前臂搭膝",
+      "direction": "双脚前后错开半步，脚掌踩稳后慢慢蹲下；前臂轻搭在膝盖上，背部保持挺直；抬眼看镜头，觉得吃力就直接站起来。",
+      "camera": "摄影者同样放低，镜头约在人物胸口高度，拍三分之二身或全身，裁切避开膝盖和脚踝。",
+      "cue": "双脚踩稳慢慢蹲下，前臂搭在膝上，背部挺直。",
+      "steps": [
+        "双脚前后错开半步，脚掌踩稳后慢慢蹲下",
+        "前臂轻搭在膝盖上，背部保持挺直",
+        "抬眼看镜头，觉得吃力就直接站起来"
+      ],
+      "quickCheck": "膝盖或脚踝不适时改用站姿；穿短裙时选择其他姿势。",
+      "recommendation": {
+        "family": "squat",
+        "tier": "contextual",
+        "peopleCount": 1,
+        "postures": [
+          "crouching"
+        ],
+        "contexts": [
+          "street",
+          "travel",
+          "lifestyle"
+        ],
+        "framing": [
+          "three_quarter",
+          "full_body"
+        ],
+        "requiredFeatures": []
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "single-ground-sit",
+      "scene": "单人坐地 / 干净地面",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "shotkit-sitting",
+        "funit-poses",
+        "tina-poses"
+      ],
+      "name": "坐地一腿伸直",
+      "direction": "确认地面干净干燥后坐下；一条腿向前伸直，另一条腿屈膝立起；一手在身后轻撑地面，上身微微后靠看镜头。",
+      "camera": "放低到人物坐姿高度，从斜前方拍三分之二身或全身，脚底不要正对镜头。",
+      "cue": "坐在干净地面上，一腿伸直一腿屈起，一手在身后撑地。",
+      "steps": [
+        "确认地面干净干燥后坐下",
+        "一条腿向前伸直，另一条腿屈膝立起",
+        "一手在身后轻撑地面，上身微微后靠看镜头"
+      ],
+      "quickCheck": "地面没有碎石和积水；撑地的手不用力，腰背不适就坐直；穿短裙时改用椅坐。",
+      "recommendation": {
+        "family": "ground-sit",
+        "tier": "everyday",
+        "peopleCount": 1,
+        "postures": [
+          "seated"
+        ],
+        "contexts": [
+          "lifestyle",
+          "travel",
+          "portrait"
+        ],
+        "framing": [
+          "three_quarter",
+          "full_body"
+        ],
+        "requiredFeatures": [
+          "ground_seat"
+        ]
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "single-jump",
+      "scene": "单人动态 / 跳跃",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "funit-poses",
+        "tina-poses"
+      ],
+      "name": "原地轻跳",
+      "direction": "穿平底鞋站在平整地面，四周留出空间；数到三后原地轻跳，手臂可以自然打开；落地时双脚着地并屈膝缓冲，看过照片再决定是否重来。",
+      "camera": "提前对焦并开连拍，用较快快门；全身构图，头顶留出起跳空间。",
+      "cue": "数到三原地轻跳，落地屈膝，摄影者连拍。",
+      "steps": [
+        "穿平底鞋站在平整地面，四周留出空间",
+        "数到三后原地轻跳，手臂可以自然打开",
+        "落地时双脚着地并屈膝缓冲，看过照片再决定是否重来"
+      ],
+      "quickCheck": "不在台阶、斜坡或湿滑地面跳；身体不适或穿高跟鞋时改用走路抓拍。",
+      "recommendation": {
+        "family": "jump",
+        "tier": "style",
+        "peopleCount": 1,
+        "postures": [
+          "standing"
+        ],
+        "contexts": [
+          "travel",
+          "street",
+          "lifestyle",
+          "social"
+        ],
+        "framing": [
+          "full_body"
+        ],
+        "requiredFeatures": [
+          "jump_space"
+        ]
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "single-head-tilt",
+      "scene": "单人近景 / 歪头",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "shotkit-portrait",
+        "shotkit-male",
+        "funit-poses"
+      ],
+      "name": "轻歪头",
+      "direction": "站稳或坐稳，肩膀放平放松；头向一侧轻歪，幅度比想象中小一点；下巴微微向前，眼睛看镜头。",
+      "camera": "近景或半身，镜头与眼睛同高，回看确认脖子没有挤出褶皱。",
+      "cue": "肩膀不动，头向一侧轻轻歪一点，眼睛看镜头。",
+      "steps": [
+        "站稳或坐稳，肩膀放平放松",
+        "头向一侧轻歪，幅度比想象中小一点",
+        "下巴微微向前，眼睛看镜头"
+      ],
+      "quickCheck": "幅度小、不耸肩；颈部不适就回正。",
+      "recommendation": {
+        "family": "head-tilt",
+        "tier": "style",
+        "peopleCount": 1,
+        "postures": [
+          "standing",
+          "seated"
+        ],
+        "contexts": [
+          "portrait",
+          "social",
+          "lifestyle"
+        ],
+        "framing": [
+          "close_up",
+          "half_body"
+        ],
+        "requiredFeatures": []
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "single-arms-open",
+      "scene": "单人站姿 / 张开双臂",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "shotkit-portrait",
+        "funit-poses",
+        "tina-poses"
+      ],
+      "name": "张开双臂",
+      "direction": "面向开阔处站稳，确认两侧没有人或障碍；双臂向两侧或斜上方慢慢打开；微微抬头，可以闭眼深呼吸，最后看一次镜头。",
+      "camera": "三分之二身或全身，左右给手臂留足空间，不把手裁在画框外。",
+      "cue": "面向开阔处，双臂慢慢向两侧打开，抬头放松。",
+      "steps": [
+        "面向开阔处站稳，确认两侧没有人或障碍",
+        "双臂向两侧或斜上方慢慢打开",
+        "微微抬头，可以闭眼深呼吸，最后看一次镜头"
+      ],
+      "quickCheck": "手臂只伸到舒适位置；身边有人经过时先收回。",
+      "recommendation": {
+        "family": "arms-open",
+        "tier": "style",
+        "peopleCount": 1,
+        "postures": [
+          "standing"
+        ],
+        "contexts": [
+          "travel",
+          "street",
+          "lifestyle"
+        ],
+        "framing": [
+          "three_quarter",
+          "full_body"
+        ],
+        "requiredFeatures": []
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "single-cross-leg-seat",
+      "scene": "单人椅坐 / 跷腿",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "shotkit-sitting"
+      ],
+      "name": "椅坐跷腿",
+      "direction": "坐在稳固椅子上，背部离开椅背一点；一条腿轻搭在另一条腿上，两膝朝向同一侧；双手叠放在上面的膝盖上，上身微侧看镜头。",
+      "camera": "从坐姿眼平或略低处拍，鞋底不要正对镜头。",
+      "cue": "坐稳后一腿轻搭另一腿，上身微侧，双手放在膝上。",
+      "steps": [
+        "坐在稳固椅子上，背部离开椅背一点",
+        "一条腿轻搭在另一条腿上，两膝朝向同一侧",
+        "双手叠放在上面的膝盖上，上身微侧看镜头"
+      ],
+      "quickCheck": "腿部不压麻；穿短裙时改用双腿斜放坐姿。",
+      "recommendation": {
+        "family": "seated-cross-leg",
+        "tier": "everyday",
+        "peopleCount": 1,
+        "postures": [
+          "seated"
+        ],
+        "contexts": [
+          "portrait",
+          "lifestyle",
+          "business"
+        ],
+        "framing": [
+          "three_quarter",
+          "full_body"
+        ],
+        "requiredFeatures": [
+          "chair"
+        ]
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "single-look-back",
+      "scene": "单人站姿 / 回眸",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "shotkit-portrait",
+        "photologica-wedding",
+        "funit-poses"
+      ],
+      "name": "背身回眸",
+      "direction": "背对或斜背对镜头站稳，双脚不动；肩膀先朝镜头一侧转一点；头跟着转过来，眼睛看镜头。",
+      "camera": "从人物回头那一侧的斜后方拍，等转头到位再按快门。",
+      "cue": "背对镜头站稳，先转肩再转头，回头看镜头。",
+      "steps": [
+        "背对或斜背对镜头站稳，双脚不动",
+        "肩膀先朝镜头一侧转一点",
+        "头跟着转过来，眼睛看镜头"
+      ],
+      "quickCheck": "转动幅度以脖子舒服为准，不必把头转到肩后。",
+      "recommendation": {
+        "family": "travel-back-look",
+        "tier": "everyday",
+        "peopleCount": 1,
+        "postures": [
+          "standing"
+        ],
+        "contexts": [
+          "portrait",
+          "street",
+          "social",
+          "lifestyle"
+        ],
+        "framing": [
+          "half_body",
+          "three_quarter",
+          "full_body"
+        ],
+        "requiredFeatures": []
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "single-wall-foot",
+      "scene": "街拍 / 靠墙抵脚",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "shotkit-portrait",
+        "tina-poses"
+      ],
+      "name": "靠墙屈膝抵墙",
+      "direction": "背部轻靠稳固墙面，承重脚踩稳；另一只脚屈膝，脚底向后轻抵墙面；双手放口袋或自然垂下，看镜头或看向一侧。",
+      "camera": "从斜前方拍三分之二身或全身，保持墙线竖直。",
+      "cue": "背靠墙站稳，一只脚屈膝向后抵住墙面，另一脚承重。",
+      "steps": [
+        "背部轻靠稳固墙面，承重脚踩稳",
+        "另一只脚屈膝，脚底向后轻抵墙面",
+        "双手放口袋或自然垂下，看镜头或看向一侧"
+      ],
+      "quickCheck": "鞋底干净，不踩店面、门或刚刷过的墙；地面防滑。",
+      "recommendation": {
+        "family": "wall-foot",
+        "tier": "everyday",
+        "peopleCount": 1,
+        "postures": [
+          "standing"
+        ],
+        "contexts": [
+          "street",
+          "lifestyle"
+        ],
+        "framing": [
+          "three_quarter",
+          "full_body"
+        ],
+        "requiredFeatures": [
+          "stable_wall"
+        ]
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "pair-back-hug",
+      "scene": "双人合照 / 背后环抱",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "shotkit-portrait",
+        "photologica-wedding"
+      ],
+      "name": "背后轻环抱",
+      "direction": "先确认双方都愿意这个接触，一前一后站稳；后面的人双手轻环在前面的人腰前，不勒紧；两张脸错开一点，一起看镜头或互看。",
+      "camera": "半身或三分之二身，对焦前面的人，确认后面的人的脸没被挡住。",
+      "cue": "双方同意后，一人站在另一人身后，双手轻环在对方腰前。",
+      "steps": [
+        "先确认双方都愿意这个接触，一前一后站稳",
+        "后面的人双手轻环在前面的人腰前，不勒紧",
+        "两张脸错开一点，一起看镜头或互看"
+      ],
+      "quickCheck": "任何一方不舒服就改为并肩站；不把重量压在对方身上。",
+      "recommendation": {
+        "family": "pair-back-hug",
+        "tier": "style",
+        "peopleCount": 2,
+        "postures": [
+          "standing"
+        ],
+        "contexts": [
+          "friends",
+          "social",
+          "lifestyle"
+        ],
+        "framing": [
+          "half_body",
+          "three_quarter"
+        ],
+        "requiredFeatures": [
+          "contact_agreed"
+        ]
+      },
+      "diagram": "./diagrams/pair-back-hug.svg",
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "group-three-huddle",
+      "scene": "三人合照 / 搭肩",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "shotkit-friends",
+        "prettypresets-groups",
+        "katebackdrop-groups"
+      ],
+      "name": "三人搭肩靠拢",
+      "direction": "确认每个人都愿意搭肩，按身高排好；手臂轻搭在相邻的人肩上，不压不勾脖子；头往中间靠一点，一起看镜头。",
+      "camera": "半身或三分之二身，平视拍，检查每张脸都完整露出。",
+      "cue": "所有人同意后，手臂轻搭彼此肩膀，头往中间靠一点。",
+      "steps": [
+        "确认每个人都愿意搭肩，按身高排好",
+        "手臂轻搭在相邻的人肩上，不压不勾脖子",
+        "头往中间靠一点，一起看镜头"
+      ],
+      "quickCheck": "有人不愿接触时改为错落站位；搭肩不用力。",
+      "recommendation": {
+        "family": "group-three-huddle",
+        "tier": "everyday",
+        "peopleCount": 3,
+        "postures": [
+          "standing"
+        ],
+        "contexts": [
+          "group",
+          "social"
+        ],
+        "framing": [
+          "half_body",
+          "three_quarter"
+        ],
+        "requiredFeatures": [
+          "contact_agreed"
+        ]
+      },
+      "diagram": "./diagrams/group-three-huddle.svg",
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "group-four-huddle",
+      "scene": "四人合照 / 搭肩",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "shotkit-friends",
+        "prettypresets-groups",
+        "katebackdrop-groups"
+      ],
+      "name": "四人搭肩靠拢",
+      "direction": "确认每个人都愿意搭肩，按身高排好，较高的人站中间；手臂轻搭在相邻的人肩上，不压不勾脖子；头往中间靠一点，一起看镜头。",
+      "camera": "半身或三分之二身，横构图，检查两端的人没有贴到画框边缘。",
+      "cue": "所有人同意后，四人手臂轻搭彼此肩膀，头往中间靠一点。",
+      "steps": [
+        "确认每个人都愿意搭肩，按身高排好，较高的人站中间",
+        "手臂轻搭在相邻的人肩上，不压不勾脖子",
+        "头往中间靠一点，一起看镜头"
+      ],
+      "quickCheck": "有人不愿接触时改为横向站位；搭肩不用力。",
+      "recommendation": {
+        "family": "group-four-huddle",
+        "tier": "everyday",
+        "peopleCount": 4,
+        "postures": [
+          "standing"
+        ],
+        "contexts": [
+          "group",
+          "social"
+        ],
+        "framing": [
+          "half_body",
+          "three_quarter"
+        ],
+        "requiredFeatures": [
+          "contact_agreed"
+        ]
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "group-three-steps",
+      "scene": "三人合照 / 台阶坐姿",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "shotkit-friends",
+        "prettypresets-groups",
+        "katebackdrop-groups"
+      ],
+      "name": "三人台阶错落坐",
+      "direction": "确认台阶干燥、够宽，不挡别人通行；分坐在相邻两三级台阶上，前面的人坐低一级；每人找到能看见镜头的位置，一起看镜头。",
+      "camera": "站在台阶下方，镜头略高于坐姿眼平，检查后面的脸没被前面的头挡住。",
+      "cue": "三人分坐在相邻两三级台阶上，前低后高，脸部错开。",
+      "steps": [
+        "确认台阶干燥、够宽，不挡别人通行",
+        "分坐在相邻两三级台阶上，前面的人坐低一级",
+        "每人找到能看见镜头的位置，一起看镜头"
+      ],
+      "quickCheck": "不坐台阶边缘，双脚都有支撑；有人要通过时先让开。",
+      "recommendation": {
+        "family": "group-three-steps",
+        "tier": "everyday",
+        "peopleCount": 3,
+        "postures": [
+          "seated"
+        ],
+        "contexts": [
+          "group",
+          "travel",
+          "lifestyle"
+        ],
+        "framing": [
+          "three_quarter",
+          "full_body"
+        ],
+        "requiredFeatures": [
+          "safe_steps"
+        ]
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "group-four-steps",
+      "scene": "四人合照 / 台阶坐姿",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "shotkit-friends",
+        "prettypresets-groups",
+        "katebackdrop-groups"
+      ],
+      "name": "四人台阶错落坐",
+      "direction": "确认台阶干燥、够宽，不挡别人通行；两人坐在下一级，另外两人坐在上一级并对准下面两人之间的空隙；每人确认能看见镜头，一起看镜头。",
+      "camera": "站在台阶下方，镜头略高于坐姿眼平，横构图检查四张脸都露出来。",
+      "cue": "两人坐低一级、两人坐高一级，前后错开，脸部不重叠。",
+      "steps": [
+        "确认台阶干燥、够宽，不挡别人通行",
+        "两人坐在下一级，另外两人坐在上一级并对准下面两人之间的空隙",
+        "每人确认能看见镜头，一起看镜头"
+      ],
+      "quickCheck": "不坐台阶边缘，双脚都有支撑；有人要通过时先让开。",
+      "recommendation": {
+        "family": "group-four-steps",
+        "tier": "everyday",
+        "peopleCount": 4,
+        "postures": [
+          "seated"
+        ],
+        "contexts": [
+          "group",
+          "travel",
+          "lifestyle"
+        ],
+        "framing": [
+          "three_quarter",
+          "full_body"
+        ],
+        "requiredFeatures": [
+          "safe_steps"
+        ]
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "group-three-jump",
+      "scene": "三人合照 / 一起跳",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "shotkit-friends",
+        "prettypresets-groups",
+        "katebackdrop-groups"
+      ],
+      "name": "三人一起跳",
+      "direction": "横排站开，相邻两人之间留出一臂距离；由一人数到三，大家一起原地轻跳；落地时双脚着地屈膝缓冲，看过照片再决定是否重来。",
+      "camera": "全身横构图，头顶留空，提前对焦并连拍。",
+      "cue": "横排站开，数到三一起轻跳，落地屈膝。",
+      "steps": [
+        "横排站开，相邻两人之间留出一臂距离",
+        "由一人数到三，大家一起原地轻跳",
+        "落地时双脚着地屈膝缓冲，看过照片再决定是否重来"
+      ],
+      "quickCheck": "地面平整防滑，不穿高跟鞋；有人不想跳可以原地站着举手。",
+      "recommendation": {
+        "family": "group-three-jump",
+        "tier": "style",
+        "peopleCount": 3,
+        "postures": [
+          "standing"
+        ],
+        "contexts": [
+          "group",
+          "social",
+          "travel"
+        ],
+        "framing": [
+          "full_body"
+        ],
+        "requiredFeatures": [
+          "jump_space"
+        ]
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "group-four-jump",
+      "scene": "四人合照 / 一起跳",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "shotkit-friends",
+        "prettypresets-groups",
+        "katebackdrop-groups"
+      ],
+      "name": "四人一起跳",
+      "direction": "横排站开，相邻两人之间留出一臂距离；由一人数到三，大家一起原地轻跳；落地时双脚着地屈膝缓冲，看过照片再决定是否重来。",
+      "camera": "全身横构图，两端和头顶都留空，提前对焦并连拍。",
+      "cue": "四人横排站开，数到三一起轻跳，落地屈膝。",
+      "steps": [
+        "横排站开，相邻两人之间留出一臂距离",
+        "由一人数到三，大家一起原地轻跳",
+        "落地时双脚着地屈膝缓冲，看过照片再决定是否重来"
+      ],
+      "quickCheck": "地面平整防滑，不穿高跟鞋；有人不想跳可以原地站着举手。",
+      "recommendation": {
+        "family": "group-four-jump",
+        "tier": "style",
+        "peopleCount": 4,
+        "postures": [
+          "standing"
+        ],
+        "contexts": [
+          "group",
+          "social",
+          "travel"
+        ],
+        "framing": [
+          "full_body"
+        ],
+        "requiredFeatures": [
+          "jump_space"
+        ]
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "group-three-ground",
+      "scene": "三人合照 / 坐地",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "prettypresets-groups",
+        "katebackdrop-groups"
+      ],
+      "name": "三人坐地合照",
+      "direction": "确认地面干净干燥，三人围成半圆坐下；各自用舒服的坐姿，膝盖朝向中间；上身转向镜头，一起看镜头。",
+      "camera": "放低到坐姿眼平，或站高一点向下拍，确认每张脸都在画面里。",
+      "cue": "三人围成半圆坐在地上，膝盖朝向中间，上身转向镜头。",
+      "steps": [
+        "确认地面干净干燥，三人围成半圆坐下",
+        "各自用舒服的坐姿，膝盖朝向中间",
+        "上身转向镜头，一起看镜头"
+      ],
+      "quickCheck": "地面没有碎石和积水；有人不便坐地时改用坐站组合。",
+      "recommendation": {
+        "family": "group-three-ground",
+        "tier": "everyday",
+        "peopleCount": 3,
+        "postures": [
+          "seated"
+        ],
+        "contexts": [
+          "group",
+          "lifestyle",
+          "travel"
+        ],
+        "framing": [
+          "three_quarter",
+          "full_body"
+        ],
+        "requiredFeatures": [
+          "ground_seat"
+        ]
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "group-four-ground",
+      "scene": "四人合照 / 坐地",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "prettypresets-groups",
+        "katebackdrop-groups"
+      ],
+      "name": "四人坐地合照",
+      "direction": "确认地面干净干燥，四人围成半圆坐下；各自用舒服的坐姿，两端的人略向中间侧身；上身转向镜头，一起看镜头。",
+      "camera": "放低到坐姿眼平，或站高一点向下拍，横构图确认四张脸都在画面里。",
+      "cue": "四人围成半圆坐在地上，膝盖朝向中间，上身转向镜头。",
+      "steps": [
+        "确认地面干净干燥，四人围成半圆坐下",
+        "各自用舒服的坐姿，两端的人略向中间侧身",
+        "上身转向镜头，一起看镜头"
+      ],
+      "quickCheck": "地面没有碎石和积水；有人不便坐地时改用坐站组合。",
+      "recommendation": {
+        "family": "group-four-ground",
+        "tier": "everyday",
+        "peopleCount": 4,
+        "postures": [
+          "seated"
+        ],
+        "contexts": [
+          "group",
+          "lifestyle",
+          "travel"
+        ],
+        "framing": [
+          "three_quarter",
+          "full_body"
+        ],
+        "requiredFeatures": [
+          "ground_seat"
+        ]
+      },
+      "diagram": "./diagrams/group-four-ground.svg",
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "group-three-walk",
+      "scene": "三人合照 / 并行慢走",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "prettypresets-groups",
+        "katebackdrop-groups",
+        "photologica-wedding"
+      ],
+      "name": "三人并行慢走",
+      "direction": "确认路线够宽、没有障碍，三人并排站好；用相同的慢步速并行，边走边聊天；摄影者提示后一起短暂看镜头。",
+      "camera": "摄影者站定连拍，横构图给前进方向留空间。",
+      "cue": "三人并排慢走，先聊天，再一起看镜头。",
+      "steps": [
+        "确认路线够宽、没有障碍，三人并排站好",
+        "用相同的慢步速并行，边走边聊天",
+        "摄影者提示后一起短暂看镜头"
+      ],
+      "quickCheck": "不占用车道或窄路，所有人都能听到提示。",
+      "recommendation": {
+        "family": "group-three-walk",
+        "tier": "everyday",
+        "peopleCount": 3,
+        "postures": [
+          "walking"
+        ],
+        "contexts": [
+          "group",
+          "street",
+          "lifestyle"
+        ],
+        "framing": [
+          "full_body"
+        ],
+        "requiredFeatures": [
+          "clear_walkway"
+        ]
+      },
+      "diagram": "./diagrams/group-three-walk.svg",
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "single-cross-leg-stand",
+      "scene": "单人站姿 / 交叉腿",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "shotkit-portrait",
+        "tina-poses"
+      ],
+      "name": "交叉腿站",
+      "direction": "双脚站稳，身体微侧向镜头；一只脚轻轻交叉到另一只脚前面，脚尖点地，重心留在后腿；双手自然放下或放口袋，看镜头。",
+      "camera": "三分之二身或全身，镜头与腰同高，鞋尖留在画面里。",
+      "cue": "站稳后前脚轻搭在后脚前面，重心放后腿，身体微侧。",
+      "steps": [
+        "双脚站稳，身体微侧向镜头",
+        "一只脚轻轻交叉到另一只脚前面，脚尖点地，重心留在后腿",
+        "双手自然放下或放口袋，看镜头"
+      ],
+      "quickCheck": "站不稳就把前脚放回地面；穿高跟鞋或地面湿滑时不做。",
+      "recommendation": {
+        "family": "cross-leg-stand",
+        "tier": "everyday",
+        "peopleCount": 1,
+        "postures": [
+          "standing"
+        ],
+        "contexts": [
+          "portrait",
+          "street",
+          "social",
+          "lifestyle"
+        ],
+        "framing": [
+          "three_quarter",
+          "full_body"
+        ],
+        "requiredFeatures": []
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "single-look-up",
+      "scene": "单人站姿 / 仰头闭眼",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "tina-poses"
+      ],
+      "name": "仰头闭眼",
+      "direction": "双脚站稳，周围留出空间；头微微抬起，下巴不要抬得太高；闭上眼睛深呼吸一次，表情放松，摄影者连拍。",
+      "camera": "半身或三分之二身，镜头略低于下巴，连拍后挑眼睛和嘴角都放松的一张。",
+      "cue": "站稳后头微微抬起，闭眼深呼吸一次，不看镜头。",
+      "steps": [
+        "双脚站稳，周围留出空间",
+        "头微微抬起，下巴不要抬得太高",
+        "闭上眼睛深呼吸一次，表情放松，摄影者连拍"
+      ],
+      "quickCheck": "闭眼时脚下站稳，不在路边、台阶边或人多的地方做；颈部不适就回正。",
+      "recommendation": {
+        "family": "look-up",
+        "tier": "style",
+        "peopleCount": 1,
+        "postures": [
+          "standing"
+        ],
+        "contexts": [
+          "portrait",
+          "travel",
+          "street",
+          "lifestyle"
+        ],
+        "framing": [
+          "half_body",
+          "three_quarter"
+        ],
+        "requiredFeatures": []
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "single-hem-sway",
+      "scene": "单人动态 / 转身衣角",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "tina-poses"
+      ],
+      "name": "转身衣角轻摆",
+      "direction": "选一段平整空路，穿好外套并站稳；向前走两步，再用慢速转身，不要快速旋转；转身时手自然放松，让衣角带起，转完看镜头。",
+      "camera": "摄影者站定，全身构图连拍，给转身方向留空间。",
+      "cue": "走两步后慢慢转身，让外套下摆自然带起来。",
+      "steps": [
+        "选一段平整空路，穿好外套并站稳",
+        "向前走两步，再用慢速转身，不要快速旋转",
+        "转身时手自然放松，让衣角带起，转完看镜头"
+      ],
+      "quickCheck": "只做慢速转身，不原地快转；鞋底打滑或衣摆长到会绊脚时不做。",
+      "recommendation": {
+        "family": "hem-sway",
+        "tier": "style",
+        "peopleCount": 1,
+        "postures": [
+          "walking"
+        ],
+        "contexts": [
+          "street",
+          "travel",
+          "lifestyle"
+        ],
+        "framing": [
+          "full_body"
+        ],
+        "requiredFeatures": [
+          "clear_walkway",
+          "jacket"
+        ]
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "single-hat-brim",
+      "scene": "单人站姿 / 帽子",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "funit-poses",
+        "tina-poses"
+      ],
+      "name": "轻碰帽檐",
+      "direction": "戴好帽子并站稳，身体微侧；一只手抬起，指尖轻放在帽檐一侧，肘部朝外抬起一点；另一只手自然放下，看镜头或看向一侧。",
+      "camera": "半身或三分之二身，注意帽檐的阴影不要罩住眼睛；必要时让人物微微抬头。",
+      "cue": "指尖轻放在帽檐一侧，肘部朝外抬起一点，另一只手自然放松。",
+      "steps": [
+        "戴好帽子并站稳，身体微侧",
+        "一只手抬起，指尖轻放在帽檐一侧，肘部朝外抬起一点",
+        "另一只手自然放下，看镜头或看向一侧"
+      ],
+      "quickCheck": "手只是轻碰，不压帽檐；大风天先压住帽子再摆动作。",
+      "recommendation": {
+        "family": "hat-brim",
+        "tier": "everyday",
+        "peopleCount": 1,
+        "postures": [
+          "standing"
+        ],
+        "contexts": [
+          "street",
+          "travel",
+          "lifestyle",
+          "portrait",
+          "social"
+        ],
+        "framing": [
+          "half_body",
+          "three_quarter"
+        ],
+        "requiredFeatures": [
+          "hat"
+        ]
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "single-sunglasses",
+      "scene": "单人站姿 / 墨镜",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "funit-poses"
+      ],
+      "name": "墨镜轻扶",
+      "direction": "戴好墨镜并站稳，肩膀放松；一只手轻扶镜架侧边，另一只手自然放下；头微微转向一侧，停住后再看镜头；也可以摘下墨镜握在胸前再拍一张。",
+      "camera": "半身或三分之二身，微侧拍摄，避免镜片里映出摄影者或手机。",
+      "cue": "戴好墨镜，一只手轻扶镜架侧边，下巴略抬。",
+      "steps": [
+        "戴好墨镜并站稳，肩膀放松",
+        "一只手轻扶镜架侧边，另一只手自然放下",
+        "头微微转向一侧，停住后再看镜头；也可以摘下墨镜握在胸前再拍一张"
+      ],
+      "quickCheck": "强光下摘墨镜时先闭眼再睁开，避免被拍成眯眼；不要用手指碰镜片。",
+      "recommendation": {
+        "family": "sunglasses",
+        "tier": "everyday",
+        "peopleCount": 1,
+        "postures": [
+          "standing"
+        ],
+        "contexts": [
+          "street",
+          "travel",
+          "lifestyle",
+          "social"
+        ],
+        "framing": [
+          "half_body",
+          "three_quarter"
+        ],
+        "requiredFeatures": [
+          "sunglasses"
+        ]
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "pair-face-to-face-hands",
+      "scene": "双人合照 / 面对面牵手",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "photologica-wedding"
+      ],
+      "name": "面对面牵手对视",
+      "direction": "确认双方都愿意牵手，面对面站稳，留一臂左右的距离；双手轻轻牵住，手臂自然弯曲，不拉扯；先互相看着笑一下，再一起转头看镜头。",
+      "camera": "半身或三分之二身，从侧前方拍，确保两张脸和牵着的手都在画面里。",
+      "cue": "双方同意后面对面轻牵双手，先互相看，再一起看镜头。",
+      "steps": [
+        "确认双方都愿意牵手，面对面站稳，留一臂左右的距离",
+        "双手轻轻牵住，手臂自然弯曲，不拉扯",
+        "先互相看着笑一下，再一起转头看镜头"
+      ],
+      "quickCheck": "任何一方不愿牵手就改为面对面站着说话；牵手力度轻，随时可以松开。",
+      "recommendation": {
+        "family": "pair-face-to-face-hands",
+        "tier": "everyday",
+        "peopleCount": 2,
+        "postures": [
+          "standing"
+        ],
+        "contexts": [
+          "friends",
+          "social",
+          "lifestyle"
+        ],
+        "framing": [
+          "half_body",
+          "three_quarter"
+        ],
+        "requiredFeatures": [
+          "contact_agreed"
+        ]
+      },
+      "diagram": "./diagrams/pair-face-to-face-hands.svg",
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "pair-forehead",
+      "scene": "双人合照 / 额头相靠",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "photologica-wedding"
+      ],
+      "name": "额头轻靠",
+      "direction": "确认双方都愿意靠近，面对面站稳；身体各自微向前倾，额头轻轻靠近，可以轻碰也可以留一指距离；闭眼或互看，保持几秒，摄影者连拍。",
+      "camera": "近景或半身，从两人侧面拍，对焦靠近镜头的人的眼睛。",
+      "cue": "双方同意后面对面，额头轻轻靠近，可以闭眼也可以互看。",
+      "steps": [
+        "确认双方都愿意靠近，面对面站稳",
+        "身体各自微向前倾，额头轻轻靠近，可以轻碰也可以留一指距离",
+        "闭眼或互看，保持几秒，摄影者连拍"
+      ],
+      "quickCheck": "不愿靠近就改为面对面对视；不要用力顶，留意眼镜和帽檐。",
+      "recommendation": {
+        "family": "pair-forehead",
+        "tier": "style",
+        "peopleCount": 2,
+        "postures": [
+          "standing"
+        ],
+        "contexts": [
+          "social",
+          "lifestyle"
+        ],
+        "framing": [
+          "close_up",
+          "half_body"
+        ],
+        "requiredFeatures": [
+          "contact_agreed"
+        ]
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "pair-front-hug",
+      "scene": "双人合照 / 正面拥抱",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "shotkit-portrait",
+        "shotkit-friends"
+      ],
+      "name": "正面轻拥抱",
+      "direction": "确认双方都愿意拥抱，面对面站近；双臂轻轻环住对方的肩背，不勒紧；身高差大时由较高的一方微屈膝；下巴放在对方肩旁，脸各自侧向镜头。",
+      "camera": "半身或三分之二身，从侧前方拍，对焦靠近镜头的脸，拍几张换一边。",
+      "cue": "双方同意后轻轻拥抱，脸侧向镜头，笑一下。",
+      "steps": [
+        "确认双方都愿意拥抱，面对面站近",
+        "双臂轻轻环住对方的肩背，不勒紧；身高差大时由较高的一方微屈膝",
+        "下巴放在对方肩旁，脸各自侧向镜头"
+      ],
+      "quickCheck": "任何一方不舒服就改为并肩站；用力要轻，不勒、不抱离地面。",
+      "recommendation": {
+        "family": "pair-front-hug",
+        "tier": "style",
+        "peopleCount": 2,
+        "postures": [
+          "standing"
+        ],
+        "contexts": [
+          "friends",
+          "social",
+          "lifestyle"
+        ],
+        "framing": [
+          "half_body",
+          "three_quarter"
+        ],
+        "requiredFeatures": [
+          "contact_agreed"
+        ]
+      },
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "pair-seated-standing",
+      "scene": "双人合照 / 一坐一站",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "shotkit-friends"
+      ],
+      "name": "一坐一站",
+      "direction": "一人坐在稳固椅子上，双脚有支撑；另一人站在椅子一侧略靠后，手自然放下或轻扶椅背；两人脸高低错开，一起看镜头或互相看一眼。",
+      "camera": "三分之二身或全身，镜头与坐者的胸口同高，确认站者的脸没有被挡住。",
+      "cue": "一人坐在椅子上，另一人站在旁边略靠后，脸高低错开。",
+      "steps": [
+        "一人坐在稳固椅子上，双脚有支撑",
+        "另一人站在椅子一侧略靠后，手自然放下或轻扶椅背",
+        "两人脸高低错开，一起看镜头或互相看一眼"
+      ],
+      "quickCheck": "站的人不把重量压在椅背上；不需要互相接触。",
+      "recommendation": {
+        "family": "pair-seated-standing",
+        "tier": "everyday",
+        "peopleCount": 2,
+        "postures": [
+          "mixed"
+        ],
+        "contexts": [
+          "friends",
+          "social",
+          "lifestyle"
+        ],
+        "framing": [
+          "three_quarter",
+          "full_body"
+        ],
+        "requiredFeatures": [
+          "chair"
+        ]
+      },
+      "diagram": "./diagrams/pair-seated-standing.svg",
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "group-four-seated-standing",
+      "scene": "四人合照 / 前坐后站",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "prettypresets-groups",
+        "photologica-wedding"
+      ],
+      "name": "四人前坐后站",
+      "direction": "让两人坐在稳固的长凳或沙发上，双脚有支撑；另外两人站在坐者后面，对准两位坐者之间和外侧的空隙；四个人脸高低错开，一起看镜头。",
+      "camera": "三分之二身或全身，横构图，检查后排的脸没有被前排的头挡住。",
+      "cue": "两人坐在长凳或沙发上，两人站在后面的空隙处。",
+      "steps": [
+        "让两人坐在稳固的长凳或沙发上，双脚有支撑",
+        "另外两人站在坐者后面，对准两位坐者之间和外侧的空隙",
+        "四个人脸高低错开，一起看镜头"
+      ],
+      "quickCheck": "站的人手放自己身侧或轻扶椅背，不压在坐者身上；座位足够宽，不挤。",
+      "recommendation": {
+        "family": "group-four-seated-standing",
+        "tier": "everyday",
+        "peopleCount": 4,
+        "postures": [
+          "mixed"
+        ],
+        "contexts": [
+          "group",
+          "lifestyle",
+          "social"
+        ],
+        "framing": [
+          "three_quarter",
+          "full_body"
+        ],
+        "requiredFeatures": [
+          "bench_or_sofa"
+        ]
+      },
+      "diagram": "./diagrams/group-four-seated-standing.svg",
+      "previewImage": null,
+      "imageStatus": "text_only_guide"
+    },
+    {
+      "id": "single-back-hand-peace",
+      "scene": "单人近景 / 手背比耶",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "funit-poses"
+      ],
+      "name": "手背比耶",
+      "direction": "站稳或坐稳，肩膀放松；一只手抬到脸旁，手背朝镜头，伸出食指和中指；手不要挡住眼睛，头微侧，看镜头笑一下。",
+      "camera": "近景或半身，镜头与眼睛同高；手和脸保持相近的距离，手离镜头太近会变形。",
+      "cue": "手抬到脸侧，手背朝镜头，食指和中指自然张开。",
+      "steps": [
+        "站稳或坐稳，肩膀放松",
+        "一只手抬到脸旁，手背朝镜头，伸出食指和中指",
+        "手不要挡住眼睛，头微侧，看镜头笑一下"
+      ],
+      "quickCheck": "手只抬到舒适高度，不耸肩；肩颈不适就换另一只手或放下。",
+      "recommendation": {
+        "family": "back-hand-peace",
+        "tier": "everyday",
+        "peopleCount": 1,
+        "postures": [
+          "standing",
+          "seated"
+        ],
+        "contexts": [
+          "social",
+          "lifestyle",
+          "street"
+        ],
+        "framing": [
+          "close_up",
+          "half_body"
+        ],
+        "requiredFeatures": []
+      },
+      "previewImage": "../reference-library/poses-shisei-v0.4.1/upper/line/upper_U005_front.webp",
+      "imageStatus": "cc0_pose_reference"
+    },
+    {
+      "id": "single-cup-cheeks",
+      "scene": "单人近景 / 双手捧脸",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "funit-poses"
+      ],
+      "name": "双手捧脸",
+      "direction": "站稳或坐稳，头摆正；双手掌心轻贴脸颊两侧，手指并拢朝上；手只轻贴不挤压，嘴角放松笑一下。",
+      "camera": "近景或半身，镜头与眼睛同高；注意手在脸上留下阴影，必要时让人微微抬头。",
+      "cue": "双手轻轻贴住脸颊两侧，手指并拢，眼睛看镜头。",
+      "steps": [
+        "站稳或坐稳，头摆正",
+        "双手掌心轻贴脸颊两侧，手指并拢朝上",
+        "手只轻贴不挤压，嘴角放松笑一下"
+      ],
+      "quickCheck": "手要干净，轻贴不按压；戴眼镜时先调整镜架，别让手指压到镜片。",
+      "recommendation": {
+        "family": "cup-cheeks",
+        "tier": "style",
+        "peopleCount": 1,
+        "postures": [
+          "standing",
+          "seated"
+        ],
+        "contexts": [
+          "social",
+          "lifestyle",
+          "portrait"
+        ],
+        "framing": [
+          "close_up",
+          "half_body"
+        ],
+        "requiredFeatures": []
+      },
+      "previewImage": "../reference-library/poses-shisei-v0.4.1/upper/line/upper_U020_front.webp",
+      "imageStatus": "cc0_pose_reference"
+    },
+    {
+      "id": "single-cover-face",
+      "scene": "单人近景 / 单手遮脸",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "tina-poses"
+      ],
+      "name": "单手遮脸伸懒腰",
+      "direction": "站稳或坐稳，确认伸出的手一侧没有人或障碍；一只手轻搭额头或眼侧，手指自然张开；另一只手向侧面或斜上方伸开，头微仰，停一下再看镜头。",
+      "camera": "半身或近景，给伸出的手留出画面空间；镜头略低于眼睛，避免手臂挡住脸。",
+      "cue": "一只手轻搭在额头或眼侧，另一只手向侧面伸开，像刚睡醒。",
+      "steps": [
+        "站稳或坐稳，确认伸出的手一侧没有人或障碍",
+        "一只手轻搭额头或眼侧，手指自然张开",
+        "另一只手向侧面或斜上方伸开，头微仰，停一下再看镜头"
+      ],
+      "quickCheck": "手只轻搭，不压眼睛；伸出的手不要碰到旁人，站稳或坐稳再抬手。",
+      "recommendation": {
+        "family": "cover-face",
+        "tier": "style",
+        "peopleCount": 1,
+        "postures": [
+          "standing",
+          "seated"
+        ],
+        "contexts": [
+          "lifestyle",
+          "social"
+        ],
+        "framing": [
+          "half_body",
+          "close_up"
+        ],
+        "requiredFeatures": []
+      },
+      "previewImage": "../reference-library/poses-shisei-v0.4.1/upper/line/upper_U023_front.webp",
+      "imageStatus": "cc0_pose_reference"
+    },
+    {
+      "id": "single-peek-fingers",
+      "scene": "单人近景 / 指缝偷看",
+      "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
+      "origin": "original_editorial_synthesis",
+      "referenceIds": [
+        "tina-poses"
+      ],
+      "name": "指缝偷看",
+      "direction": "站或坐稳，肩膀放松；双手抬到脸前，手指自然张开，掌根离开脸一点；眼睛从指缝看镜头，头微歪，停住再拍。",
+      "camera": "近景，镜头与眼睛同高；对焦在眼睛上，手不要贴得太近以免挡住对焦。",
+      "cue": "双手抬到脸前，手指张开留出缝隙，眼睛从缝里看镜头。",
+      "steps": [
+        "站或坐稳，肩膀放松",
+        "双手抬到脸前，手指自然张开，掌根离开脸一点",
+        "眼睛从指缝看镜头，头微歪，停住再拍"
+      ],
+      "quickCheck": "手指离眼睛至少一拳，不戳到眼睛；戴眼镜时放慢动作。",
+      "recommendation": {
+        "family": "peek-fingers",
+        "tier": "style",
+        "peopleCount": 1,
+        "postures": [
+          "standing",
+          "seated"
+        ],
+        "contexts": [
+          "social",
+          "lifestyle"
+        ],
+        "framing": [
+          "close_up"
+        ],
+        "requiredFeatures": []
+      },
+      "previewImage": "../reference-library/poses-shisei-v0.4.1/upper/line/upper_U025_front.webp",
+      "imageStatus": "cc0_pose_reference"
+    }
+  ],
+  "summary": {
+    "sourceLibrarySelectedGroups": 21,
+    "guideBasedGroups": 77,
+    "addedInstructions": 73,
+    "totalInstructions": 98,
+    "distinctFamilies": 84,
+    "note": "原图库审核范围保持标准全身与上半身单人组；本轮新增摄影指引为原创文字编排，参考公开指南原则，不含来源示范图，也未增加源图审核范围。"
+  },
+  "poses": [
+    {
+      "id": "photo-full-single-p004",
+      "name": "椅坐双腿斜放",
+      "fit": "adapt",
+      "scene": "坐姿人像 / 半身或全身",
+      "direction": "坐在稳固椅子上，双脚有支撑；双膝舒适靠近，双腿斜向同一侧；双手轻放大腿，肩膀轻转向镜头。",
+      "camera": "先从坐姿眼平取景；拍全身时保留双脚，裁切避开膝盖和脚踝。",
+      "why": "斜腿与回转上身可直接迁移到椅子坐姿；不要求地面摆拍。",
+      "previewImage": null,
+      "imageStatus": "needs_new_matching_illustration",
+      "cue": "坐稳，双腿斜向一边，肩膀轻转向镜头。",
+      "steps": [
+        "坐在稳固椅子上，双脚有支撑",
+        "双膝舒适靠近，双腿斜向同一侧",
+        "双手轻放大腿，肩膀轻转向镜头"
+      ],
+      "quickCheck": "双脚有支撑，腿部保持舒适。",
+      "recommendation": {
+        "family": "seated-angled",
+        "tier": "everyday",
+        "peopleCount": 1,
+        "postures": [
+          "seated"
+        ],
+        "contexts": [
+          "portrait",
+          "social",
+          "lifestyle"
+        ],
+        "framing": [
+          "three_quarter",
+          "full_body"
+        ],
+        "requiredFeatures": [
+          "chair"
+        ]
+      }
+    },
+    {
+      "id": "photo-full-single-p009",
+      "name": "椅坐轻靠扶手",
+      "fit": "adapt",
+      "scene": "坐姿人像 / 轻松肖像",
+      "direction": "坐稳，双脚落地；一侧前臂轻搭扶手，身体稍靠向该侧；另一只手放腿上，抬眼看镜头。",
+      "camera": "从坐姿眼平取半身或三分之二身，保留搭扶手的手臂。",
+      "why": "保留轻微侧倾与支撑关系，去掉不便执行的地面支撑。",
+      "previewImage": null,
+      "imageStatus": "needs_new_matching_illustration",
+      "cue": "坐稳，一侧前臂轻搭扶手，肩膀放松。",
+      "steps": [
+        "坐稳，双脚落地",
+        "一侧前臂轻搭扶手，身体稍靠向该侧",
+        "另一只手放腿上，抬眼看镜头"
+      ],
+      "quickCheck": "肩膀放松，不靠手腕撑住身体。",
+      "recommendation": {
+        "family": "seated-lean",
+        "tier": "everyday",
+        "peopleCount": 1,
+        "postures": [
+          "seated"
+        ],
+        "contexts": [
+          "portrait",
+          "lifestyle"
+        ],
+        "framing": [
+          "half_body",
+          "three_quarter"
+        ],
+        "requiredFeatures": [
+          "armrest_chair"
+        ]
+      }
+    },
+    {
+      "id": "photo-full-single-p012",
+      "name": "椅坐轻托下巴",
+      "fit": "adapt",
+      "scene": "坐姿人像 / 思考感",
+      "direction": "坐稳，前臂搭在大腿上；一只手轻托下巴，另一只手放腿上；放松手指，视线看镜头或镜头旁。",
+      "camera": "从坐姿眼平拍近景或半身，让脸部和托腮的手都完整入画。",
+      "why": "迁移单膝抬起的坐姿布局，再改为椅坐托腮；原图实际手位更接近颈侧，与上游托腮名称不完全一致，不是改造动作的示范图。",
+      "previewImage": null,
+      "imageStatus": "needs_new_matching_illustration",
+      "cue": "坐稳，手肘有支撑，一只手轻托下巴。",
+      "steps": [
+        "坐稳，前臂搭在大腿上",
+        "一只手轻托下巴，另一只手放腿上",
+        "放松手指，视线看镜头或镜头旁"
+      ],
+      "quickCheck": "手只轻触，不把脸颊挤变形。",
+      "recommendation": {
+        "family": "chin-rest",
+        "tier": "everyday",
+        "peopleCount": 1,
+        "postures": [
+          "seated"
+        ],
+        "contexts": [
+          "portrait",
+          "lifestyle"
+        ],
+        "framing": [
+          "close_up",
+          "half_body"
+        ],
+        "requiredFeatures": [
+          "chair"
+        ]
+      }
+    },
+    {
+      "id": "photo-full-single-p015",
+      "name": "单手搭腰重心站姿",
+      "fit": "direct",
+      "scene": "站姿人像 / 全身",
+      "direction": "双脚前后轻错开，重心放在较舒适的一侧；身体微侧，一只手轻搭腰侧；另一只手放松垂下，肩膀放低。",
+      "camera": "先从胸口至眼睛高度取景；全身画面给脚下留空间。",
+      "why": "站姿稳定、执行门槛低；以轻微重心变化替代僵直正面站立。",
+      "previewImage": "../reference-library/poses-shisei-v0.4.1/std/line/std_P015_diag.webp",
+      "imageStatus": "cc0_pose_reference",
+      "cue": "身体微侧，一手轻搭腰，另一手放松。",
+      "steps": [
+        "双脚前后轻错开，重心放在较舒适的一侧",
+        "身体微侧，一只手轻搭腰侧",
+        "另一只手放松垂下，肩膀放低"
+      ],
+      "quickCheck": "前脚也保持稳定接触地面，不用绷紧膝盖。",
+      "recommendation": {
+        "family": "hands-on-waist",
+        "tier": "everyday",
+        "peopleCount": 1,
+        "postures": [
+          "standing"
+        ],
+        "contexts": [
+          "portrait",
+          "street",
+          "social"
+        ],
+        "framing": [
+          "three_quarter",
+          "full_body"
+        ],
+        "requiredFeatures": []
+      }
+    },
+    {
+      "id": "photo-full-single-p017",
+      "name": "站立自然侧望",
+      "fit": "direct",
+      "scene": "站姿人像 / 侧望",
+      "direction": "双脚自然站稳，身体微侧；双臂放松垂下，肩膀放低；下巴保持自然，视线看向镜头旁。",
+      "camera": "半身或全身均可，在视线朝向的一侧留一些空间。",
+      "why": "站立侧望与自然垂臂适合环境人像；原图不作为背身回眸示范。",
+      "previewImage": "../reference-library/poses-shisei-v0.4.1/std/line/std_P017_diag.webp",
+      "imageStatus": "cc0_pose_reference",
+      "cue": "身体微侧，手自然垂下，看向镜头旁。",
+      "steps": [
+        "双脚自然站稳，身体微侧",
+        "双臂放松垂下，肩膀放低",
+        "下巴保持自然，视线看向镜头旁"
+      ],
+      "quickCheck": "转头幅度舒适，不强行扭颈。",
+      "recommendation": {
+        "family": "look-away",
+        "tier": "everyday",
+        "peopleCount": 1,
+        "postures": [
+          "standing"
+        ],
+        "contexts": [
+          "portrait",
+          "street",
+          "social",
+          "lifestyle"
+        ],
+        "framing": [
+          "half_body",
+          "full_body"
+        ],
+        "requiredFeatures": []
+      }
+    },
+    {
+      "id": "photo-full-single-p018",
+      "name": "双手轻搭腰侧",
+      "fit": "direct",
+      "scene": "站姿人像 / 全身",
+      "direction": "自然站稳，身体微侧；双手轻搭腰侧，手肘自然打开；放松肩膀和胸腹，视线看镜头。",
+      "camera": "取三分之二身或全身，保留两侧手肘，不把手裁在画框边缘。",
+      "why": "双手轻搭腰侧的站姿容易执行；与插兜动作分开，不用不对应的图片作示范。",
+      "previewImage": null,
+      "imageStatus": "source_reference_local_only",
+      "cue": "双手轻搭腰侧，肩膀放低，身体微侧。",
+      "steps": [
+        "自然站稳，身体微侧",
+        "双手轻搭腰侧，手肘自然打开",
+        "放松肩膀和胸腹，视线看镜头"
+      ],
+      "quickCheck": "手不用力掐腰，肩膀不耸起。",
+      "recommendation": {
+        "family": "hands-on-waist",
+        "tier": "everyday",
+        "peopleCount": 1,
+        "postures": [
+          "standing"
+        ],
+        "contexts": [
+          "portrait",
+          "street",
+          "social"
+        ],
+        "framing": [
+          "three_quarter",
+          "full_body"
+        ],
+        "requiredFeatures": []
+      }
+    },
+    {
+      "id": "photo-full-single-p020",
+      "name": "站立轻理头发",
+      "fit": "adapt",
+      "scene": "站姿人像 / 自然手部动作",
+      "direction": "身体微侧，另一只手放松垂下；一只手轻理耳侧头发；视线看镜头旁，手自然放回身侧。",
+      "camera": "半身或近景，连续拍下整理头发到手放下的过程。",
+      "why": "整理头发能给手部一个自然任务；降低原图较刻意的后脑触碰。",
+      "previewImage": null,
+      "imageStatus": "needs_new_matching_illustration",
+      "cue": "站稳，轻理耳侧头发，手慢慢放下。",
+      "steps": [
+        "身体微侧，另一只手放松垂下",
+        "一只手轻理耳侧头发",
+        "视线看镜头旁，手自然放回身侧"
+      ],
+      "quickCheck": "手掌避开眼睛，动作自然完成即可。",
+      "recommendation": {
+        "family": "hair-adjust",
+        "tier": "everyday",
+        "peopleCount": 1,
+        "postures": [
+          "standing"
+        ],
+        "contexts": [
+          "portrait",
+          "street",
+          "social",
+          "lifestyle"
+        ],
+        "framing": [
+          "close_up",
+          "half_body"
+        ],
+        "requiredFeatures": [
+          "tuckable_hair"
+        ]
+      }
+    },
+    {
+      "id": "photo-full-single-p041",
+      "name": "椅坐双手搭膝",
+      "fit": "adapt",
+      "scene": "坐姿人像 / 休闲",
+      "direction": "坐在稳固椅子上，双脚自然落地；双手轻放膝上或大腿上；肩膀微侧，抬眼看镜头。",
+      "camera": "从坐姿眼平取半身或三分之二身；画面裁切避开膝盖关节。",
+      "why": "手放膝上的简洁关系可复用，原地面跪坐不作为通用动作。",
+      "previewImage": null,
+      "imageStatus": "needs_new_matching_illustration",
+      "cue": "坐稳，双脚落地，双手轻放膝上。",
+      "steps": [
+        "坐在稳固椅子上，双脚自然落地",
+        "双手轻放膝上或大腿上",
+        "肩膀微侧，抬眼看镜头"
+      ],
+      "quickCheck": "双手放松，不压住膝盖承重。",
+      "recommendation": {
+        "family": "seated-hands",
+        "tier": "everyday",
+        "peopleCount": 1,
+        "postures": [
+          "seated"
+        ],
+        "contexts": [
+          "portrait",
+          "social",
+          "lifestyle"
+        ],
+        "framing": [
+          "half_body",
+          "three_quarter"
+        ],
+        "requiredFeatures": [
+          "chair"
+        ]
+      }
+    },
+    {
+      "id": "photo-full-single-p045",
+      "name": "侧向椅坐",
+      "fit": "adapt",
+      "scene": "坐姿人像 / 环境肖像",
+      "direction": "坐稳，双脚有支撑；双膝和脚尖朝向同一侧；双手放大腿，上身轻转向镜头。",
+      "camera": "从坐姿眼平取三分之二身或全身，留出双腿伸展的空间。",
+      "why": "侧向腿部线条适合椅坐迁移，避免地面侧坐对服装和场地的要求。",
+      "previewImage": null,
+      "imageStatus": "needs_new_matching_illustration",
+      "cue": "侧坐椅子，双腿同向，上身轻转向镜头。",
+      "steps": [
+        "坐稳，双脚有支撑",
+        "双膝和脚尖朝向同一侧",
+        "双手放大腿，上身轻转向镜头"
+      ],
+      "quickCheck": "上身只轻转，不追求大幅扭腰。",
+      "recommendation": {
+        "family": "seated-angled",
+        "tier": "everyday",
+        "peopleCount": 1,
+        "postures": [
+          "seated"
+        ],
+        "contexts": [
+          "portrait",
+          "lifestyle"
+        ],
+        "framing": [
+          "three_quarter",
+          "full_body"
+        ],
+        "requiredFeatures": [
+          "chair"
+        ]
+      }
+    },
+    {
+      "id": "photo-full-single-p046",
+      "name": "椅坐轻触脸侧",
+      "fit": "adapt",
+      "scene": "坐姿人像 / 近景",
+      "direction": "坐稳，一侧前臂由另一只手轻托；指尖轻触脸颊或下颌边缘；肩膀放松，眼睛看镜头。",
+      "camera": "从坐姿眼平拍近景或半身，让靠近镜头的眼睛清晰可见。",
+      "why": "轻触脸部适合作为近景手势，需将地面坐姿换成椅坐。",
+      "previewImage": null,
+      "imageStatus": "needs_new_matching_illustration",
+      "cue": "坐稳，指尖轻触脸侧，手掌不要压脸。",
+      "steps": [
+        "坐稳，一侧前臂由另一只手轻托",
+        "指尖轻触脸颊或下颌边缘",
+        "肩膀放松，眼睛看镜头"
+      ],
+      "quickCheck": "手掌避开五官，手指不绷直。",
+      "recommendation": {
+        "family": "face-touch",
+        "tier": "everyday",
+        "peopleCount": 1,
+        "postures": [
+          "seated"
+        ],
+        "contexts": [
+          "portrait",
+          "social",
+          "lifestyle"
+        ],
+        "framing": [
+          "close_up",
+          "half_body"
+        ],
+        "requiredFeatures": [
+          "chair"
+        ]
+      }
+    },
+    {
+      "id": "photo-full-single-p061",
+      "name": "矮凳坐姿搭膝",
+      "fit": "adapt",
+      "scene": "户外休闲 / 低机位全身",
+      "direction": "坐在稳固矮凳上，双脚落地；双手轻搭大腿，背部自然伸展；肩膀放松，抬眼看镜头。",
+      "camera": "把相机降到坐姿人物胸口至眼睛附近；全身构图保留双脚。",
+      "why": "浅蹲可用于街头或运动风照片，但舒适度与服装限制较大，必须提供坐姿替代。",
+      "previewImage": null,
+      "imageStatus": "needs_new_matching_illustration",
+      "cue": "坐稳矮凳，双脚落地，双手轻搭大腿。",
+      "steps": [
+        "坐在稳固矮凳上，双脚落地",
+        "双手轻搭大腿，背部自然伸展",
+        "肩膀放松，抬眼看镜头"
+      ],
+      "quickCheck": "凳子稳固，起坐和膝腿弯曲都舒适。",
+      "recommendation": {
+        "family": "seated-hands",
+        "tier": "everyday",
+        "peopleCount": 1,
+        "postures": [
+          "seated"
+        ],
+        "contexts": [
+          "street",
+          "lifestyle"
+        ],
+        "framing": [
+          "three_quarter",
+          "full_body"
+        ],
+        "requiredFeatures": [
+          "low_seat"
+        ]
+      }
+    },
+    {
+      "id": "photo-full-single-p063",
+      "name": "矮凳坐姿托腮",
+      "fit": "adapt",
+      "scene": "户外休闲 / 思考感",
+      "direction": "坐稳矮凳，双脚落地；前臂轻搭大腿，一手托下巴；另一只手放腿上，眼睛看镜头旁。",
+      "camera": "降到坐姿眼平拍近景或半身，保留脸部与手的空间。",
+      "why": "保留托腮表情方向，深蹲版本不作通用推荐。",
+      "previewImage": null,
+      "imageStatus": "needs_new_matching_illustration",
+      "cue": "坐稳矮凳，前臂搭腿，一手轻托下巴。",
+      "steps": [
+        "坐稳矮凳，双脚落地",
+        "前臂轻搭大腿，一手托下巴",
+        "另一只手放腿上，眼睛看镜头旁"
+      ],
+      "quickCheck": "保持舒适坐姿，手不挤压脸颊。",
+      "recommendation": {
+        "family": "chin-rest",
+        "tier": "everyday",
+        "peopleCount": 1,
+        "postures": [
+          "seated"
+        ],
+        "contexts": [
+          "street",
+          "lifestyle"
+        ],
+        "framing": [
+          "close_up",
+          "half_body"
+        ],
+        "requiredFeatures": [
+          "low_seat"
+        ]
+      }
+    },
+    {
+      "id": "photo-full-single-p067",
+      "name": "站立微前倾",
+      "fit": "adapt",
+      "scene": "站姿人像 / 轻松前倾",
+      "direction": "双脚前后轻错开，站稳；从髋部轻微前倾，幅度以舒适为准；双手轻搭大腿上方，抬眼看镜头。",
+      "camera": "相机随人物调整到眼平，取半身或近景。",
+      "why": "轻微前倾可增加交流感；幅度缩小后更自然且不要求地面支撑。",
+      "previewImage": null,
+      "imageStatus": "needs_new_matching_illustration",
+      "cue": "站稳，身体微向前，双手轻搭大腿。",
+      "steps": [
+        "双脚前后轻错开，站稳",
+        "从髋部轻微前倾，幅度以舒适为准",
+        "双手轻搭大腿上方，抬眼看镜头"
+      ],
+      "quickCheck": "不弓背，也不把身体重量压在膝盖上。",
+      "recommendation": {
+        "family": "lean-forward",
+        "tier": "everyday",
+        "peopleCount": 1,
+        "postures": [
+          "standing"
+        ],
+        "contexts": [
+          "portrait",
+          "street",
+          "lifestyle"
+        ],
+        "framing": [
+          "close_up",
+          "half_body"
+        ],
+        "requiredFeatures": []
+      }
+    },
+    {
+      "id": "photo-full-single-p079",
+      "name": "椅坐轻转上身",
+      "fit": "adapt",
+      "scene": "坐姿人像 / 三分之二身",
+      "direction": "坐稳，双膝稍转向一侧；双脚有支撑，上身轻转向镜头；双手放腿上，肩膀放松。",
+      "camera": "从坐姿眼平取三分之二身或全身，画框避开膝盖和脚踝。",
+      "why": "轻微上身回转能形成自然层次，原地面坐姿改为椅坐。",
+      "previewImage": null,
+      "imageStatus": "needs_new_matching_illustration",
+      "cue": "双膝转向一侧，上身轻转回来，肩膀放松。",
+      "steps": [
+        "坐稳，双膝稍转向一侧",
+        "双脚有支撑，上身轻转向镜头",
+        "双手放腿上，肩膀放松"
+      ],
+      "quickCheck": "以舒适的小幅转身为准。",
+      "recommendation": {
+        "family": "seated-angled",
+        "tier": "everyday",
+        "peopleCount": 1,
+        "postures": [
+          "seated"
+        ],
+        "contexts": [
+          "portrait",
+          "lifestyle"
+        ],
+        "framing": [
+          "three_quarter",
+          "full_body"
+        ],
+        "requiredFeatures": [
+          "chair"
+        ]
+      }
+    },
+    {
+      "id": "photo-upper80v2-p001",
+      "name": "半身双手比心",
+      "fit": "direct",
+      "scene": "半身 / 轻松社交照片",
+      "direction": "站稳或坐稳，肩膀放松；双手在胸前组成小爱心；手肘放低，让脸和手势都露出来。",
+      "camera": "取半身，把手势完整留在画面中，避免只拍脸而裁掉双手。",
+      "why": "清晰、易执行的日常社交手势。",
+      "previewImage": "../reference-library/poses-shisei-v0.4.1/upper/line/upper_U001_front.webp",
+      "imageStatus": "cc0_pose_reference",
+      "cue": "双手在胸前比心，手肘放低，轻轻微笑。",
+      "steps": [
+        "站稳或坐稳，肩膀放松",
+        "双手在胸前组成小爱心",
+        "手肘放低，让脸和手势都露出来"
+      ],
+      "quickCheck": "手势放在脸下方，不遮五官。",
+      "recommendation": {
+        "family": "heart-hands",
+        "tier": "style",
+        "peopleCount": 1,
+        "postures": [
+          "standing",
+          "seated"
+        ],
+        "contexts": [
+          "social"
+        ],
+        "framing": [
+          "half_body"
+        ],
+        "requiredFeatures": []
+      }
+    },
+    {
+      "id": "photo-upper80v2-p013",
+      "name": "双手轻托下巴",
+      "fit": "adapt",
+      "scene": "半身 / 可爱风近景",
+      "direction": "肩膀放松，手肘放松下沉，不必夹紧；双手轻放在下巴下方；手指放松，眼睛看镜头。",
+      "camera": "拍近景或半身，同时保留脸部、下巴和双手。",
+      "why": "托腮适合轻松近景，控制手的位置以免挡脸。",
+      "previewImage": "../reference-library/poses-shisei-v0.4.1/upper/line/upper_U013_front.webp",
+      "imageStatus": "cc0_pose_reference",
+      "cue": "双手轻放下巴下方，手指放松，脸别压手。",
+      "steps": [
+        "肩膀放松，手肘放松下沉，不必夹紧",
+        "双手轻放在下巴下方",
+        "手指放松，眼睛看镜头"
+      ],
+      "quickCheck": "手掌不挤压脸颊。",
+      "recommendation": {
+        "family": "chin-rest",
+        "tier": "style",
+        "peopleCount": 1,
+        "postures": [
+          "standing",
+          "seated"
+        ],
+        "contexts": [
+          "social",
+          "lifestyle"
+        ],
+        "framing": [
+          "close_up",
+          "half_body"
+        ],
+        "requiredFeatures": []
+      }
+    },
+    {
+      "id": "photo-upper80v2-p016",
+      "name": "合十问候",
+      "fit": "direct",
+      "scene": "半身 / 友好问候",
+      "direction": "站稳或坐稳，肩膀放松；双手在胸前轻轻合十；手肘自然下垂，表情放松。",
+      "camera": "取半身，将合十的双手完整留在画面中下部。",
+      "why": "礼貌友好的手势，不依赖身体曲线或夸张动作。",
+      "previewImage": "../reference-library/poses-shisei-v0.4.1/upper/line/upper_U016_front.webp",
+      "imageStatus": "cc0_pose_reference",
+      "cue": "双手在胸前轻合十，肩膀放松。",
+      "steps": [
+        "站稳或坐稳，肩膀放松",
+        "双手在胸前轻轻合十",
+        "手肘自然下垂，表情放松"
+      ],
+      "quickCheck": "双手不过分用力，肩膀不耸起。",
+      "recommendation": {
+        "family": "palms-together",
+        "tier": "style",
+        "peopleCount": 1,
+        "postures": [
+          "standing",
+          "seated"
+        ],
+        "contexts": [
+          "social"
+        ],
+        "framing": [
+          "half_body"
+        ],
+        "requiredFeatures": []
+      }
+    },
+    {
+      "id": "photo-upper80v2-p018",
+      "name": "手指围框",
+      "fit": "direct",
+      "scene": "半身 / 创意社交照片",
+      "direction": "肩膀放松，双手抬到脸侧；手指松松组成小取景框；将手稍移开，让双眼清楚露出。",
+      "camera": "取近景或半身，将完整手势与脸同时纳入画面。",
+      "why": "创意手势本身易执行且不含成人暗示。",
+      "previewImage": "../reference-library/poses-shisei-v0.4.1/upper/line/upper_U018_front.webp",
+      "imageStatus": "cc0_pose_reference",
+      "cue": "手指在脸侧做小取景框，眼睛露出来。",
+      "steps": [
+        "肩膀放松，双手抬到脸侧",
+        "手指松松组成小取景框",
+        "将手稍移开，让双眼清楚露出"
+      ],
+      "quickCheck": "手指不挡住眼睛，也不顶到画框。",
+      "recommendation": {
+        "family": "hand-frame",
+        "tier": "style",
+        "peopleCount": 1,
+        "postures": [
+          "standing",
+          "seated"
+        ],
+        "contexts": [
+          "social"
+        ],
+        "framing": [
+          "close_up",
+          "half_body"
+        ],
+        "requiredFeatures": []
+      }
+    },
+    {
+      "id": "photo-upper80v2-p019",
+      "name": "轻将头发别耳后",
+      "fit": "direct",
+      "scene": "半身 / 自然抓拍",
+      "direction": "站稳或坐稳，身体微侧；一只手轻把耳侧发丝别到耳后；视线自然移动，手慢慢放下。",
+      "camera": "取近景或半身，连续拍下动作过程，让眼睛保持可见。",
+      "why": "日常整理头发动作自然，适合抓拍而非长时间定格。",
+      "previewImage": "../reference-library/poses-shisei-v0.4.1/upper/line/upper_U019_diag.webp",
+      "imageStatus": "cc0_pose_reference",
+      "cue": "轻把耳侧头发别到耳后，再自然放下手。",
+      "steps": [
+        "站稳或坐稳，身体微侧",
+        "一只手轻把耳侧发丝别到耳后",
+        "视线自然移动，手慢慢放下"
+      ],
+      "quickCheck": "头发长度适合别耳后，再选择这个动作。",
+      "recommendation": {
+        "family": "hair-adjust",
+        "tier": "everyday",
+        "peopleCount": 1,
+        "postures": [
+          "standing",
+          "seated"
+        ],
+        "contexts": [
+          "portrait",
+          "street",
+          "social",
+          "lifestyle"
+        ],
+        "framing": [
+          "close_up",
+          "half_body"
+        ],
+        "requiredFeatures": [
+          "tuckable_hair"
+        ]
+      }
+    },
+    {
+      "id": "photo-upper80v2-p021",
+      "name": "轻松敬礼",
+      "fit": "direct",
+      "scene": "半身 / 户外或制服肖像",
+      "direction": "站稳或坐稳，一只手放松；另一只手轻抬到额侧作敬礼；肩膀放低，手掌避开眉眼。",
+      "camera": "取半身，头顶和抬起的手肘都留出空间。",
+      "why": "短促、易懂的问候动作，适合有情境的肖像。",
+      "previewImage": "../reference-library/poses-shisei-v0.4.1/upper/line/upper_U021_front.webp",
+      "imageStatus": "cc0_pose_reference",
+      "cue": "单手轻放额侧做敬礼，眼睛看镜头。",
+      "steps": [
+        "站稳或坐稳，一只手放松",
+        "另一只手轻抬到额侧作敬礼",
+        "肩膀放低，手掌避开眉眼"
+      ],
+      "quickCheck": "动作以轻松问候为主，手不遮眼。",
+      "recommendation": {
+        "family": "salute",
+        "tier": "style",
+        "peopleCount": 1,
+        "postures": [
+          "standing",
+          "seated"
+        ],
+        "contexts": [
+          "social"
+        ],
+        "framing": [
+          "half_body"
+        ],
+        "requiredFeatures": []
+      }
+    },
+    {
+      "id": "photo-upper80v2-p023",
+      "name": "生活场景轻伸展",
+      "fit": "adapt",
+      "scene": "生活方式 / 动态抓拍",
+      "direction": "站稳或坐稳，另一只手放松；一侧手臂在舒适范围内轻抬伸展；自然呼吸，再慢慢把手放下。",
+      "camera": "取半身，预留抬手空间，连续拍下伸展过程。",
+      "why": "作为早晨、居家主题的生活抓拍可改用，不能泛化到正式人像。",
+      "previewImage": null,
+      "imageStatus": "needs_new_matching_illustration",
+      "cue": "一侧手臂轻抬伸展，放松呼吸，再慢慢放下。",
+      "steps": [
+        "站稳或坐稳，另一只手放松",
+        "一侧手臂在舒适范围内轻抬伸展",
+        "自然呼吸，再慢慢把手放下"
+      ],
+      "quickCheck": "伸展幅度舒适，不必刻意打哈欠或揉眼睛。",
+      "recommendation": {
+        "family": "stretch",
+        "tier": "contextual",
+        "peopleCount": 1,
+        "postures": [
+          "standing",
+          "seated"
+        ],
+        "contexts": [
+          "lifestyle"
+        ],
+        "framing": [
+          "half_body"
+        ],
+        "requiredFeatures": []
+      }
+    }
+  ]
+}
