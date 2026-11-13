@@ -1,4 +1,4 @@
-const CACHE_NAME = 'pose-notes-cf606d21e45d';
+const CACHE_NAME = 'pose-notes-5d4e8642eb4b';
 const APP_ROOT = new URL('./', self.location.href);
 const IMAGE_ROOT = new URL('../reference-library/poses-shisei-v0.4.1/', self.location.href);
 const CATALOG_URL = new URL('../reference-library/photo-pose-selection.json', self.location.href).href;
@@ -8,6 +8,7 @@ const CORE_URLS = [
   new URL('./style.css', self.location.href).href,
   new URL('./app.js', self.location.href).href,
   new URL('./shoot.js', self.location.href).href,
+  new URL('./diagnostics.js', self.location.href).href,
   new URL('./diagrams/group-three-huddle.svg', self.location.href).href,
   new URL('./diagrams/group-four-seated-standing.svg', self.location.href).href,
   new URL('./diagrams/group-four-ground.svg', self.location.href).href,

@@ -1,3 +1,5 @@
+import { recordEvent, setDiagnosticsMeta, diagnosticsSnapshot, diagnosticsText } from './diagnostics.js';
+
 const byId = (id) => document.getElementById(id);
 const status = byId('status-message');
 const statusText = byId('status-text');
@@ -304,6 +306,7 @@ async function init() {
   } catch (error) {
     if (requestId !== loadRequest) return;
     console.error('Unable to load photo pose catalog', error);
+    recordEvent('catalog-error', error?.name || 'error');
     const message = error.name === 'AbortError'
       ? '读取动作目录超时。检查网络连接后重试。'
       : reloadOnRetry ? '页面初始化失败，请重试以重新加载页面。' : '动作目录加载失败。请检查连接后重试。';
@@ -320,6 +323,7 @@ async function startShoot(pose, opener) {
     openShoot(pose, opener);
   } catch (error) {
     console.error('Unable to load the camera view', error);
+    recordEvent('camera-module-error', error?.name || 'error');
     status.hidden = false;
     statusText.textContent = '相机界面加载失败，请检查连接后重试。动作目录不受影响。';
   }
@@ -344,6 +348,8 @@ const allPoses = [...catalog.poses, ...catalog.guideBasedPoses];
 byId('catalog-version').textContent = `v${catalog.version} · ${allPoses.length} 条`;
 byId('catalog-count').textContent = String(allPoses.length);
 byId('about-version').textContent = `v${catalog.version} · ${allPoses.length} 条动作`;
+setDiagnosticsMeta({ version: `v${catalog.version}`, catalogCount: allPoses.length });
+recordEvent('catalog-loaded', `${allPoses.length} poses`);
 
 function updateAdvancedSummary() {
   const selected = [state.posture, state.framing, ...state.availableFeatures];
@@ -601,6 +607,42 @@ updateAdvancedSummary();
 render();
 }
 
+async function refreshDiagnostics() {
+  try {
+    const snapshot = await diagnosticsSnapshot();
+    byId('diagnostics-text').textContent = diagnosticsText(snapshot);
+    byId('diagnostics-status').textContent = '';
+  } catch (error) {
+    console.warn('Unable to build diagnostics', error);
+    byId('diagnostics-text').textContent = '诊断信息生成失败。';
+    byId('diagnostics-status').textContent = '请刷新页面后重试。';
+  }
+}
+
+async function copyDiagnostics() {
+  const box = byId('diagnostics-text');
+  if (box.textContent === '打开后生成。') await refreshDiagnostics();
+  try {
+    if (!navigator.clipboard?.writeText) throw new Error('Clipboard API unavailable');
+    await navigator.clipboard.writeText(box.textContent);
+    byId('diagnostics-status').textContent = '已复制，粘贴到反馈里即可。';
+    recordEvent('diagnostics-copied');
+  } catch (error) {
+    byId('diagnostics-status').textContent = '复制失败，请手动选择文本。';
+    const range = document.createRange();
+    range.selectNodeContents(box);
+    const selection = getSelection();
+    selection.removeAllRanges();
+    selection.addRange(range);
+    box.focus({ preventScroll: true });
+  }
+}
+
+byId('about-diagnostics').addEventListener('toggle', () => {
+  if (byId('about-diagnostics').open) refreshDiagnostics();
+});
+byId('diagnostics-refresh').addEventListener('click', refreshDiagnostics);
+byId('diagnostics-copy').addEventListener('click', copyDiagnostics);
 byId('about-open').addEventListener('click', () => byId('about-dialog').showModal());
 byId('about-close').addEventListener('click', () => byId('about-dialog').close());
 byId('about-dialog').addEventListener('click', (event) => {

@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#17211f" />
     <meta name="description" content="按人数、场景和现场条件筛选摄影动作口令与三步指导。" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; connect-src 'self' blob:; worker-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'" />
+    <meta name="referrer" content="no-referrer" />
     <title>Pose Notes | 摄影动作目录</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
@@ -181,9 +183,19 @@
           <button id="about-close" type="button" aria-label="关闭关于与隐私">关闭</button>
         </div>
         <p>这是一个现场摄影动作参考工具：按人数、场景和现场条件给出动作口令、三步、机位提醒和安全边界。</p>
-        <p>照片只在本机处理：不上传，不写照片存储；相机设置以 <code>pose-notes-camera-v1</code> 保存在本机。离线缓存可能被浏览器清除。</p>
+        <p>照片只在本机处理：不上传，不写照片存储；页面不加载统计、广告或第三方脚本。相机设置以 <code>pose-notes-camera-v1</code> 保存在本机。离线缓存可能被浏览器清除。</p>
         <p>图片：人偶线稿来自 Shisei v0.4.1（CC0 1.0）；站位示意图为本项目原创。没有真人示范图。</p>
         <p>限制：网页相机画质和功能弱于原生相机；iOS、微信等环境的相机能力受系统限制；现场条件和身体条件仍须自己确认。</p>
+        <details id="about-diagnostics" class="about-diagnostics">
+          <summary>本机诊断信息</summary>
+          <p>只在本机生成，不包含照片、不自动上传。遇到相机或保存问题时，复制后发给支持人员。</p>
+          <pre id="diagnostics-text" tabindex="0">打开后生成。</pre>
+          <div class="about-diagnostics-actions">
+            <button id="diagnostics-refresh" type="button">刷新诊断</button>
+            <button id="diagnostics-copy" type="button">复制诊断信息</button>
+          </div>
+          <p id="diagnostics-status" class="about-diagnostics-status" role="status" aria-live="polite"></p>
+        </details>
         <p>版本：<span id="about-version">v4 · 98 条动作</span>。</p>
       </dialog>
 

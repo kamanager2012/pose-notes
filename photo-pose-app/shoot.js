@@ -1,3 +1,5 @@
+import { recordEvent } from './diagnostics.js';
+
 const byId = (id) => document.getElementById(id);
 const REF_MODES = ['corner', 'overlay', 'off'];
 const REF_LABELS = { corner: '角落图', overlay: '叠加', off: '隐藏' };
@@ -336,6 +338,7 @@ function onShutter() {
 }
 
 function fail(key) {
+  recordEvent('camera-error', key);
   state.errorKey = key;
   state.capturing = false;
   setPhase('error');
@@ -436,6 +439,7 @@ async function startCamera() {
   }
   state.stream = stream;
   const track = stream.getVideoTracks()[0];
+  recordEvent('camera-start', `facing=${state.facing}`);
   setupTorch(track);
   setupZoom(track);
   const actual = track?.getSettings?.().facingMode;
@@ -456,6 +460,7 @@ async function startCamera() {
   if (token !== state.token) return;
   byId('shoot-stage').dataset.facing = state.facing;
   setPhase('live');
+  recordEvent('camera-live', `facing=${state.facing}`);
   showNotice(state.facing === 'user' ? FRONT_NOTE : '');
 }
 
@@ -463,6 +468,7 @@ function setupTorch(track) {
  const row = byId('shoot-torch-row');
  const box = byId('shoot-torch');
  const capabilities = track?.getCapabilities?.() ?? {};
+ recordEvent('camera-torch', capabilities.torch === true ? 'available' : 'unavailable');
  row.hidden = capabilities.torch !== true;
  box.checked = false;
  box.onchange = async () => {
@@ -479,6 +485,7 @@ function setupZoom(track) {
  const row = byId('shoot-zoom-row');
  const input = byId('shoot-zoom');
  const capabilities = track?.getCapabilities?.() ?? {};
+ recordEvent('camera-zoom', capabilities.zoom ? `available ${capabilities.zoom.min}-${capabilities.zoom.max}` : 'unavailable');
  if (!capabilities.zoom) {
   row.hidden = true;
   return;
@@ -604,8 +611,10 @@ async function takePhotos() {
     if (!blob) {
       state.capturing = false;
       if (shots.length) {
+        recordEvent('burst-partial', `failed=${index + 1} kept=${shots.length}`);
         showReview(shots, '', `第 ${index + 1} 张失败，已保留前 ${shots.length} 张。点缩略图选一张保存或分享。`);
       } else {
+        recordEvent('burst-failed', `count=${count}`);
         setPhase('live');
         showNotice('拍照失败，请重试。');
       }
@@ -615,10 +624,12 @@ async function takePhotos() {
   }
   state.capturing = false;
   if (!shots.length) {
+    recordEvent('burst-failed', `count=${count}`);
     setPhase('live');
     showNotice('拍照失败，请重试。');
     return;
   }
+  recordEvent('photos', `${shots.length}/${count} aspect=${state.settings.aspect} quality=${state.settings.quality}`);
   showReview(shots);
 }
 
@@ -711,6 +722,7 @@ async function showReview(input, name = '', warning = '') {
   });
   state.selected = 0;
   setPhase('review');
+  recordEvent('review', `${shots.length} shot(s)`);
   renderShots();
   showNotice(warning || (shots.length > 1
     ? `拍了 ${shots.length} 张，点下面的缩略图选一张保存或分享。`
@@ -749,11 +761,13 @@ function photoFile() {
 function savePhoto() {
   if (!state.blob) return;
   if (isWeChat() || isMobile()) {
+    recordEvent('save', 'long-press');
     showNotice('保存：长按上方照片，选择“保存图片/存储图像”，也可以发送给朋友。');
     byId('shoot-result').scrollIntoView({ block: 'center' });
     return;
   }
   if (!state.url) return;
+  recordEvent('save', 'download');
   download(photoFile());
 }
 
@@ -763,13 +777,18 @@ async function sharePhoto() {
   if (navigator.canShare?.({ files: [file] })) {
     try {
       await navigator.share({ files: [file], title: state.pose?.name ?? '照片' });
+      recordEvent('share', 'sheet');
       showNotice('已交给系统分享面板。');
       return;
     } catch (error) {
-      if (error?.name === 'AbortError') return;
+      if (error?.name === 'AbortError') {
+        recordEvent('share', 'cancelled');
+        return;
+      }
       console.warn('Sharing failed', error);
     }
   }
+  recordEvent('share', 'fallback');
   showNotice('当前浏览器不支持直接分享文件，请长按照片保存。');
   byId('shoot-result').scrollIntoView({ block: 'center' });
 }
@@ -871,6 +890,7 @@ function useSystemPhoto(event) {
     showNotice('选的文件不是图片，请重新选择。');
     return;
   }
+  recordEvent('system-photo', file.type || 'unknown');
   showReview(file, file.name);
 }
 
@@ -1071,6 +1091,7 @@ function wire() {
   byId('shoot-native').addEventListener('click', () => byId('shoot-file').click());
   byId('shoot-file').addEventListener('change', useSystemPhoto);
   byId('shoot-ref').addEventListener('error', () => {
+    recordEvent('ref-error', 'image failed');
     const hadFocus = document.activeElement === byId('shoot-ref');
     state.hasRef = false;
     state.refDragging = false;

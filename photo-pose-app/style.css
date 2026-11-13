@@ -69,6 +69,13 @@ h1 em { color: var(--mint-dark); font-style: normal; }
 .about-dialog p { margin: 12px 0 0; color: var(--muted-strong); font-size: 13px; line-height: 1.8; }
 .about-dialog code { color: var(--ink); font: 12px var(--mono); }
 .about-dialog .viewer-toolbar button { min-height: 44px; min-width: 44px; padding: 0 12px; color: var(--ink); background: white; border: 1px solid var(--border-strong); }
+.about-diagnostics { margin-top: 14px; padding-top: 10px; border-top: 1px solid var(--line); }
+.about-diagnostics summary { min-height: 44px; display: flex; align-items: center; cursor: pointer; color: var(--ink); font-size: 13px; }
+.about-diagnostics pre { max-height: 220px; margin: 8px 0 0; padding: 10px; overflow: auto; color: var(--ink); background: var(--paper); border: 1px solid var(--line); font: 12px/1.6 var(--mono); white-space: pre-wrap; overflow-wrap: anywhere; }
+.about-diagnostics-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+.about-diagnostics-actions button { min-height: 44px; padding: 0 12px; color: var(--ink); background: white; border: 1px solid var(--border-strong); font-size: 13px; }
+.about-diagnostics-status { min-height: 18px; margin: 6px 0 0; color: var(--muted-strong); font-size: 12px; }
+.about-diagnostics summary:focus-visible, .about-diagnostics-actions button:focus-visible, .about-diagnostics pre:focus-visible { outline: 2px solid var(--accent-ui); outline-offset: 2px; }
 .footer-link { min-height: 44px; padding: 0; color: var(--muted-strong); background: transparent; border: 0; font: 12px var(--mono); letter-spacing: .05em; text-decoration: underline; }
 .footer-link:focus-visible { outline: 2px solid var(--accent-ui); outline-offset: 2px; }
 .gallery-viewer::backdrop { background: rgb(15 22 20 / 78%); }
