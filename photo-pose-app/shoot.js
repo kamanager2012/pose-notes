@@ -21,13 +21,17 @@ const POSTURE_LABELS = { standing: '站姿', sitting: '坐姿', squatting: '蹲�
 const ANGLE_LABELS = { front: '正面', diag: '斜侧', side: '侧面', back: '背面', above: '俯视', below: '仰视' };
 const PICKER_PAGE = 18;
 const TIMERS = [0, 3, 10];
-const FRONT_NOTE = '前置镜头的预览是镜像的，保存的照片不镜像。';
+const SETTINGS_KEY = 'pose-notes-camera-v1';
+const ASPECTS = new Set(['source', '3:4', '4:3', '1:1', '16:9']);
+const QUALITIES = [0.8, 0.92, 0.98];
+const FRONT_NOTE = '前置镜头的预览是镜像的；保存是否镜像可在相机设置里改。';
 const SAVE_NOTE = '已请求保存。请到浏览器的下载列表或相册里确认；没找到就用分享。';
 
 const state = {
   pose: null, opener: null, stream: null, facing: 'environment', token: 0,
   phase: 'idle', errorKey: '', refMode: 'corner', hasRef: false, blob: null, url: '', name: '', capturing: false,
   delay: 0, countdown: null, countdownTimer: null, countdownStart: 0, gridOn: false,
+  settings: readCameraSettings(),
 };
 const IMAGE_NAME = /\.(jpe?g|png|webp|heic|heif)$/i;
 const picker = { loaded: false, entries: [], limit: PICKER_PAGE, request: 0, scrollNeeded: false };
@@ -42,6 +46,55 @@ function showNotice(text) {
 function typeFor(name, fallback = '') {
   const extension = IMAGE_NAME.exec(name)?.[1]?.toLowerCase();
   return (extension && TYPES[extension]) || fallback || 'image/jpeg';
+}
+
+function readCameraSettings() {
+ const defaults = { aspect: 'source', quality: 0.92, mirrorSave: false };
+ try {
+  const raw = JSON.parse(localStorage.getItem(SETTINGS_KEY) ?? 'null');
+  if (!raw || typeof raw !== 'object') return defaults;
+  return {
+   aspect: ASPECTS.has(raw.aspect) ? raw.aspect : defaults.aspect,
+   quality: QUALITIES.includes(Number(raw.quality)) ? Number(raw.quality) : defaults.quality,
+   mirrorSave: Boolean(raw.mirrorSave),
+  };
+ } catch {
+  return defaults;
+ }
+}
+
+function saveCameraSettings() {
+ try {
+  localStorage.setItem(SETTINGS_KEY, JSON.stringify(state.settings));
+ } catch {
+  // Settings are optional; a blocked storage must not stop the camera.
+ }
+}
+
+function applyCameraSettings() {
+ const stage = byId('shoot-stage');
+ const aspect = state.settings.aspect;
+ stage.style.aspectRatio = aspect === 'source' ? '3 / 4' : aspect.replace(':', ' / ');
+ byId('shoot-video').style.objectFit = aspect === 'source' ? 'contain' : 'cover';
+ for (const button of byId('shoot-aspects').querySelectorAll('button')) {
+  button.setAttribute('aria-pressed', String(button.dataset.aspect === aspect));
+ }
+ byId('shoot-quality').value = String(state.settings.quality);
+ byId('shoot-mirror-save').checked = state.settings.mirrorSave;
+}
+
+function closeSettings() {
+ const panel = byId('shoot-settings');
+ if (panel) panel.hidden = true;
+}
+
+function openSettings() {
+ const panel = byId('shoot-settings');
+ panel.hidden = false;
+ closePicker();
+ applyCameraSettings();
+ byId('shoot-settings-close').focus({ preventScroll: true });
+ panel.scrollIntoView({ block: 'start' });
 }
 
 function isWeChat() {
@@ -85,6 +138,7 @@ function setPhase(phase) {
   state.phase = phase;
   if (phase !== 'live') {
     closePicker();
+    closeSettings();
     cancelCountdown();
   }
   const review = phase === 'review';
@@ -217,6 +271,8 @@ function messageKey(error) {
 
 function stopStream() {
   const video = byId('shoot-video');
+  byId('shoot-torch-row').hidden = true;
+  byId('shoot-zoom-row').hidden = true;
   state.stream?.getTracks().forEach((track) => track.stop());
   state.stream = null;
   video.srcObject = null;
@@ -268,6 +324,8 @@ async function startCamera() {
   }
   state.stream = stream;
   const track = stream.getVideoTracks()[0];
+  setupTorch(track);
+  setupZoom(track);
   const actual = track?.getSettings?.().facingMode;
   if (actual === 'user' || actual === 'environment') state.facing = actual;
   track?.addEventListener('ended', () => {
@@ -289,6 +347,84 @@ async function startCamera() {
   showNotice(state.facing === 'user' ? FRONT_NOTE : '');
 }
 
+function setupTorch(track) {
+ const row = byId('shoot-torch-row');
+ const box = byId('shoot-torch');
+ const capabilities = track?.getCapabilities?.() ?? {};
+ row.hidden = capabilities.torch !== true;
+ box.checked = false;
+ box.onchange = async () => {
+  try {
+   await track.applyConstraints({ advanced: [{ torch: box.checked }] });
+  } catch (error) {
+   box.checked = false;
+   showNotice('当前浏览器不能控制手电。');
+  }
+ };
+}
+
+function setupZoom(track) {
+ const row = byId('shoot-zoom-row');
+ const input = byId('shoot-zoom');
+ const capabilities = track?.getCapabilities?.() ?? {};
+ if (!capabilities.zoom) {
+  row.hidden = true;
+  return;
+ }
+ const { min, max, step } = capabilities.zoom;
+ row.hidden = false;
+ input.min = String(min);
+ input.max = String(max);
+ input.step = String(step || 0.1);
+ input.value = String(track.getSettings?.().zoom ?? min);
+ input.oninput = async () => {
+  try {
+   await track.applyConstraints({ advanced: [{ zoom: Number(input.value) }] });
+  } catch (error) {
+   console.warn('Unable to apply zoom', error);
+  }
+ };
+}
+
+function cropFor(width, height, aspect) {
+ if (aspect === 'source') return { sx: 0, sy: 0, sw: width, sh: height };
+ const [aw, ah] = aspect.split(':').map(Number);
+ const target = aw / ah;
+ if (width / height > target) {
+  const sw = Math.round(height * target);
+  return { sx: Math.round((width - sw) / 2), sy: 0, sw, sh: height };
+ }
+ const sh = Math.round(width / target);
+ return { sx: 0, sy: Math.round((height - sh) / 2), sw: width, sh };
+}
+
+function mirrorFront() {
+ return state.facing === 'user' && state.settings.mirrorSave;
+}
+
+async function processCaptured(blob) {
+ if (state.settings.aspect === 'source' && !mirrorFront() && state.settings.quality === 0.92) return blob;
+ try {
+  const bitmap = await createImageBitmap(blob);
+  const crop = cropFor(bitmap.width, bitmap.height, state.settings.aspect);
+  const canvas = document.createElement('canvas');
+  canvas.width = crop.sw;
+  canvas.height = crop.sh;
+  const context = canvas.getContext('2d');
+  if (mirrorFront()) {
+   context.translate(crop.sw, 0);
+   context.scale(-1, 1);
+  }
+  context.drawImage(bitmap, crop.sx, crop.sy, crop.sw, crop.sh, 0, 0, crop.sw, crop.sh);
+  bitmap.close();
+  const result = await new Promise((resolve) => canvas.toBlob(resolve, 'image/jpeg', state.settings.quality));
+  return result ?? blob;
+ } catch (error) {
+  console.warn('Unable to apply the camera settings to the still photo', error);
+  return blob;
+ }
+}
+
 async function capture() {
   const video = byId('shoot-video');
   const width = video.videoWidth;
@@ -305,7 +441,7 @@ async function capture() {
   const settings = track?.getSettings?.() ?? {};
   if (track && 'ImageCapture' in window && (settings.width ?? 0) >= 1280) {
     try {
-      const blob = await new ImageCapture(track).takePhoto();
+      const blob = await processCaptured(await new ImageCapture(track).takePhoto());
       if (token !== state.token || state.phase !== 'live' || !state.capturing) return;
       state.capturing = false;
       showReview(blob);
@@ -314,10 +450,16 @@ async function capture() {
       console.warn('ImageCapture failed, falling back to the canvas', error);
     }
   }
+  const crop = cropFor(width, height, state.settings.aspect);
   const canvas = document.createElement('canvas');
-  canvas.width = width;
-  canvas.height = height;
-  canvas.getContext('2d').drawImage(video, 0, 0, width, height);
+  canvas.width = crop.sw;
+  canvas.height = crop.sh;
+  const context = canvas.getContext('2d');
+  if (mirrorFront()) {
+   context.translate(crop.sw, 0);
+   context.scale(-1, 1);
+  }
+  context.drawImage(video, crop.sx, crop.sy, crop.sw, crop.sh, 0, 0, crop.sw, crop.sh);
   canvas.toBlob((blob) => {
     if (token !== state.token || state.phase !== 'live' || !state.capturing) return;
     state.capturing = false;
@@ -326,7 +468,7 @@ async function capture() {
       setPhase('live');
       showNotice('拍照失败，请重试。');
     }
-  }, 'image/jpeg', 0.92);
+  }, 'image/jpeg', state.settings.quality);
 }
 
 async function showReview(blob, name = '') {
@@ -618,6 +760,29 @@ function wire() {
   byId('shoot-result').addEventListener('error', () => {
     if (state.phase === 'review') showNotice('这张照片在当前浏览器里无法预览，但文件没有被改动，仍然可以保存或分享。');
   });
+  byId('shoot-settings-open').addEventListener('click', () => {
+    if (byId('shoot-settings').hidden) openSettings();
+    else closeSettings();
+  });
+  byId('shoot-settings-close').addEventListener('click', () => {
+    closeSettings();
+    byId('shoot-settings-open').focus();
+  });
+  byId('shoot-aspects').addEventListener('click', (event) => {
+    const button = event.target.closest('button[data-aspect]');
+    if (!button) return;
+    state.settings.aspect = button.dataset.aspect;
+    saveCameraSettings();
+    applyCameraSettings();
+  });
+  byId('shoot-quality').addEventListener('change', (event) => {
+    state.settings.quality = Number(event.target.value);
+    saveCameraSettings();
+  });
+  byId('shoot-mirror-save').addEventListener('change', (event) => {
+    state.settings.mirrorSave = event.target.checked;
+    saveCameraSettings();
+  });
   byId('shoot-ref-library').addEventListener('click', () => {
     if (byId('shoot-picker').hidden) openPicker();
     else closePicker();
@@ -655,6 +820,7 @@ export function openShoot(pose, opener) {
   fillGuide(pose);
   byId('shoot-stage').dataset.facing = 'environment';
   byId('shoot-steps').closest('details').open = false;
+  applyCameraSettings();
   dialog.showModal();
   if (document.visibilityState === 'hidden') {
     setPhase('paused');

@@ -85,6 +85,7 @@
         <div id="shoot-fallback" class="shoot-fallback">
           <button id="shoot-retry" type="button" hidden>重试相机</button>
           <button id="shoot-ref-library" type="button">从图库选参考</button>
+          <button id="shoot-settings-open" type="button">相机设置</button>
           <button id="shoot-native" type="button">用系统相机拍</button>
           <input id="shoot-file" type="file" accept="image/*" capture="environment" hidden />
         </div>
@@ -108,6 +109,35 @@
           <div id="shoot-picker-grid" class="shoot-picker-grid"></div>
           <button id="shoot-picker-retry" type="button" hidden>重试图库</button>
           <button id="shoot-picker-more" type="button" hidden>查看更多</button>
+        </section>
+        <section id="shoot-settings" class="shoot-settings" aria-labelledby="shoot-settings-title" hidden>
+          <div class="shoot-picker-head">
+            <strong id="shoot-settings-title">相机设置</strong>
+            <button id="shoot-settings-close" type="button" aria-label="关闭相机设置">关闭</button>
+          </div>
+          <fieldset class="shoot-setting">
+            <legend>画幅</legend>
+            <div id="shoot-aspects" class="shoot-aspects" role="group" aria-label="画幅">
+              <button type="button" data-aspect="source" aria-pressed="true">原始</button>
+              <button type="button" data-aspect="3:4" aria-pressed="false">3:4</button>
+              <button type="button" data-aspect="4:3" aria-pressed="false">4:3</button>
+              <button type="button" data-aspect="1:1" aria-pressed="false">1:1</button>
+              <button type="button" data-aspect="16:9" aria-pressed="false">16:9</button>
+            </div>
+          </fieldset>
+          <label class="shoot-setting-row">画质
+            <select id="shoot-quality">
+              <option value="0.8">标准</option>
+              <option value="0.92" selected>高</option>
+              <option value="0.98">极高</option>
+            </select>
+          </label>
+          <label class="shoot-setting-check"><input id="shoot-mirror-save" type="checkbox" /> 保存时镜像前置照片</label>
+          <label id="shoot-torch-row" class="shoot-setting-check" hidden><input id="shoot-torch" type="checkbox" /> 手电/闪光（支持时）</label>
+          <label id="shoot-zoom-row" class="shoot-setting-row" hidden>变焦
+            <input id="shoot-zoom" type="range" min="1" max="1" step="0.1" value="1" />
+          </label>
+          <p class="shoot-settings-note">设置只保存在本机，照片仍不上传。手电和变焦是否可用取决于手机浏览器。</p>
         </section>
         <details class="shoot-guide">
           <summary>三步和检查</summary>
