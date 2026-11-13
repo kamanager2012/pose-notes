@@ -214,8 +214,11 @@ select:focus { border-color: var(--mint-dark); outline: 2px solid var(--accent-u
 .shoot-shutter span { display: block; width: 52px; height: 52px; border-radius: 50%; background: var(--ink); }
 .shoot-shutter:disabled { opacity: .45; cursor: not-allowed; }
 .shoot-shutter:focus-visible, .shoot-controls button:focus-visible, .shoot-bar button:focus-visible, .shoot-fallback button:focus-visible, .shoot-guide summary:focus-visible { outline: 2px solid var(--accent-ui); outline-offset: 2px; }
-.shoot-review-controls { display: flex; justify-content: center; }
+.shoot-review-controls { display: flex; flex-wrap: wrap; justify-content: center; }
 .shoot-save { color: var(--panel); background: var(--ink); border-color: var(--ink); }
+.shoot-photo-meta, .shoot-save-hint { margin: 8px 0 0; color: var(--muted-strong); font-size: 12px; line-height: 1.6; text-align: center; }
+.shoot-photo-meta[hidden], .shoot-save-hint[hidden] { display: none; }
+#shoot-result { -webkit-touch-callout: default; user-select: auto; }
 .shoot-controls button:disabled { opacity: .5; cursor: not-allowed; }
 .shoot-fallback { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 10px; }
 .shoot-guide { margin-top: 12px; border-top: 1px solid var(--line); }

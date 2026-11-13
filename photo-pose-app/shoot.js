@@ -44,6 +44,28 @@ function typeFor(name, fallback = '') {
   return (extension && TYPES[extension]) || fallback || 'image/jpeg';
 }
 
+function isWeChat() {
+  return /MicroMessenger/i.test(navigator.userAgent);
+}
+
+function isMobile() {
+  return /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+}
+
+function readDataUrl(blob) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = () => resolve(reader.result);
+    reader.onerror = () => reject(reader.error);
+    reader.readAsDataURL(blob);
+  });
+}
+
+function formatBytes(size) {
+  if (size >= 1024 * 1024) return `${(size / (1024 * 1024)).toFixed(1)} MB`;
+  return `${Math.max(1, Math.round(size / 1024))} KB`;
+}
+
 function closePicker() {
   const panel = byId('shoot-picker');
   if (panel) panel.hidden = true;
@@ -74,6 +96,15 @@ function setPhase(phase) {
   byId('shoot-live-controls').hidden = review;
   byId('shoot-review-controls').hidden = !review;
   byId('shoot-fallback').hidden = review;
+  byId('shoot-photo-meta').hidden = !review;
+  byId('shoot-save-hint').hidden = !review;
+  byId('shoot-share').hidden = review && isWeChat();
+  byId('shoot-save').textContent = isWeChat() ? '长按照片保存' : '保存到相册';
+  if (review) {
+    byId('shoot-save-hint').textContent = isWeChat()
+      ? '微信里请长按上方照片，选择“保存图片”。'
+      : '长按照片可保存到相册；分享按钮会打开系统分享面板。';
+  }
   byId('shoot-shutter').disabled = phase !== 'live' || state.capturing;
   byId('shoot-flip').disabled = phase !== 'live' || state.capturing;
   byId('shoot-retry').hidden = !canRetry;
@@ -198,6 +229,8 @@ function clearPhoto() {
   state.name = '';
   state.capturing = false;
   byId('shoot-result').removeAttribute('src');
+  byId('shoot-photo-meta').textContent = '';
+  byId('shoot-photo-meta').hidden = true;
 }
 
 async function startCamera() {
@@ -219,7 +252,7 @@ async function startCamera() {
   let stream;
   try {
     stream = await navigator.mediaDevices.getUserMedia({
-      video: { facingMode: { ideal: state.facing }, width: { ideal: 1920 }, height: { ideal: 1080 } },
+      video: { facingMode: { ideal: state.facing }, width: { ideal: 2560 }, height: { ideal: 1440 } },
       audio: false,
     });
   } catch (error) {
@@ -256,7 +289,7 @@ async function startCamera() {
   showNotice(state.facing === 'user' ? FRONT_NOTE : '');
 }
 
-function capture() {
+async function capture() {
   const video = byId('shoot-video');
   const width = video.videoWidth;
   const height = video.videoHeight;
@@ -268,6 +301,19 @@ function capture() {
   state.capturing = true;
   setPhase('live');
   showNotice('正在生成照片…');
+  const track = state.stream?.getVideoTracks()[0];
+  const settings = track?.getSettings?.() ?? {};
+  if (track && 'ImageCapture' in window && (settings.width ?? 0) >= 1280) {
+    try {
+      const blob = await new ImageCapture(track).takePhoto();
+      if (token !== state.token || state.phase !== 'live' || !state.capturing) return;
+      state.capturing = false;
+      showReview(blob);
+      return;
+    } catch (error) {
+      console.warn('ImageCapture failed, falling back to the canvas', error);
+    }
+  }
   const canvas = document.createElement('canvas');
   canvas.width = width;
   canvas.height = height;
@@ -283,17 +329,27 @@ function capture() {
   }, 'image/jpeg', 0.92);
 }
 
-function showReview(blob, name = '') {
+async function showReview(blob, name = '') {
   state.token += 1;
   stopStream();
   clearPhoto();
   state.name = name;
   state.blob = blob.type ? blob : blob.slice(0, blob.size, typeFor(name, blob.type));
-  state.url = URL.createObjectURL(state.blob);
-  byId('shoot-result').src = state.url;
+  const photo = state.blob;
+  state.url = URL.createObjectURL(photo);
   setPhase('review');
   showNotice(name ? `已选择 ${name}，确认后保存或分享。` : '拍好了。可以重拍，或保存、分享。');
   byId('shoot-save').focus();
+  let src = state.url;
+  if (isWeChat() || isMobile()) {
+    try {
+      src = await readDataUrl(photo);
+    } catch (error) {
+      console.warn('Unable to prepare the photo for long-press saving', error);
+    }
+  }
+  if (state.blob !== photo) return;
+  byId('shoot-result').src = src;
 }
 
 function fileName(type) {
@@ -314,11 +370,26 @@ function download(file) {
   showNotice(SAVE_NOTE);
 }
 
-async function savePhoto() {
-  if (!state.blob) return;
+function photoFile() {
   const name = state.name || fileName(state.blob.type);
   const type = typeFor(name, state.blob.type);
-  const file = new File([state.blob], name, { type });
+  return new File([state.blob], name, { type });
+}
+
+function savePhoto() {
+  if (!state.blob) return;
+  if (isWeChat() || isMobile()) {
+    showNotice('保存：长按上方照片，选择“保存图片/存储图像”。');
+    byId('shoot-result').scrollIntoView({ block: 'center' });
+    return;
+  }
+  if (!state.url) return;
+  download(photoFile());
+}
+
+async function sharePhoto() {
+  if (!state.blob) return;
+  const file = photoFile();
   if (navigator.canShare?.({ files: [file] })) {
     try {
       await navigator.share({ files: [file], title: state.pose?.name ?? '照片' });
@@ -326,11 +397,11 @@ async function savePhoto() {
       return;
     } catch (error) {
       if (error?.name === 'AbortError') return;
-      console.warn('Sharing failed, falling back to a download', error);
+      console.warn('Sharing failed', error);
     }
   }
-  if (!state.blob || !state.url) return;
-  download(file);
+  showNotice('当前浏览器不支持直接分享文件，请长按照片保存。');
+  byId('shoot-result').scrollIntoView({ block: 'center' });
 }
 
 function retake() {
@@ -533,10 +604,17 @@ function wire() {
   byId('shoot-retry').addEventListener('click', startCamera);
   byId('shoot-retake').addEventListener('click', retake);
   byId('shoot-save').addEventListener('click', savePhoto);
+  byId('shoot-share').addEventListener('click', sharePhoto);
   byId('shoot-ref-toggle').addEventListener('click', cycleReference);
   byId('shoot-native').addEventListener('click', () => byId('shoot-file').click());
   byId('shoot-file').addEventListener('change', useSystemPhoto);
   byId('shoot-ref').addEventListener('error', () => { state.hasRef = false; applyRef(); });
+  byId('shoot-result').addEventListener('load', () => {
+    if (state.phase !== 'review' || !state.blob) return;
+    const image = byId('shoot-result');
+    byId('shoot-photo-meta').hidden = false;
+    byId('shoot-photo-meta').textContent = `${image.naturalWidth} × ${image.naturalHeight} · ${formatBytes(state.blob.size)}`;
+  });
   byId('shoot-result').addEventListener('error', () => {
     if (state.phase === 'review') showNotice('这张照片在当前浏览器里无法预览，但文件没有被改动，仍然可以保存或分享。');
   });
