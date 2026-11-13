@@ -102,7 +102,7 @@ function setPhase(phase) {
   byId('shoot-save').textContent = isWeChat() ? '长按照片保存' : '保存到相册';
   if (review) {
     byId('shoot-save-hint').textContent = isWeChat()
-      ? '微信里请长按上方照片，选择“保存图片”。'
+      ? '微信里请长按上方照片，选择“保存图片”或“发送给朋友”。'
       : '长按照片可保存到相册；分享按钮会打开系统分享面板。';
   }
   byId('shoot-shutter').disabled = phase !== 'live' || state.capturing;
@@ -379,7 +379,7 @@ function photoFile() {
 function savePhoto() {
   if (!state.blob) return;
   if (isWeChat() || isMobile()) {
-    showNotice('保存：长按上方照片，选择“保存图片/存储图像”。');
+    showNotice('保存：长按上方照片，选择“保存图片/存储图像”，也可以发送给朋友。');
     byId('shoot-result').scrollIntoView({ block: 'center' });
     return;
   }
