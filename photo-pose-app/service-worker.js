@@ -1,4 +1,4 @@
-const CACHE_NAME = 'pose-notes-1d58e9c9e5da';
+const CACHE_NAME = 'pose-notes-1a51806370b2';
 const APP_ROOT = new URL('./', self.location.href);
 const IMAGE_ROOT = new URL('../reference-library/poses-shisei-v0.4.1/', self.location.href);
 const CATALOG_URL = new URL('../reference-library/photo-pose-selection.json', self.location.href).href;
@@ -21,8 +21,20 @@ const CORE_URLS = [
   new URL('../reference-library/photo-pose-gallery.json', self.location.href).href,
 ];
 
+const FETCH_TIMEOUT = 8000;
+
 function freshRequest(url) {
   return new Request(url, { cache: 'reload' });
+}
+
+async function fetchFresh(url) {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), FETCH_TIMEOUT);
+  try {
+    return await fetch(freshRequest(url), { signal: controller.signal });
+  } finally {
+    clearTimeout(timer);
+  }
 }
 
 async function cacheCueDrawings(cache) {
@@ -36,7 +48,7 @@ async function cacheCueDrawings(cache) {
       if (url.startsWith(IMAGE_ROOT.href) && url.endsWith('.webp')) urls.add(url);
     }
     await Promise.allSettled([...urls].map(async (url) => {
-      const response = await fetch(freshRequest(url));
+      const response = await fetchFresh(url);
       if (response.ok) await cache.put(url, response);
     }));
   } catch (error) {
@@ -50,7 +62,7 @@ async function repairCore(cache) {
     if (!(await cache.match(url))) missing.push(url);
   }
   await Promise.allSettled(missing.map(async (url) => {
-    const response = await fetch(freshRequest(url));
+    const response = await fetchFresh(url);
     if (response.ok) await cache.put(url, response);
   }));
   return missing.length;
@@ -91,7 +103,11 @@ self.addEventListener('install', (event) => {
     const existed = await caches.has(CACHE_NAME);
     const cache = await caches.open(CACHE_NAME);
     try {
-      await cache.addAll(CORE_URLS.map(freshRequest));
+      await Promise.all(CORE_URLS.map(async (url) => {
+        const response = await fetchFresh(url);
+        if (!response.ok) throw new Error(`HTTP ${response.status} for ${url}`);
+        await cache.put(url, response);
+      }));
     } catch (error) {
       if (!existed) await caches.delete(CACHE_NAME);
       throw error;
