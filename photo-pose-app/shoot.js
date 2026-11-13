@@ -716,6 +716,7 @@ async function showReview(input, name = '', warning = '') {
     ? `拍了 ${shots.length} 张，点下面的缩略图选一张保存或分享。`
     : name ? `已选择 ${name}，确认后保存或分享。` : '拍好了。可以重拍，或保存、分享。'));
   byId('shoot-dialog').scrollTop = 0;
+  byId('shoot-close').focus({ preventScroll: true });
   await selectShot(0);
   const save = byId('shoot-save');
   (save.disabled ? byId('shoot-close') : save).focus({ preventScroll: true });
