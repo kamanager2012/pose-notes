@@ -12,9 +12,11 @@ const labels = {
 const angleLabels = { front: '正面', diag: '斜侧', side: '侧面', back: '背面', above: '俯视', below: '仰视' };
 const GALLERY_DATA_URL = '../reference-library/photo-pose-gallery.json';
 const GALLERY_IMAGE_ROOT = '../reference-library/poses-shisei-v0.4.1/';
+const GALLERY_THUMB_ROOT = GALLERY_IMAGE_ROOT + 'thumb/';
 const GALLERY_IMAGE_PATH = /^(std|upper)\/(line|photo)\/[A-Za-z0-9_]+\.webp$/;
 const postureLabels = { standing: '站姿', sitting: '坐姿', squatting: '蹲姿', lying: '躺姿', upper: '半身动作' };
 let viewerState = null;
+let viewerPath = null;
 let galleryEntries = [];
 let galleryLimit = 24;
 let galleryRequest = 0;
@@ -173,7 +175,7 @@ function renderGallery() {
     const show = () => {
       const [angle, path] = entry.images.find(([key]) => key === select.value);
       imageError.hidden = true;
-      image.src = GALLERY_IMAGE_ROOT + path;
+      image.src = GALLERY_THUMB_ROOT + path;
       image.alt = `${text.textContent}姿势参考，${angleLabels[angle]}视角`;
     };
     select.addEventListener('change', show);
@@ -218,12 +220,20 @@ function updateGalleryViewer() {
   if (!viewerState) return;
   const angle = byId('viewer-angle').value;
   const path = viewerState.images.find(([key]) => key === angle)?.[1];
+  viewerPath = path;
   byId('viewer-error').hidden = true;
   byId('viewer-image').src = GALLERY_IMAGE_ROOT + path;
   byId('viewer-image').alt = `${byId('viewer-caption').textContent}，${angleLabels[angle]}视角`;
 }
 
-byId('viewer-image').addEventListener('error', () => { byId('viewer-error').hidden = false; });
+byId('viewer-image').addEventListener('error', () => {
+  const image = byId('viewer-image');
+  if (viewerPath && image.getAttribute('src') === GALLERY_IMAGE_ROOT + viewerPath) {
+    image.src = GALLERY_THUMB_ROOT + viewerPath;
+    return;
+  }
+  byId('viewer-error').hidden = false;
+});
 byId('viewer-image').addEventListener('load', () => { byId('viewer-error').hidden = true; });
 byId('viewer-retry').addEventListener('click', updateGalleryViewer);
 byId('viewer-angle').addEventListener('change', updateGalleryViewer);

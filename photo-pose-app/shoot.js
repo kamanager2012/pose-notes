@@ -18,6 +18,7 @@ const MESSAGES = {
 };
 const GALLERY_DATA_URL = '../reference-library/photo-pose-gallery.json';
 const GALLERY_IMAGE_ROOT = '../reference-library/poses-shisei-v0.4.1/';
+const GALLERY_THUMB_ROOT = GALLERY_IMAGE_ROOT + 'thumb/';
 const GALLERY_IMAGE_PATH = /^(std|upper)\/line\/[A-Za-z0-9_]+\.webp$/;
 const POSTURE_LABELS = { standing: '站姿', sitting: '坐姿', squatting: '蹲姿', lying: '躺姿', upper: '半身动作' };
 const ANGLE_LABELS = { front: '正面', diag: '斜侧', side: '侧面', back: '背面', above: '俯视', below: '仰视' };
@@ -957,7 +958,7 @@ function renderPicker() {
     const image = document.createElement('img');
     image.loading = 'lazy';
     image.decoding = 'async';
-    image.src = GALLERY_IMAGE_ROOT + entry.path;
+    image.src = GALLERY_THUMB_ROOT + entry.path;
     image.alt = '';
     const caption = document.createElement('span');
     caption.textContent = `${POSTURE_LABELS[entry.posture]} · ${ANGLE_LABELS[entry.angle]}`;
