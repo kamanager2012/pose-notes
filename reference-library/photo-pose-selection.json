@@ -1604,15 +1604,15 @@
         "fujifilm-groups"
       ],
       "name": "朋友背靠背",
-      "direction": "两人站稳并确认是否需要轻触背部；身体朝向相反方向，双手自然放松；分别看向镜头两侧或一起看镜头。",
+      "direction": "双方同意后，两人站稳并确认背部距离；身体朝向相反方向，双手自然放松；分别看向镜头两侧或一起看镜头。",
       "camera": "半身或三分之二身，保持两张脸和肩线清楚。",
-      "cue": "两人背部轻触或留一点距离，分别看向不同方向。",
+      "cue": "两人背对背站，各自分别看向不同方向。",
       "steps": [
-        "两人站稳并确认是否需要轻触背部",
+        "双方同意后，两人站稳并确认背部距离",
         "身体朝向相反方向，双手自然放松",
         "分别看向镜头两侧或一起看镜头"
       ],
-      "quickCheck": "不把重量压在对方身上，接触可改为不接触。",
+      "quickCheck": "双方都愿意才靠背；不愿接触时保持一臂距离，也能完成。",
       "recommendation": {
         "family": "friends-back-to-back",
         "tier": "style",
@@ -1628,7 +1628,9 @@
           "half_body",
           "three_quarter"
         ],
-        "requiredFeatures": []
+        "requiredFeatures": [
+          "contact_agreed"
+        ]
       },
       "previewImage": null,
       "imageStatus": "text_only_guide"
@@ -3450,7 +3452,7 @@
       "referenceIds": [
         "tina-poses"
       ],
-      "name": "单手遮脸伸懒腰",
+      "name": "单手托额伸展",
       "direction": "站稳或坐稳，确认伸出的手一侧没有人或障碍；一只手轻搭额头或眼侧，手指自然张开；另一只手向侧面或斜上方伸开，头微仰，停一下再看镜头。",
       "camera": "半身或近景，给伸出的手留出画面空间；镜头略低于眼睛，避免手臂挡住脸。",
       "cue": "一只手轻搭在额头或眼侧，另一只手向侧面伸开，像刚睡醒。",
@@ -3483,13 +3485,13 @@
     },
     {
       "id": "single-peek-fingers",
-      "scene": "单人近景 / 指缝偷看",
+      "scene": "单人近景 / 指缝探看",
       "reference": "原创场景口令；referenceIds 指向通用原则依据，并非逐姿势翻译或实拍验证。",
       "origin": "original_editorial_synthesis",
       "referenceIds": [
         "tina-poses"
       ],
-      "name": "指缝偷看",
+      "name": "指缝探看",
       "direction": "站或坐稳，肩膀放松；双手抬到脸前，手指自然张开，掌根离开脸一点；眼睛从指缝看镜头，头微歪，停住再拍。",
       "camera": "近景，镜头与眼睛同高；对焦在眼睛上，手不要贴得太近以免挡住对焦。",
       "cue": "双手抬到脸前，手指张开留出缝隙，眼睛从缝里看镜头。",
